@@ -243,7 +243,7 @@ Transform:
   m_GameObject: {fileID: 42386807}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.39, y: 2.41, z: 0.005248511}
+  m_LocalPosition: {x: -1.39, y: 2, z: 0.005248511}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -276,7 +276,7 @@ GameObject:
   - component: {fileID: 45646821}
   - component: {fileID: 45646820}
   - component: {fileID: 45646822}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Idle (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -372,7 +372,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.28, y: 0.24, z: 0.2}
+  m_Size: {x: 0.2, y: 0.2, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &71502558
 GameObject:
@@ -892,7 +892,7 @@ Transform:
   m_GameObject: {fileID: 435584484}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.5577977, y: 0.5275966, z: 0}
+  m_LocalPosition: {x: 0.5577977, y: 0.47, z: 0}
   m_LocalScale: {x: 4.9779, y: 4.9779, z: 4.9779}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -930,7 +930,7 @@ GameObject:
   - component: {fileID: 537938737}
   - component: {fileID: 537938736}
   - component: {fileID: 537938738}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Idle (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1026,7 +1026,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.28, y: 0.24, z: 0.2}
+  m_Size: {x: 0.2, y: 0.2, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &557516931
 GameObject:
@@ -1148,7 +1148,7 @@ GameObject:
   - component: {fileID: 642052377}
   - component: {fileID: 642052376}
   - component: {fileID: 642052378}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Idle (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1244,7 +1244,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.28, y: 0.24, z: 0.2}
+  m_Size: {x: 0.2, y: 0.2, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &657832587
 GameObject:
@@ -1257,7 +1257,7 @@ GameObject:
   - component: {fileID: 657832590}
   - component: {fileID: 657832589}
   - component: {fileID: 657832588}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Idle (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1283,7 +1283,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.28, y: 0.24, z: 0.2}
+  m_Size: {x: 0.2, y: 0.2, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!212 &657832589
 SpriteRenderer:
@@ -1619,7 +1619,7 @@ GameObject:
   - component: {fileID: 911407546}
   - component: {fileID: 911407545}
   - component: {fileID: 911407547}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Idle (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1715,7 +1715,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.28, y: 0.24, z: 0.2}
+  m_Size: {x: 0.2, y: 0.2, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &931644806
 GameObject:
@@ -1728,7 +1728,7 @@ GameObject:
   - component: {fileID: 931644809}
   - component: {fileID: 931644808}
   - component: {fileID: 931644807}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Idle (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1754,7 +1754,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.28, y: 0.24, z: 0.2}
+  m_Size: {x: 0.2, y: 0.2, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!212 &931644808
 SpriteRenderer:
@@ -2025,7 +2025,7 @@ GameObject:
   - component: {fileID: 1315690789}
   - component: {fileID: 1315690788}
   - component: {fileID: 1315690787}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Blue (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2051,7 +2051,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.65, y: 0.65, z: 0.1}
+  m_Size: {x: 0.65, y: 0.65, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!212 &1315690788
 SpriteRenderer:
@@ -2134,7 +2134,7 @@ GameObject:
   - component: {fileID: 1337021748}
   - component: {fileID: 1337021747}
   - component: {fileID: 1337021746}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Idle (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2160,7 +2160,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.28, y: 0.24, z: 0.2}
+  m_Size: {x: 0.2, y: 0.2, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!212 &1337021747
 SpriteRenderer:
@@ -2621,7 +2621,7 @@ GameObject:
   - component: {fileID: 1517161965}
   - component: {fileID: 1517161964}
   - component: {fileID: 1517161963}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Idle (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2647,7 +2647,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.28, y: 0.24, z: 0.2}
+  m_Size: {x: 0.2, y: 0.2, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!212 &1517161964
 SpriteRenderer:
@@ -2817,7 +2817,6 @@ GameObject:
   - component: {fileID: 1603750512}
   - component: {fileID: 1603750511}
   - component: {fileID: 1603750513}
-  - component: {fileID: 1603750514}
   m_Layer: 6
   m_Name: Idle (5)
   m_TagString: Untagged
@@ -2916,27 +2915,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.2, y: 0.2, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!65 &1603750514
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1603750510}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.28, y: 0.24, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1635682567
 GameObject:
   m_ObjectHideFlags: 0
@@ -2983,7 +2961,6 @@ GameObject:
   - component: {fileID: 1645740634}
   - component: {fileID: 1645740633}
   - component: {fileID: 1645740635}
-  - component: {fileID: 1645740636}
   m_Layer: 6
   m_Name: Idle (10)
   m_TagString: Untagged
@@ -3081,27 +3058,6 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 0.2, y: 0.2, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!65 &1645740636
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1645740632}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.28, y: 0.24, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1695452871
 GameObject:
@@ -3332,7 +3288,7 @@ GameObject:
   - component: {fileID: 1800764447}
   - component: {fileID: 1800764446}
   - component: {fileID: 1800764445}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Idle (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3358,7 +3314,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.28, y: 0.24, z: 0.2}
+  m_Size: {x: 0.2, y: 0.2, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!212 &1800764446
 SpriteRenderer:
@@ -3935,7 +3891,7 @@ GameObject:
   - component: {fileID: 2050752543}
   - component: {fileID: 2050752542}
   - component: {fileID: 2050752541}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Blue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3961,7 +3917,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.65, y: 0.65, z: 0.1}
+  m_Size: {x: 0.65, y: 0.65, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!212 &2050752542
 SpriteRenderer:
@@ -4044,7 +4000,7 @@ GameObject:
   - component: {fileID: 2116446408}
   - component: {fileID: 2116446407}
   - component: {fileID: 2116446409}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Idle (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4140,7 +4096,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.28, y: 0.24, z: 0.2}
+  m_Size: {x: 0.2, y: 0.2, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
