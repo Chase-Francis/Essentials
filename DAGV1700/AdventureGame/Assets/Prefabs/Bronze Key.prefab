@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 4029989443053267442}
   - component: {fileID: 863412939059294389}
   - component: {fileID: 800261273517014475}
-  - component: {fileID: 4033928801118631373}
   - component: {fileID: 7234859438745067249}
   - component: {fileID: 3673042268863972660}
   m_Layer: 13
@@ -112,36 +111,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.11, y: 0.27, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4033928801118631373
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5172279395606417805}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7c4c067838ab4f4daf3ceea190e0b91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  awakeEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  triggerEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 863412939059294389}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
 --- !u!114 &7234859438745067249
 MonoBehaviour:
   m_ObjectHideFlags: 0
