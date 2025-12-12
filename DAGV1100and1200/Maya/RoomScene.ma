@@ -1,51 +1,55 @@
 //Maya ASCII 2026 scene
 //Name: RoomScene.ma
-//Last modified: Wed, Dec 10, 2025 08:20:31 PM
+//Last modified: Thu, Dec 11, 2025 10:21:36 PM
 //Codeset: 1252
 file -rdi 1 -ns "Table" -rfn "TableRN" -op "v=0;" -typ "mayaAscii" "C:/GitHub/Essentials/DAGV1100and1200/Maya/Table.ma";
-file -rdi 1 -ns "Bookshelf" -rfn "BookshelfRN" -op "v=0;" -typ "mayaAscii" "C:/GitHub/Essentials/DAGV1100and1200/Maya/Bookshelf.ma";
-file -rdi 1 -ns "Books" -rfn "BooksRN" -op "v=0;" -typ "mayaAscii" "C:/GitHub/Essentials/DAGV1100and1200/Maya/Books.ma";
-file -rdi 1 -ns "DeskLmp" -rfn "DeskLmpRN" -op "v=0;" -typ "mayaAscii" "C:/GitHub/Essentials/DAGV1100and1200/Maya/DeskLmp.ma";
-file -rdi 1 -ns "PottedFlower" -rfn "PottedFlowerRN" -op "v=0;" -typ "mayaAscii"
-		 "C:/GitHub/Essentials/DAGV1100and1200/Maya/PottedFlower.ma";
+file -rdi 1 -ns "Books" -dr 1 -rfn "BooksRN" -op "v=0;" -typ "mayaAscii" "C:/GitHub/Essentials/DAGV1100and1200/Maya/Books.ma";
+file -rdi 1 -ns "DeskLmp" -dr 1 -rfn "DeskLmpRN" -op "v=0;" -typ "mayaAscii"
+		 "C:/GitHub/Essentials/DAGV1100and1200/Maya/DeskLmp.ma";
 file -rdi 1 -ns "Sofa" -rfn "SofaRN" -op "v=0;" -typ "mayaAscii" "C:/GitHub/Essentials/DAGV1100and1200/Maya/Sofa.ma";
 file -rdi 1 -ns "Chair" -rfn "ChairRN" -op "v=0;" -typ "mayaAscii" "C:/GitHub/Essentials/DAGV1100and1200/Maya/Chair.ma";
+file -rdi 1 -ns "PottedFlower" -rfn "PottedFlowerRN" -op "v=0;" -typ "mayaAscii"
+		 "C:/GitHub/Essentials/DAGV1100and1200/Maya/PottedFlower.ma";
+file -rdi 1 -ns "Bookshelf" -rfn "BookshelfRN" -op "v=0;" -typ "mayaAscii" "C:/GitHub/Essentials/DAGV1100and1200/Maya/Bookshelf.ma";
+file -rdi 1 -ns "Books1" -rfn "BooksRN1" -op "v=0;" -typ "mayaAscii" "C:/GitHub/Essentials/DAGV1100and1200/Maya/Books.ma";
+file -rdi 1 -ns "DeskLmp1" -rfn "DeskLmpRN1" -op "v=0;" -typ "mayaAscii" "C:/GitHub/Essentials/DAGV1100and1200/Maya/DeskLmp.ma";
 file -r -ns "Table" -dr 1 -rfn "TableRN" -op "v=0;" -typ "mayaAscii" "C:/GitHub/Essentials/DAGV1100and1200/Maya/Table.ma";
-file -r -ns "Bookshelf" -dr 1 -rfn "BookshelfRN" -op "v=0;" -typ "mayaAscii" "C:/GitHub/Essentials/DAGV1100and1200/Maya/Bookshelf.ma";
 file -r -ns "Books" -dr 1 -rfn "BooksRN" -op "v=0;" -typ "mayaAscii" "C:/GitHub/Essentials/DAGV1100and1200/Maya/Books.ma";
 file -r -ns "DeskLmp" -dr 1 -rfn "DeskLmpRN" -op "v=0;" -typ "mayaAscii" "C:/GitHub/Essentials/DAGV1100and1200/Maya/DeskLmp.ma";
-file -r -ns "PottedFlower" -dr 1 -rfn "PottedFlowerRN" -op "v=0;" -typ "mayaAscii"
-		 "C:/GitHub/Essentials/DAGV1100and1200/Maya/PottedFlower.ma";
 file -r -ns "Sofa" -dr 1 -rfn "SofaRN" -op "v=0;" -typ "mayaAscii" "C:/GitHub/Essentials/DAGV1100and1200/Maya/Sofa.ma";
 file -r -ns "Chair" -dr 1 -rfn "ChairRN" -op "v=0;" -typ "mayaAscii" "C:/GitHub/Essentials/DAGV1100and1200/Maya/Chair.ma";
+file -r -ns "PottedFlower" -dr 1 -rfn "PottedFlowerRN" -op "v=0;" -typ "mayaAscii"
+		 "C:/GitHub/Essentials/DAGV1100and1200/Maya/PottedFlower.ma";
+file -r -ns "Bookshelf" -dr 1 -rfn "BookshelfRN" -op "v=0;" -typ "mayaAscii" "C:/GitHub/Essentials/DAGV1100and1200/Maya/Bookshelf.ma";
+file -r -ns "Books1" -dr 1 -rfn "BooksRN1" -op "v=0;" -typ "mayaAscii" "C:/GitHub/Essentials/DAGV1100and1200/Maya/Books.ma";
+file -r -ns "DeskLmp1" -dr 1 -rfn "DeskLmpRN1" -op "v=0;" -typ "mayaAscii" "C:/GitHub/Essentials/DAGV1100and1200/Maya/DeskLmp.ma";
 requires maya "2026";
 requires "stereoCamera" "10.0";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiImagerDenoiserOidn"
 		 "mtoa" "5.5.3";
-requires "stereoCamera" "10.0";
 currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
 fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "89932963-4E64-20D2-1C82-27A465DC1D7A";
+fileInfo "UUID" "8C037C0F-4984-7954-0F83-A8A746FCB6D6";
 createNode transform -s -n "persp";
 	rename -uid "01ED71B3-4BD0-AF6B-41CE-FA8EC07D164B";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 18.250995413159316 24.602795155042521 41.357545322583789 ;
-	setAttr ".r" -type "double3" -24.600000000000016 24.200000000000212 2.6152432873732451e-15 ;
+	setAttr ".t" -type "double3" 24.133700005621183 35.966308786332732 36.990304328427598 ;
+	setAttr ".r" -type "double3" -36.600000000000591 33.000000000000533 1.8961883265173247e-15 ;
 	setAttr ".rp" -type "double3" 4.4408920985006262e-16 8.8817841970012523e-16 0 ;
 	setAttr ".rpt" -type "double3" 2.8231974989772987e-16 2.4769585689100048e-16 -8.204770151777218e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "A2AFA9F4-4567-A39E-6F97-23910FCA8802";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 44.350386752510147;
+	setAttr ".coi" 55.339697868328301;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 5.8652239361689258 5.7805818319320679 -8.7092149257659912 ;
+	setAttr ".tp" -type "double3" 0.15595457039325389 5.0729120086038746 -8.4567535239768752 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "F1E9A90D-4065-47B2-ABD8-6CB6D4C74EAE";
@@ -1667,15 +1671,15 @@ createNode mesh -n "polySurfaceShape3" -p "|ChairMesh2";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "05AE56DE-439E-74FD-CE9A-C5AB5D2B5022";
-	setAttr -s 12 ".lnk";
-	setAttr -s 12 ".slnk";
+	rename -uid "766A9DF5-4F1E-F95F-5655-65B09BC85A37";
+	setAttr -s 7 ".lnk";
+	setAttr -s 7 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "F66F1171-4532-A7BD-6499-A58A4147E18F";
+	rename -uid "19BCC94C-4A7B-D31D-36C5-4D8841A5EAB3";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "3837C105-4497-B0B3-05B7-498646624E64";
+	rename -uid "58C2407A-4172-A490-AA90-EBB824649DB4";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "36E6A03A-49E5-D7C8-154D-FB939860689A";
+	rename -uid "0D896263-4D2D-806D-65F2-9287DC19B003";
 	setAttr ".cdl" 2;
 	setAttr -s 3 ".dli[1:2]"  1 2;
 	setAttr -s 3 ".dli";
@@ -1683,7 +1687,7 @@ createNode displayLayer -n "defaultLayer";
 	rename -uid "78F89E93-4A88-68E3-FCD9-4CA33D660714";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "264C2EF5-41D7-86DC-9D7A-D6A7DA5F0348";
+	rename -uid "B08A3108-441B-CA97-D65B-71B272A54A31";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "602990F6-4981-1E7D-0CDC-9CA895BCE7FE";
 	setAttr ".g" yes;
@@ -1726,7 +1730,7 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -docTag \"RADRENDER\" \n            -camera \"|persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n"
 		+ "            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 1\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n"
 		+ "            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n"
-		+ "            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 2163\n            -height 1159\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"\")) -mbv $menusOkayInPanels  $panelName;\n"
+		+ "            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1758\n            -height 1119\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"\")) -mbv $menusOkayInPanels  $panelName;\n"
 		+ "\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n"
 		+ "            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -showUfeItems 1\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n"
 		+ "            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n"
@@ -1752,11 +1756,11 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 16384\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -rendererOverrideName \"stereoOverrideVP2\" \n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n"
 		+ "                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -controllers 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n"
 		+ "                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -bluePencil 1\n                -greasePencils 0\n                -excludeObjectPreset \"All\" \n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName; };\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n"
-		+ "\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 1\n            -showTimeEditor 1\n            -showReferenceNodes 1\n            -showReferenceMembers 1\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n"
+		+ "\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 1\n            -showReferenceMembers 1\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n"
 		+ "            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -showUfeItems 1\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n"
 		+ "            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap true\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
-		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -docTag \\\"RADRENDER\\\" \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 1\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 2163\\n    -height 1159\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName\"\n"
-		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -docTag \\\"RADRENDER\\\" \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 1\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 2163\\n    -height 1159\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName\"\n"
+		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -docTag \\\"RADRENDER\\\" \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 1\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1758\\n    -height 1119\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName\"\n"
+		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -docTag \\\"RADRENDER\\\" \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 1\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1758\\n    -height 1119\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName\"\n"
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 5 -size 12 -divisions 5 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
@@ -1800,533 +1804,15 @@ createNode reference -n "TableRN";
 		":initialShadingGroup.dsm";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
-createNode reference -n "BookshelfRN";
-	rename -uid "7644E315-4D63-6F54-B27B-63AF61ABD024";
-	setAttr ".phl[1]" 0;
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"BookshelfRN"
-		"BookshelfRN" 0
-		"BookshelfRN" 244
-		2 "|Bookshelf:pCube6" "translate" " -type \"double3\" 7 0 -9.64375893336326939"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints" " -s 237"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[0]" " -type \"float2\" 0.17434946000000001 0.16582304"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[1]" " -type \"float2\" 0.15197127999999999 0.18820116000000001"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[2]" " -type \"float2\" 0.19672754000000001 0.12106678"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[3]" " -type \"float2\" 0.19672754000000001 0.12106678"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[4]" " -type \"float2\" 0.19672754000000001 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[5]" " -type \"float2\" 0.12959313 0.12106678"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[6]" " -type \"float2\" 0.12959313 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[7]" " -type \"float2\" 0.17434946000000001 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[8]" " -type \"float2\" 0.19672754000000001 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[9]" " -type \"float2\" 0.12959313 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[10]" " -type \"float2\" 0.12959313 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[11]" " -type \"float2\" 0.15197127999999999 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[12]" " -type \"float2\" 0.15197127999999999 0.16582304"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[13]" " -type \"float2\" 0.17434946000000001 0.16582304"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[14]" " -type \"float2\" 0.17434946000000001 0.18820116000000001"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[15]" " -type \"float2\" 0.15197127999999999 0.18820116000000001"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[16]" " -type \"float2\" 0.19672754000000001 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[17]" " -type \"float2\" 0.19672754000000001 0.12106678"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[18]" " -type \"float2\" 0.19672754000000001 0.12106678"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[19]" " -type \"float2\" 0.12959313 0.12106678"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[20]" " -type \"float2\" 0.12959313 0.12106678"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[21]" " -type \"float2\" 0.12959313 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[22]" " -type \"float2\" 0.19672754000000001 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[23]" " -type \"float2\" 0.19672754000000001 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[24]" " -type \"float2\" 0.19672754000000001 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[25]" " -type \"float2\" 0.12959313 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[26]" " -type \"float2\" 0.12959313 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[27]" " -type \"float2\" 0.12959313 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[28]" " -type \"float2\" 0.15197127999999999 0.16582304"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[29]" " -type \"float2\" 0.17434946000000001 0.16582304"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[30]" " -type \"float2\" 0.17434946000000001 0.16582304"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[31]" " -type \"float2\" 0.15197127999999999 0.16582304"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[32]" " -type \"float2\" 0.17434946000000001 0.16582304"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[33]" " -type \"float2\" 0.15197127999999999 0.16582304"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[34]" " -type \"float2\" 0.17434946000000001 0.16582304"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[35]" " -type \"float2\" 0.17434946000000001 0.18820116000000001"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[36]" " -type \"float2\" 0.15197127999999999 0.18820116000000001"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[37]" " -type \"float2\" 0.15197127999999999 0.18820116000000001"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[38]" " -type \"float2\" 0.19672754000000001 0.12106678"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[39]" " -type \"float2\" 0.19672754000000001 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[40]" " -type \"float2\" 0.12959313 0.12106678"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[41]" " -type \"float2\" 0.12959313 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[42]" " -type \"float2\" 0.19672754000000001 0.12106678"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[43]" " -type \"float2\" 0.19672754000000001 0.12106678"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[44]" " -type \"float2\" 0.19672754000000001 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[45]" " -type \"float2\" 0.19672754000000001 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[46]" " -type \"float2\" 0.19672754000000001 0.12106678"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[47]" " -type \"float2\" 0.17434946000000001 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[48]" " -type \"float2\" 0.19672754000000001 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[49]" " -type \"float2\" 0.12959313 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[50]" " -type \"float2\" 0.12959313 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[51]" " -type \"float2\" 0.15197127999999999 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[52]" " -type \"float2\" 0.12959313 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[53]" " -type \"float2\" 0.12959313 0.12106678"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[54]" " -type \"float2\" 0.12959313 0.12106678"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[55]" " -type \"float2\" 0.12959313 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[56]" " -type \"float2\" 0.19672754000000001 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[57]" " -type \"float2\" 0.19672754000000001 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[58]" " -type \"float2\" 0.12959313 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[59]" " -type \"float2\" 0.12959313 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[60]" " -type \"float2\" 0.15197127999999999 0.16582304"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[61]" " -type \"float2\" 0.17434946000000001 0.16582304"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[62]" " -type \"float2\" 0.17434946000000001 0.16582304"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[63]" " -type \"float2\" 0.15197127999999999 0.16582304"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[64]" " -type \"float2\" 0.17434946000000001 0.16582304"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[65]" " -type \"float2\" 0.15197127999999999 0.16582304"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[66]" " -type \"float2\" 0.17434946000000001 0.16582304"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[67]" " -type \"float2\" 0.17434946000000001 0.18820116000000001"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[68]" " -type \"float2\" 0.15197127999999999 0.18820116000000001"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[69]" " -type \"float2\" 0.15197127999999999 0.18820116000000001"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[70]" " -type \"float2\" 0.19672754000000001 0.12106678"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[71]" " -type \"float2\" 0.19672754000000001 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[72]" " -type \"float2\" 0.12959313 0.12106678"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[73]" " -type \"float2\" 0.12959313 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[74]" " -type \"float2\" 0.19672754000000001 0.12106678"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[75]" " -type \"float2\" 0.19672754000000001 0.12106678"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[76]" " -type \"float2\" 0.19672754000000001 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[77]" " -type \"float2\" 0.19672754000000001 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[78]" " -type \"float2\" 0.19672754000000001 0.12106678"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[79]" " -type \"float2\" 0.17434946000000001 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[80]" " -type \"float2\" 0.19672754000000001 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[81]" " -type \"float2\" 0.12959313 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[82]" " -type \"float2\" 0.12959313 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[83]" " -type \"float2\" 0.15197127999999999 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[84]" " -type \"float2\" 0.12959313 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[85]" " -type \"float2\" 0.12959313 0.12106678"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[86]" " -type \"float2\" 0.12959313 0.12106678"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[87]" " -type \"float2\" 0.12959313 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[88]" " -type \"float2\" 0.19672754000000001 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[89]" " -type \"float2\" 0.19672754000000001 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[90]" " -type \"float2\" 0.12959313 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[91]" " -type \"float2\" 0.12959313 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[92]" " -type \"float2\" 0.15197127999999999 0.16582304"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[93]" " -type \"float2\" 0.17434946000000001 0.16582304"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[94]" " -type \"float2\" 0.17434946000000001 0.16582304"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[95]" " -type \"float2\" 0.15197127999999999 0.16582304"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[96]" " -type \"float2\" 0.12959313 0.12106678"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[97]" " -type \"float2\" 0.17434946000000001 0.12106678"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[98]" " -type \"float2\" 0.17468091999999999 0.12106678"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[99]" " -type \"float2\" 0.17434946000000001 0.12106678"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[100]" " -type \"float2\" 0.15197127999999999 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[101]" " -type \"float2\" 0.15197127999999999 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[102]" " -type \"float2\" 0.15163976000000001 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[103]" " -type \"float2\" 0.12959313 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[104]" " -type \"float2\" 0.15197127999999999 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[105]" " -type \"float2\" 0.15197127999999999 0.12106678"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[106]" " -type \"float2\" 0.15197127999999999 0.12106678"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[107]" " -type \"float2\" 0.19672754000000001 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[108]" " -type \"float2\" 0.17468091999999999 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[109]" " -type \"float2\" 0.19672754000000001 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[110]" " -type \"float2\" 0.17434946000000001 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[111]" " -type \"float2\" 0.17434946000000001 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[112]" " -type \"float2\" 0.17434946000000001 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[113]" " -type \"float2\" 0.17434946000000001 0.14344487"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[114]" " -type \"float2\" 0.12959313 0.12106678"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[115]" " -type \"float2\" 0.17434946000000001 0.12106678"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[116]" " -type \"float2\" 0.17468091999999999 0.12106678"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[117]" " -type \"float2\" 0.17434946000000001 0.12106678"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[118]" " -type \"float2\" 0.15197127999999999 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[119]" " -type \"float2\" 0.15197127999999999 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[120]" " -type \"float2\" 0.15163976000000001 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[121]" " -type \"float2\" 0.12959313 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[122]" " -type \"float2\" 0.15197127999999999 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[123]" " -type \"float2\" 0.15197127999999999 0.12106678"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[124]" " -type \"float2\" 0.15197127999999999 0.12106678"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[125]" " -type \"float2\" 0.19672754000000001 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[126]" " -type \"float2\" 0.17468091999999999 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[127]" " -type \"float2\" 0.19672754000000001 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[128]" " -type \"float2\" 0.17434946000000001 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[129]" " -type \"float2\" 0.17434946000000001 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[130]" " -type \"float2\" 0.17434946000000001 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[131]" " -type \"float2\" 0.17434946000000001 0.14344483999999999"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[132]" " -type \"float2\" 0.17434946000000001 0.18820116000000001"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[133]" " -type \"float2\" 0.17434946000000001 0.21024778"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[134]" " -type \"float2\" 0.15197127999999999 0.21024778"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[135]" " -type \"float2\" 0.15197127999999999 0.16582304"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[136]" " -type \"float2\" 0.17434946000000001 0.18820116000000001"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[137]" " -type \"float2\" 0.17434946000000001 0.21024778"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[138]" " -type \"float2\" 0.15197127999999999 0.21024778"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[139]" " -type \"float2\" 0.15197127999999999 0.16582304"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[140]" " -type \"float2\" 0.17434946000000001 0.18820116000000001"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[141]" " -type \"float2\" 0.17434946000000001 0.21028527999999999"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[142]" " -type \"float2\" 0.15197127999999999 0.21028527999999999"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[143]" " -type \"float2\" 0.15197127999999999 0.12666069999999999"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[144]" " -type \"float2\" 0.17434946000000001 0.12106678"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[145]" " -type \"float2\" 0.15197127999999999 0.14377645"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[146]" " -type \"float2\" 0.17434946000000001 0.13785088000000001"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[147]" " -type \"float2\" 0.15197127999999999 0.12666069999999999"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[148]" " -type \"float2\" 0.17434946000000001 0.12106678"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[149]" " -type \"float2\" 0.15197127999999999 0.14377645"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[150]" " -type \"float2\" 0.17434946000000001 0.13785082000000001"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[151]" " -type \"float2\" 0.15167718999999999 0.12106678"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[152]" " -type \"float2\" 0.15163979 0.12106678"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[153]" " -type \"float2\" 0.17434946000000001 0.12666069999999999"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[154]" " -type \"float2\" 0.15197127999999999 0.14344487"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[155]" " -type \"float2\" 0.15197127999999999 0.13785088000000001"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[156]" " -type \"float2\" 0.17434946000000001 0.14377645"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[157]" " -type \"float2\" 0.15163979 0.12106678"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[158]" " -type \"float2\" 0.17434946000000001 0.12666069999999999"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[159]" " -type \"float2\" 0.15197127999999999 0.14344483999999999"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[160]" " -type \"float2\" 0.15197127999999999 0.13785082000000001"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[161]" " -type \"float2\" 0.17434946000000001 0.14377645"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[162]" " -type \"float2\" 0.17434946000000001 0.13123772"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[163]" " -type \"float2\" 0.17434946000000001 0.13123774999999999"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[164]" " -type \"float2\" 0.17434946000000001 0.13174668"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[165]" " -type \"float2\" 0.15197127999999999 0.13174668"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[166]" " -type \"float2\" 0.15197127999999999 0.13123772"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[167]" " -type \"float2\" 0.15197127999999999 0.13123774999999999"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[168]" " -type \"float2\" 0.12959313 0.13123774999999999"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[169]" " -type \"float2\" 0.12959313 0.13123774999999999"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[170]" " -type \"float2\" 0.12959313 0.13123774999999999"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[171]" " -type \"float2\" 0.15197127999999999 0.17803021999999999"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[172]" " -type \"float2\" 0.17434946000000001 0.17803021999999999"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[173]" " -type \"float2\" 0.19672754000000001 0.13123774999999999"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[174]" " -type \"float2\" 0.19672754000000001 0.13123774999999999"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[175]" " -type \"float2\" 0.19672754000000001 0.13123774999999999"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[176]" " -type \"float2\" 0.17434946000000001 0.13226067999999999"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[177]" " -type \"float2\" 0.17434946000000001 0.13226067999999999"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[178]" " -type \"float2\" 0.17434946000000001 0.13225820999999999"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[179]" " -type \"float2\" 0.15197127999999999 0.13225820999999999"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[180]" " -type \"float2\" 0.15197127999999999 0.13226067999999999"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[181]" " -type \"float2\" 0.15197127999999999 0.13226067999999999"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[182]" " -type \"float2\" 0.12959313 0.13226067999999999"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[183]" " -type \"float2\" 0.12959313 0.13226067999999999"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[184]" " -type \"float2\" 0.12959313 0.13226067999999999"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[185]" " -type \"float2\" 0.15197127999999999 0.17700722999999999"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[186]" " -type \"float2\" 0.17434946000000001 0.17700722999999999"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[187]" " -type \"float2\" 0.19672754000000001 0.13226067999999999"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[188]" " -type \"float2\" 0.19672754000000001 0.13226067999999999"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[189]" " -type \"float2\" 0.19672754000000001 0.13226067999999999"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[190]" " -type \"float2\" 0.12959313 0.12106678"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[191]" " -type \"float2\" 0.17466572 0.12106678"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[192]" " -type \"float2\" 0.17434946000000001 0.12106678"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[193]" " -type \"float2\" 0.15197127999999999 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[194]" " -type \"float2\" 0.15197127999999999 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[195]" " -type \"float2\" 0.15165498999999999 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[196]" " -type \"float2\" 0.12959313 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[197]" " -type \"float2\" 0.15197127999999999 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[198]" " -type \"float2\" 0.19672754000000001 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[199]" " -type \"float2\" 0.17466572 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[200]" " -type \"float2\" 0.19672754000000001 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[201]" " -type \"float2\" 0.17434946000000001 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[202]" " -type \"float2\" 0.17434946000000001 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[203]" " -type \"float2\" 0.15197127999999999 0.12106678"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[204]" " -type \"float2\" 0.17434946000000001 0.18820116000000001"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[205]" " -type \"float2\" 0.17434946000000001 0.21026304000000001"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[206]" " -type \"float2\" 0.15197127999999999 0.21026304000000001"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[207]" " -type \"float2\" 0.15197127999999999 0.16582304"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[208]" " -type \"float2\" 0.17434946000000001 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[209]" " -type \"float2\" 0.17434946000000001 0.12106678"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[210]" " -type \"float2\" 0.15197127999999999 0.12106678"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[211]" " -type \"float2\" 0.17426148 0.12666069999999999"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[212]" " -type \"float2\" 0.17434946000000001 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[213]" " -type \"float2\" 0.15197127999999999 0.14376119000000001"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[214]" " -type \"float2\" 0.17426523999999999 0.13808659000000001"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[215]" " -type \"float2\" 0.15165498999999999 0.12106678"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[216]" " -type \"float2\" 0.15205547 0.12642508999999999"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[217]" " -type \"float2\" 0.17434946000000001 0.12106678"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[218]" " -type \"float2\" 0.15197127999999999 0.14344493"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[219]" " -type \"float2\" 0.15205920000000001 0.13785094000000001"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[220]" " -type \"float2\" 0.17434946000000001 0.14376119000000001"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[221]" " -type \"float2\" 0.15212429 0.14384701999999999"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[222]" " -type \"float2\" 0.15197127999999999 0.17401651000000001"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[223]" " -type \"float2\" 0.15212429 0.16542086"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[224]" " -type \"float2\" 0.17434946000000001 0.12705627"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[225]" " -type \"float2\" 0.15197127999999999 0.13525137000000001"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[226]" " -type \"float2\" 0.17419639000000001 0.14384701999999999"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[227]" " -type \"float2\" 0.17419639000000001 0.16542086"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[228]" " -type \"float2\" 0.17434946000000001 0.17401651000000001"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[229]" " -type \"float2\" 0.15197127999999999 0.18820116000000001"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[230]" " -type \"float2\" 0.12959313 0.12106678"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[231]" " -type \"float2\" 0.15197127999999999 0.12705627"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[232]" " -type \"float2\" 0.12959313 0.13525139999999999"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[233]" " -type \"float2\" 0.17464342999999999 0.12106678"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[234]" " -type \"float2\" 0.19672754000000001 0.12106678"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[235]" " -type \"float2\" 0.19672754000000001 0.13525124999999999"
-		
-		2 "|Bookshelf:pCube6|Bookshelf:Bookshelf" "uvSet[0].uvSetPoints[236]" " -type \"float2\" 0.17434946000000001 0.13525137000000001"
-		
-		3 "Bookshelf:groupId42.groupId" "|Bookshelf:pCube6|Bookshelf:Bookshelf.instObjGroups.objectGroups[0].objectGroupId" 
-		""
-		3 ":initialShadingGroup.memberWireframeColor" "|Bookshelf:pCube6|Bookshelf:Bookshelf.instObjGroups.objectGroups[0].objectGrpColor" 
-		""
-		3 "|Bookshelf:pCube6|Bookshelf:Bookshelf.instObjGroups.objectGroups[0]" ":initialShadingGroup.dagSetMembers" 
-		"-na"
-		3 "Bookshelf:groupId42.message" ":initialShadingGroup.groupNodes" "-na"
-		5 3 "BookshelfRN" "|Bookshelf:pCube6|Bookshelf:Bookshelf.instObjGroups" 
-		"BookshelfRN.placeHolderList[1]" "";
-	setAttr ".ptag" -type "string" "";
-lockNode -l 1 ;
 createNode reference -n "BooksRN";
 	rename -uid "8CC8230F-49CD-EFAC-7BEF-0D87D0077A0A";
 	setAttr -s 21 ".phl";
-	setAttr ".phl[1]" 0;
-	setAttr ".phl[2]" 0;
-	setAttr ".phl[3]" 0;
-	setAttr ".phl[4]" 0;
-	setAttr ".phl[5]" 0;
-	setAttr ".phl[6]" 0;
-	setAttr ".phl[7]" 0;
-	setAttr ".phl[8]" 0;
-	setAttr ".phl[9]" 0;
-	setAttr ".phl[10]" 0;
-	setAttr ".phl[11]" 0;
-	setAttr ".phl[12]" 0;
-	setAttr ".phl[13]" 0;
-	setAttr ".phl[14]" 0;
-	setAttr ".phl[15]" 0;
-	setAttr ".phl[16]" 0;
-	setAttr ".phl[17]" 0;
-	setAttr ".phl[18]" 0;
-	setAttr ".phl[19]" 0;
-	setAttr ".phl[20]" 0;
-	setAttr ".phl[21]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"BooksRN"
-		"BooksRN" 0
 		"BooksRN" 780
 		2 "|Books:BookGrp" "translate" " -type \"double3\" 5.86336844357706788 5 -9"
 		
-		2 "|Books:BookGrp|Books:Book20|Books:Book15" "uvSet[0].uvSetPoints" " -s 34"
+		2 "|Books:BookGrp|Books:Book20|Books:Book15" "uvSet[0].uvSetPoints" " -s 72"
 		
 		2 "|Books:BookGrp|Books:Book20|Books:Book15" "uvSet[0].uvSetPoints[0]" " -type \"float2\" 0.15197127999999999 0.12106678"
 		
@@ -2396,7 +1882,7 @@ createNode reference -n "BooksRN";
 		
 		2 "|Books:BookGrp|Books:Book20|Books:Book15" "uvSet[0].uvSetPoints[33]" " -type \"float2\" 0.15197127999999999 0.21057936999999999"
 		
-		2 "|Books:BookGrp|Books:Book2|Books:Book2" "uvSet[0].uvSetPoints" " -s 34"
+		2 "|Books:BookGrp|Books:Book2|Books:Book2" "uvSet[0].uvSetPoints" " -s 72"
 		
 		2 "|Books:BookGrp|Books:Book2|Books:Book2" "uvSet[0].uvSetPoints[0]" " -type \"float2\" 0.15197127999999999 0.12106678"
 		
@@ -2466,7 +1952,7 @@ createNode reference -n "BooksRN";
 		
 		2 "|Books:BookGrp|Books:Book2|Books:Book2" "uvSet[0].uvSetPoints[33]" " -type \"float2\" 0.15197127999999999 0.21057936999999999"
 		
-		2 "|Books:BookGrp|Books:Book|Books:Book" "uvSet[0].uvSetPoints" " -s 34"
+		2 "|Books:BookGrp|Books:Book|Books:Book" "uvSet[0].uvSetPoints" " -s 72"
 		2 "|Books:BookGrp|Books:Book|Books:Book" "uvSet[0].uvSetPoints[0]" " -type \"float2\" 0.15197127999999999 0.12106678"
 		
 		2 "|Books:BookGrp|Books:Book|Books:Book" "uvSet[0].uvSetPoints[1]" " -type \"float2\" 0.17434946000000001 0.12106678"
@@ -2535,7 +2021,7 @@ createNode reference -n "BooksRN";
 		
 		2 "|Books:BookGrp|Books:Book|Books:Book" "uvSet[0].uvSetPoints[33]" " -type \"float2\" 0.15197127999999999 0.21057936999999999"
 		
-		2 "|Books:BookGrp|Books:Book13|Books:Book8" "uvSet[0].uvSetPoints" " -s 34"
+		2 "|Books:BookGrp|Books:Book13|Books:Book8" "uvSet[0].uvSetPoints" " -s 72"
 		
 		2 "|Books:BookGrp|Books:Book13|Books:Book8" "uvSet[0].uvSetPoints[0]" " -type \"float2\" 0.15197127999999999 0.12106678"
 		
@@ -2605,7 +2091,7 @@ createNode reference -n "BooksRN";
 		
 		2 "|Books:BookGrp|Books:Book13|Books:Book8" "uvSet[0].uvSetPoints[33]" " -type \"float2\" 0.15197127999999999 0.21057936999999999"
 		
-		2 "|Books:BookGrp|Books:Book10|Books:Book9" "uvSet[0].uvSetPoints" " -s 34"
+		2 "|Books:BookGrp|Books:Book10|Books:Book9" "uvSet[0].uvSetPoints" " -s 72"
 		
 		2 "|Books:BookGrp|Books:Book10|Books:Book9" "uvSet[0].uvSetPoints[0]" " -type \"float2\" 0.15197127999999999 0.12106678"
 		
@@ -2675,7 +2161,7 @@ createNode reference -n "BooksRN";
 		
 		2 "|Books:BookGrp|Books:Book10|Books:Book9" "uvSet[0].uvSetPoints[33]" " -type \"float2\" 0.15197127999999999 0.21057936999999999"
 		
-		2 "|Books:BookGrp|Books:Book18|Books:Book17" "uvSet[0].uvSetPoints" " -s 34"
+		2 "|Books:BookGrp|Books:Book18|Books:Book17" "uvSet[0].uvSetPoints" " -s 72"
 		
 		2 "|Books:BookGrp|Books:Book18|Books:Book17" "uvSet[0].uvSetPoints[0]" " -type \"float2\" 0.15197127999999999 0.12106678"
 		
@@ -2745,7 +2231,7 @@ createNode reference -n "BooksRN";
 		
 		2 "|Books:BookGrp|Books:Book18|Books:Book17" "uvSet[0].uvSetPoints[33]" " -type \"float2\" 0.15197127999999999 0.21057936999999999"
 		
-		2 "|Books:BookGrp|Books:Book16|Books:Book19" "uvSet[0].uvSetPoints" " -s 34"
+		2 "|Books:BookGrp|Books:Book16|Books:Book19" "uvSet[0].uvSetPoints" " -s 72"
 		
 		2 "|Books:BookGrp|Books:Book16|Books:Book19" "uvSet[0].uvSetPoints[0]" " -type \"float2\" 0.15197127999999999 0.12106678"
 		
@@ -2815,7 +2301,7 @@ createNode reference -n "BooksRN";
 		
 		2 "|Books:BookGrp|Books:Book16|Books:Book19" "uvSet[0].uvSetPoints[33]" " -type \"float2\" 0.15197127999999999 0.21057936999999999"
 		
-		2 "|Books:BookGrp|Books:Book7|Books:Book11" "uvSet[0].uvSetPoints" " -s 34"
+		2 "|Books:BookGrp|Books:Book7|Books:Book11" "uvSet[0].uvSetPoints" " -s 72"
 		
 		2 "|Books:BookGrp|Books:Book7|Books:Book11" "uvSet[0].uvSetPoints[0]" " -type \"float2\" 0.15197127999999999 0.12106678"
 		
@@ -2885,7 +2371,7 @@ createNode reference -n "BooksRN";
 		
 		2 "|Books:BookGrp|Books:Book7|Books:Book11" "uvSet[0].uvSetPoints[33]" " -type \"float2\" 0.15197127999999999 0.21057936999999999"
 		
-		2 "|Books:BookGrp|Books:Book5|Books:Book5" "uvSet[0].uvSetPoints" " -s 34"
+		2 "|Books:BookGrp|Books:Book5|Books:Book5" "uvSet[0].uvSetPoints" " -s 72"
 		
 		2 "|Books:BookGrp|Books:Book5|Books:Book5" "uvSet[0].uvSetPoints[0]" " -type \"float2\" 0.15197127999999999 0.12106678"
 		
@@ -2955,7 +2441,7 @@ createNode reference -n "BooksRN";
 		
 		2 "|Books:BookGrp|Books:Book5|Books:Book5" "uvSet[0].uvSetPoints[33]" " -type \"float2\" 0.15197127999999999 0.21057936999999999"
 		
-		2 "|Books:BookGrp|Books:Book15|Books:Book14" "uvSet[0].uvSetPoints" " -s 34"
+		2 "|Books:BookGrp|Books:Book15|Books:Book14" "uvSet[0].uvSetPoints" " -s 72"
 		
 		2 "|Books:BookGrp|Books:Book15|Books:Book14" "uvSet[0].uvSetPoints[0]" " -type \"float2\" 0.15197127999999999 0.12106678"
 		
@@ -3025,7 +2511,7 @@ createNode reference -n "BooksRN";
 		
 		2 "|Books:BookGrp|Books:Book15|Books:Book14" "uvSet[0].uvSetPoints[33]" " -type \"float2\" 0.15197127999999999 0.21057936999999999"
 		
-		2 "|Books:BookGrp|Books:Book12|Books:Book13" "uvSet[0].uvSetPoints" " -s 34"
+		2 "|Books:BookGrp|Books:Book12|Books:Book13" "uvSet[0].uvSetPoints" " -s 72"
 		
 		2 "|Books:BookGrp|Books:Book12|Books:Book13" "uvSet[0].uvSetPoints[0]" " -type \"float2\" 0.15197127999999999 0.12106678"
 		
@@ -3095,7 +2581,7 @@ createNode reference -n "BooksRN";
 		
 		2 "|Books:BookGrp|Books:Book12|Books:Book13" "uvSet[0].uvSetPoints[33]" " -type \"float2\" 0.15197127999999999 0.21057936999999999"
 		
-		2 "|Books:BookGrp|Books:Book1|Books:Book1" "uvSet[0].uvSetPoints" " -s 34"
+		2 "|Books:BookGrp|Books:Book1|Books:Book1" "uvSet[0].uvSetPoints" " -s 72"
 		
 		2 "|Books:BookGrp|Books:Book1|Books:Book1" "uvSet[0].uvSetPoints[0]" " -type \"float2\" 0.15197127999999999 0.12106678"
 		
@@ -3166,7 +2652,7 @@ createNode reference -n "BooksRN";
 		2 "|Books:BookGrp|Books:Book1|Books:Book1" "uvSet[0].uvSetPoints[33]" " -type \"float2\" 0.15197127999999999 0.21057936999999999"
 		
 		2 "|Books:BookGrp|Books:Book17" "translate" " -type \"double3\" 0 0 0"
-		2 "|Books:BookGrp|Books:Book17|Books:Book16" "uvSet[0].uvSetPoints" " -s 34"
+		2 "|Books:BookGrp|Books:Book17|Books:Book16" "uvSet[0].uvSetPoints" " -s 72"
 		
 		2 "|Books:BookGrp|Books:Book17|Books:Book16" "uvSet[0].uvSetPoints[0]" " -type \"float2\" 0.15197127999999999 0.12106678"
 		
@@ -3236,7 +2722,7 @@ createNode reference -n "BooksRN";
 		
 		2 "|Books:BookGrp|Books:Book17|Books:Book16" "uvSet[0].uvSetPoints[33]" " -type \"float2\" 0.15197127999999999 0.21057936999999999"
 		
-		2 "|Books:BookGrp|Books:Book6|Books:Book6" "uvSet[0].uvSetPoints" " -s 34"
+		2 "|Books:BookGrp|Books:Book6|Books:Book6" "uvSet[0].uvSetPoints" " -s 72"
 		
 		2 "|Books:BookGrp|Books:Book6|Books:Book6" "uvSet[0].uvSetPoints[0]" " -type \"float2\" 0.15197127999999999 0.12106678"
 		
@@ -3306,7 +2792,7 @@ createNode reference -n "BooksRN";
 		
 		2 "|Books:BookGrp|Books:Book6|Books:Book6" "uvSet[0].uvSetPoints[33]" " -type \"float2\" 0.15197127999999999 0.21057936999999999"
 		
-		2 "|Books:BookGrp|Books:Book4|Books:Book4" "uvSet[0].uvSetPoints" " -s 34"
+		2 "|Books:BookGrp|Books:Book4|Books:Book4" "uvSet[0].uvSetPoints" " -s 72"
 		
 		2 "|Books:BookGrp|Books:Book4|Books:Book4" "uvSet[0].uvSetPoints[0]" " -type \"float2\" 0.15197127999999999 0.12106678"
 		
@@ -3376,7 +2862,7 @@ createNode reference -n "BooksRN";
 		
 		2 "|Books:BookGrp|Books:Book4|Books:Book4" "uvSet[0].uvSetPoints[33]" " -type \"float2\" 0.15197127999999999 0.21057936999999999"
 		
-		2 "|Books:BookGrp|Books:Book9|Books:Book12" "uvSet[0].uvSetPoints" " -s 34"
+		2 "|Books:BookGrp|Books:Book9|Books:Book12" "uvSet[0].uvSetPoints" " -s 72"
 		
 		2 "|Books:BookGrp|Books:Book9|Books:Book12" "uvSet[0].uvSetPoints[0]" " -type \"float2\" 0.15197127999999999 0.12106678"
 		
@@ -3446,7 +2932,7 @@ createNode reference -n "BooksRN";
 		
 		2 "|Books:BookGrp|Books:Book9|Books:Book12" "uvSet[0].uvSetPoints[33]" " -type \"float2\" 0.15197127999999999 0.21057936999999999"
 		
-		2 "|Books:BookGrp|Books:Book19|Books:Book20" "uvSet[0].uvSetPoints" " -s 34"
+		2 "|Books:BookGrp|Books:Book19|Books:Book20" "uvSet[0].uvSetPoints" " -s 72"
 		
 		2 "|Books:BookGrp|Books:Book19|Books:Book20" "uvSet[0].uvSetPoints[0]" " -type \"float2\" 0.15197127999999999 0.12106678"
 		
@@ -3516,7 +3002,7 @@ createNode reference -n "BooksRN";
 		
 		2 "|Books:BookGrp|Books:Book19|Books:Book20" "uvSet[0].uvSetPoints[33]" " -type \"float2\" 0.15197127999999999 0.21057936999999999"
 		
-		2 "|Books:BookGrp|Books:Book3|Books:Book3" "uvSet[0].uvSetPoints" " -s 34"
+		2 "|Books:BookGrp|Books:Book3|Books:Book3" "uvSet[0].uvSetPoints" " -s 72"
 		
 		2 "|Books:BookGrp|Books:Book3|Books:Book3" "uvSet[0].uvSetPoints[0]" " -type \"float2\" 0.15197127999999999 0.12106678"
 		
@@ -3588,7 +3074,7 @@ createNode reference -n "BooksRN";
 		
 		2 "|Books:BookGrp|Books:Book11|Books:Book10" "uvPivot" " -type \"double2\" 0.16316036103605686 0.16582302135098104"
 		
-		2 "|Books:BookGrp|Books:Book11|Books:Book10" "uvSet[0].uvSetPoints" " -s 34"
+		2 "|Books:BookGrp|Books:Book11|Books:Book10" "uvSet[0].uvSetPoints" " -s 72"
 		
 		2 "|Books:BookGrp|Books:Book11|Books:Book10" "uvSet[0].uvSetPoints[0]" " -type \"float2\" 0.15197127999999999 0.12106678"
 		
@@ -3658,7 +3144,7 @@ createNode reference -n "BooksRN";
 		
 		2 "|Books:BookGrp|Books:Book11|Books:Book10" "uvSet[0].uvSetPoints[33]" " -type \"float2\" 0.15197127999999999 0.21057936999999999"
 		
-		2 "|Books:BookGrp|Books:Book14|Books:Book18" "uvSet[0].uvSetPoints" " -s 34"
+		2 "|Books:BookGrp|Books:Book14|Books:Book18" "uvSet[0].uvSetPoints" " -s 72"
 		
 		2 "|Books:BookGrp|Books:Book14|Books:Book18" "uvSet[0].uvSetPoints[0]" " -type \"float2\" 0.15197127999999999 0.12106678"
 		
@@ -3728,7 +3214,7 @@ createNode reference -n "BooksRN";
 		
 		2 "|Books:BookGrp|Books:Book14|Books:Book18" "uvSet[0].uvSetPoints[33]" " -type \"float2\" 0.15197127999999999 0.21057936999999999"
 		
-		2 "|Books:BookGrp|Books:Book8|Books:Book7" "uvSet[0].uvSetPoints" " -s 34"
+		2 "|Books:BookGrp|Books:Book8|Books:Book7" "uvSet[0].uvSetPoints" " -s 72"
 		
 		2 "|Books:BookGrp|Books:Book8|Books:Book7" "uvSet[0].uvSetPoints[0]" " -type \"float2\" 0.15197127999999999 0.12106678"
 		
@@ -3798,47 +3284,47 @@ createNode reference -n "BooksRN";
 		
 		2 "|Books:BookGrp|Books:Book8|Books:Book7" "uvSet[0].uvSetPoints[33]" " -type \"float2\" 0.15197127999999999 0.21057936999999999"
 		
-		3 "|Books:BookGrp|Books:Book1|Books:Book1.instObjGroups" ":initialShadingGroup.dagSetMembers" 
-		"-na"
-		3 "|Books:BookGrp|Books:Book4|Books:Book4.instObjGroups" ":initialShadingGroup.dagSetMembers" 
+		3 "|Books:BookGrp|Books:Book20|Books:Book15.instObjGroups" ":initialShadingGroup.dagSetMembers" 
 		"-na"
 		3 "|Books:BookGrp|Books:Book2|Books:Book2.instObjGroups" ":initialShadingGroup.dagSetMembers" 
 		"-na"
-		3 "|Books:BookGrp|Books:Book6|Books:Book6.instObjGroups" ":initialShadingGroup.dagSetMembers" 
+		3 "|Books:BookGrp|Books:Book|Books:Book.instObjGroups" ":initialShadingGroup.dagSetMembers" 
 		"-na"
 		3 "|Books:BookGrp|Books:Book13|Books:Book8.instObjGroups" ":initialShadingGroup.dagSetMembers" 
 		"-na"
-		3 "|Books:BookGrp|Books:Book14|Books:Book18.instObjGroups" ":initialShadingGroup.dagSetMembers" 
-		"-na"
 		3 "|Books:BookGrp|Books:Book10|Books:Book9.instObjGroups" ":initialShadingGroup.dagSetMembers" 
+		"-na"
+		3 "|Books:BookGrp|Books:Book18|Books:Book17.instObjGroups" ":initialShadingGroup.dagSetMembers" 
+		"-na"
+		3 "|Books:BookGrp|Books:Book16|Books:Book19.instObjGroups" ":initialShadingGroup.dagSetMembers" 
+		"-na"
+		3 "|Books:BookGrp|Books:Book7|Books:Book11.instObjGroups" ":initialShadingGroup.dagSetMembers" 
+		"-na"
+		3 "|Books:BookGrp|Books:Book5|Books:Book5.instObjGroups" ":initialShadingGroup.dagSetMembers" 
 		"-na"
 		3 "|Books:BookGrp|Books:Book15|Books:Book14.instObjGroups" ":initialShadingGroup.dagSetMembers" 
 		"-na"
-		3 "|Books:BookGrp|Books:Book|Books:Book.instObjGroups" ":initialShadingGroup.dagSetMembers" 
-		"-na"
-		3 "|Books:BookGrp|Books:Book8|Books:Book7.instObjGroups" ":initialShadingGroup.dagSetMembers" 
-		"-na"
 		3 "|Books:BookGrp|Books:Book12|Books:Book13.instObjGroups" ":initialShadingGroup.dagSetMembers" 
 		"-na"
-		3 "|Books:BookGrp|Books:Book5|Books:Book5.instObjGroups" ":initialShadingGroup.dagSetMembers" 
+		3 "|Books:BookGrp|Books:Book1|Books:Book1.instObjGroups" ":initialShadingGroup.dagSetMembers" 
+		"-na"
+		3 "|Books:BookGrp|Books:Book17|Books:Book16.instObjGroups" ":initialShadingGroup.dagSetMembers" 
+		"-na"
+		3 "|Books:BookGrp|Books:Book6|Books:Book6.instObjGroups" ":initialShadingGroup.dagSetMembers" 
+		"-na"
+		3 "|Books:BookGrp|Books:Book4|Books:Book4.instObjGroups" ":initialShadingGroup.dagSetMembers" 
+		"-na"
+		3 "|Books:BookGrp|Books:Book9|Books:Book12.instObjGroups" ":initialShadingGroup.dagSetMembers" 
+		"-na"
+		3 "|Books:BookGrp|Books:Book19|Books:Book20.instObjGroups" ":initialShadingGroup.dagSetMembers" 
 		"-na"
 		3 "|Books:BookGrp|Books:Book3|Books:Book3.instObjGroups" ":initialShadingGroup.dagSetMembers" 
 		"-na"
 		3 "|Books:BookGrp|Books:Book11|Books:Book10.instObjGroups" ":initialShadingGroup.dagSetMembers" 
 		"-na"
-		3 "|Books:BookGrp|Books:Book16|Books:Book19.instObjGroups" ":initialShadingGroup.dagSetMembers" 
+		3 "|Books:BookGrp|Books:Book14|Books:Book18.instObjGroups" ":initialShadingGroup.dagSetMembers" 
 		"-na"
-		3 "|Books:BookGrp|Books:Book18|Books:Book17.instObjGroups" ":initialShadingGroup.dagSetMembers" 
-		"-na"
-		3 "|Books:BookGrp|Books:Book7|Books:Book11.instObjGroups" ":initialShadingGroup.dagSetMembers" 
-		"-na"
-		3 "|Books:BookGrp|Books:Book20|Books:Book15.instObjGroups" ":initialShadingGroup.dagSetMembers" 
-		"-na"
-		3 "|Books:BookGrp|Books:Book9|Books:Book12.instObjGroups" ":initialShadingGroup.dagSetMembers" 
-		"-na"
-		3 "|Books:BookGrp|Books:Book17|Books:Book16.instObjGroups" ":initialShadingGroup.dagSetMembers" 
-		"-na"
-		3 "|Books:BookGrp|Books:Book19|Books:Book20.instObjGroups" ":initialShadingGroup.dagSetMembers" 
+		3 "|Books:BookGrp|Books:Book8|Books:Book7.instObjGroups" ":initialShadingGroup.dagSetMembers" 
 		"-na"
 		5 3 "BooksRN" "|Books:BookGrp|Books:Book20|Books:Book15.instObjGroups" 
 		"BooksRN.placeHolderList[1]" ":initialShadingGroup.dsm"
@@ -3886,10 +3372,8 @@ createNode reference -n "BooksRN";
 lockNode -l 1 ;
 createNode reference -n "DeskLmpRN";
 	rename -uid "F6A6A6A3-460B-FAA6-CE3D-87B80B49BB4D";
-	setAttr ".phl[1]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"DeskLmpRN"
-		"DeskLmpRN" 0
 		"DeskLmpRN" 2240
 		2 "|DeskLmp:pCylinder5" "translate" " -type \"double3\" 9.86516475051096009 7.41600632565194839 -9.40269089043080974"
 		
@@ -3897,7 +3381,7 @@ createNode reference -n "DeskLmpRN";
 		
 		2 "|DeskLmp:pCylinder5" "rotatePivot" " -type \"double3\" 0 0 0"
 		2 "|DeskLmp:pCylinder5" "scalePivot" " -type \"double3\" 0 0 0"
-		2 "|DeskLmp:pCylinder5|DeskLmp:pCylinder5Shape" "uvSet[0].uvSetPoints" " -s 2228"
+		2 "|DeskLmp:pCylinder5|DeskLmp:pCylinder5Shape" "uvSet[0].uvSetPoints" " -s 2870"
 		
 		2 "|DeskLmp:pCylinder5|DeskLmp:pCylinder5Shape" "uvSet[0].uvSetPoints[0]" 
 		" -type \"float2\" 0.17646213999999999 0.13073108"
@@ -8356,3133 +7840,24 @@ createNode reference -n "DeskLmpRN";
 		2 "|DeskLmp:pCylinder5|DeskLmp:pCylinder5Shape" "uvSet[0].uvSetPoints[2227]" 
 		" -type \"float2\" 0.19448974999999999 0.15687180000000001"
 		3 "DeskLmp:groupId43.message" ":initialShadingGroup.groupNodes" "-na"
-		3 "DeskLmp:groupId43.groupId" "|DeskLmp:pCylinder5|DeskLmp:pCylinder5Shape.instObjGroups.objectGroups[0].objectGroupId" 
+		3 "DeskLmp:groupId40.groupId" "|DeskLmp:pCylinder5|DeskLmp:pCylinder5Shape.compInstObjGroups.compObjectGroups[0].compObjectGroupId" 
+		""
+		3 "|DeskLmp:pCylinder5|DeskLmp:pCylinder5Shape.compInstObjGroups.compObjectGroups[0]" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "DeskLmp:groupId1.groupId" "|DeskLmp:pCylinder5|DeskLmp:pCylinder5Shape.instObjGroups.objectGroups[0].objectGroupId" 
 		""
 		3 ":initialShadingGroup.memberWireframeColor" "|DeskLmp:pCylinder5|DeskLmp:pCylinder5Shape.instObjGroups.objectGroups[0].objectGrpColor" 
 		""
 		3 "|DeskLmp:pCylinder5|DeskLmp:pCylinder5Shape.instObjGroups.objectGroups[0]" 
 		":initialShadingGroup.dagSetMembers" "-na"
-		3 "DeskLmp:groupId40.groupId" "|DeskLmp:pCylinder5|DeskLmp:pCylinder5Shape.compInstObjGroups.compObjectGroups[0].compObjectGroupId" 
-		""
-		3 "|DeskLmp:pCylinder5|DeskLmp:pCylinder5Shape.compInstObjGroups.compObjectGroups[0]" 
-		":initialShadingGroup.dagSetMembers" "-na"
 		5 3 "DeskLmpRN" "|DeskLmp:pCylinder5|DeskLmp:pCylinder5Shape.instObjGroups" 
 		"DeskLmpRN.placeHolderList[1]" "";
-	setAttr ".ptag" -type "string" "";
-lockNode -l 1 ;
-createNode reference -n "PottedFlowerRN";
-	rename -uid "5E4AE88A-429D-8DC4-0D09-3AA4CAA39E36";
-	setAttr -s 7 ".phl";
-	setAttr ".phl[1]" 0;
-	setAttr ".phl[2]" 0;
-	setAttr ".phl[3]" 0;
-	setAttr ".phl[4]" 0;
-	setAttr ".phl[5]" 0;
-	setAttr ".phl[6]" 0;
-	setAttr ".phl[7]" 0;
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"PottedFlowerRN"
-		"PottedFlowerRN" 0
-		"PottedFlowerRN" 1385
-		2 "|PottedFlower:revolvedSurface3" "translate" " -type \"double3\" 0 0 -9"
-		
-		2 "|PottedFlower:revolvedSurface3" "rotate" " -type \"double3\" 0 -68.5281682961086176 0"
-		
-		2 "|PottedFlower:revolvedSurface3" "scale" " -type \"double3\" 0.66909009712786738 0.66909009712786738 0.66909009712786738"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints" 
-		" -s 254"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[0]" 
-		" -type \"float2\" 0.20791659000000001 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[1]" 
-		" -type \"float2\" 0.20791659000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[2]" 
-		" -type \"float2\" 0.16316035000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[3]" 
-		" -type \"float2\" 0.16316035000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[4]" 
-		" -type \"float2\" 0.16316035000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[5]" 
-		" -type \"float2\" 0.13758534 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[6]" 
-		" -type \"float2\" 0.13758534 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[7]" 
-		" -type \"float2\" 0.13758534 0.13225582"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[8]" 
-		" -type \"float2\" 0.12479782 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[9]" 
-		" -type \"float2\" 0.12479782 0.13225582"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[10]" 
-		" -type \"float2\" 0.12479782 0.12666132999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[11]" 
-		" -type \"float2\" 0.13758534 0.12666132999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[12]" 
-		" -type \"float2\" 0.13119154999999999 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[13]" 
-		" -type \"float2\" 0.13119154999999999 0.12666132999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[14]" 
-		" -type \"float2\" 0.13119154999999999 0.13225582"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[15]" 
-		" -type \"float2\" 0.12479782 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[16]" 
-		" -type \"float2\" 0.12479782 0.13785037"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[17]" 
-		" -type \"float2\" 0.13758534 0.13785037"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[18]" 
-		" -type \"float2\" 0.13119154999999999 0.13785037"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[19]" 
-		" -type \"float2\" 0.13119154999999999 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[20]" 
-		" -type \"float2\" 0.16316035000000001 0.13225582"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[21]" 
-		" -type \"float2\" 0.15037283000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[22]" 
-		" -type \"float2\" 0.15037283000000001 0.13225582"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[23]" 
-		" -type \"float2\" 0.15037283000000001 0.12666132999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[24]" 
-		" -type \"float2\" 0.14397906999999999 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[25]" 
-		" -type \"float2\" 0.14397906999999999 0.12666132999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[26]" 
-		" -type \"float2\" 0.14397906999999999 0.13225582"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[27]" 
-		" -type \"float2\" 0.16316035000000001 0.12666132999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[28]" 
-		" -type \"float2\" 0.15676659000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[29]" 
-		" -type \"float2\" 0.15676659000000001 0.12666132999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[30]" 
-		" -type \"float2\" 0.15676659000000001 0.13225582"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[31]" 
-		" -type \"float2\" 0.15037283000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[32]" 
-		" -type \"float2\" 0.15037283000000001 0.13785037"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[33]" 
-		" -type \"float2\" 0.14397906999999999 0.13785037"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[34]" 
-		" -type \"float2\" 0.14397906999999999 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[35]" 
-		" -type \"float2\" 0.16316035000000001 0.13785037"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[36]" 
-		" -type \"float2\" 0.15676659000000001 0.13785037"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[37]" 
-		" -type \"float2\" 0.15676659000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[38]" 
-		" -type \"float2\" 0.13758534 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[39]" 
-		" -type \"float2\" 0.13758534 0.154634"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[40]" 
-		" -type \"float2\" 0.12479782 0.154634"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[41]" 
-		" -type \"float2\" 0.12479782 0.14903944999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[42]" 
-		" -type \"float2\" 0.13758534 0.14903944999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[43]" 
-		" -type \"float2\" 0.13119154999999999 0.14903944999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[44]" 
-		" -type \"float2\" 0.13119154999999999 0.154634"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[45]" 
-		" -type \"float2\" 0.12479782 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[46]" 
-		" -type \"float2\" 0.12479782 0.16022849"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[47]" 
-		" -type \"float2\" 0.13758534 0.16022849"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[48]" 
-		" -type \"float2\" 0.13119154999999999 0.16022849"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[49]" 
-		" -type \"float2\" 0.13119154999999999 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[50]" 
-		" -type \"float2\" 0.16316035000000001 0.154634"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[51]" 
-		" -type \"float2\" 0.15037283000000001 0.154634"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[52]" 
-		" -type \"float2\" 0.15037283000000001 0.14903944999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[53]" 
-		" -type \"float2\" 0.14397906999999999 0.14903944999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[54]" 
-		" -type \"float2\" 0.14397906999999999 0.154634"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[55]" 
-		" -type \"float2\" 0.16316035000000001 0.14903944999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[56]" 
-		" -type \"float2\" 0.15676659000000001 0.14903944999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[57]" 
-		" -type \"float2\" 0.15676659000000001 0.154634"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[58]" 
-		" -type \"float2\" 0.15037283000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[59]" 
-		" -type \"float2\" 0.15037283000000001 0.16022849"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[60]" 
-		" -type \"float2\" 0.14397906999999999 0.16022849"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[61]" 
-		" -type \"float2\" 0.14397906999999999 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[62]" 
-		" -type \"float2\" 0.16316035000000001 0.16022849"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[63]" 
-		" -type \"float2\" 0.15676659000000001 0.16022849"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[64]" 
-		" -type \"float2\" 0.15676659000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[65]" 
-		" -type \"float2\" 0.20791659000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[66]" 
-		" -type \"float2\" 0.18234160999999999 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[67]" 
-		" -type \"float2\" 0.18234160999999999 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[68]" 
-		" -type \"float2\" 0.18234160999999999 0.13225582"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[69]" 
-		" -type \"float2\" 0.16955413999999999 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[70]" 
-		" -type \"float2\" 0.16955413999999999 0.13225582"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[71]" 
-		" -type \"float2\" 0.16955413999999999 0.12666132999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[72]" 
-		" -type \"float2\" 0.18234160999999999 0.12666132999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[73]" 
-		" -type \"float2\" 0.17594782 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[74]" 
-		" -type \"float2\" 0.17594782 0.12666132999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[75]" 
-		" -type \"float2\" 0.17594782 0.13225582"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[76]" 
-		" -type \"float2\" 0.16955413999999999 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[77]" 
-		" -type \"float2\" 0.16955413999999999 0.13785037"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[78]" 
-		" -type \"float2\" 0.18234160999999999 0.13785037"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[79]" 
-		" -type \"float2\" 0.17594782 0.13785037"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[80]" 
-		" -type \"float2\" 0.17594782 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[81]" 
-		" -type \"float2\" 0.20791659000000001 0.13225582"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[82]" 
-		" -type \"float2\" 0.19512913000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[83]" 
-		" -type \"float2\" 0.19512913000000001 0.13225582"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[84]" 
-		" -type \"float2\" 0.19512913000000001 0.12666132999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[85]" 
-		" -type \"float2\" 0.1887354 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[86]" 
-		" -type \"float2\" 0.1887354 0.12666132999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[87]" 
-		" -type \"float2\" 0.1887354 0.13225582"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[88]" 
-		" -type \"float2\" 0.20791659000000001 0.12666132999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[89]" 
-		" -type \"float2\" 0.20152286 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[90]" 
-		" -type \"float2\" 0.20152286 0.12666132999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[91]" 
-		" -type \"float2\" 0.20152286 0.13225582"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[92]" 
-		" -type \"float2\" 0.19512913000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[93]" 
-		" -type \"float2\" 0.19512913000000001 0.13785037"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[94]" 
-		" -type \"float2\" 0.1887354 0.13785037"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[95]" 
-		" -type \"float2\" 0.1887354 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[96]" 
-		" -type \"float2\" 0.20791659000000001 0.13785037"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[97]" 
-		" -type \"float2\" 0.20152286 0.13785037"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[98]" 
-		" -type \"float2\" 0.20152286 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[99]" 
-		" -type \"float2\" 0.18234160999999999 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[100]" 
-		" -type \"float2\" 0.18234160999999999 0.154634"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[101]" 
-		" -type \"float2\" 0.16955413999999999 0.154634"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[102]" 
-		" -type \"float2\" 0.16955413999999999 0.14903944999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[103]" 
-		" -type \"float2\" 0.18234160999999999 0.14903944999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[104]" 
-		" -type \"float2\" 0.17594782 0.14903944999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[105]" 
-		" -type \"float2\" 0.17594782 0.154634"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[106]" 
-		" -type \"float2\" 0.16955413999999999 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[107]" 
-		" -type \"float2\" 0.16955413999999999 0.16022849"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[108]" 
-		" -type \"float2\" 0.18234160999999999 0.16022849"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[109]" 
-		" -type \"float2\" 0.17594782 0.16022849"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[110]" 
-		" -type \"float2\" 0.17594782 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[111]" 
-		" -type \"float2\" 0.20791659000000001 0.154634"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[112]" 
-		" -type \"float2\" 0.19512913000000001 0.154634"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[113]" 
-		" -type \"float2\" 0.19512913000000001 0.14903944999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[114]" 
-		" -type \"float2\" 0.1887354 0.14903944999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[115]" 
-		" -type \"float2\" 0.1887354 0.154634"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[116]" 
-		" -type \"float2\" 0.20791659000000001 0.14903944999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[117]" 
-		" -type \"float2\" 0.20152286 0.14903944999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[118]" 
-		" -type \"float2\" 0.20152286 0.154634"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[119]" 
-		" -type \"float2\" 0.19512913000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[120]" 
-		" -type \"float2\" 0.19512913000000001 0.16022849"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[121]" 
-		" -type \"float2\" 0.1887354 0.16022849"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[122]" 
-		" -type \"float2\" 0.1887354 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[123]" 
-		" -type \"float2\" 0.20791659000000001 0.16022849"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[124]" 
-		" -type \"float2\" 0.20152286 0.16022849"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[125]" 
-		" -type \"float2\" 0.20152286 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[126]" 
-		" -type \"float2\" 0.16316035000000001 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[127]" 
-		" -type \"float2\" 0.13758534 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[128]" 
-		" -type \"float2\" 0.13758534 0.17701212"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[129]" 
-		" -type \"float2\" 0.12479782 0.17701212"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[130]" 
-		" -type \"float2\" 0.12479782 0.17141756"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[131]" 
-		" -type \"float2\" 0.13758534 0.17141756"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[132]" 
-		" -type \"float2\" 0.13119154999999999 0.17141756"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[133]" 
-		" -type \"float2\" 0.13119154999999999 0.17701212"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[134]" 
-		" -type \"float2\" 0.12479782 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[135]" 
-		" -type \"float2\" 0.12479782 0.18260667"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[136]" 
-		" -type \"float2\" 0.13758534 0.18260667"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[137]" 
-		" -type \"float2\" 0.13119154999999999 0.18260667"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[138]" 
-		" -type \"float2\" 0.13119154999999999 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[139]" 
-		" -type \"float2\" 0.16316035000000001 0.17701212"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[140]" 
-		" -type \"float2\" 0.15037283000000001 0.17701212"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[141]" 
-		" -type \"float2\" 0.15037283000000001 0.17141756"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[142]" 
-		" -type \"float2\" 0.14397906999999999 0.17141756"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[143]" 
-		" -type \"float2\" 0.14397906999999999 0.17701212"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[144]" 
-		" -type \"float2\" 0.16316035000000001 0.17141756"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[145]" 
-		" -type \"float2\" 0.15676659000000001 0.17141756"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[146]" 
-		" -type \"float2\" 0.15676659000000001 0.17701212"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[147]" 
-		" -type \"float2\" 0.15037283000000001 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[148]" 
-		" -type \"float2\" 0.15037283000000001 0.18260667"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[149]" 
-		" -type \"float2\" 0.14397906999999999 0.18260667"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[150]" 
-		" -type \"float2\" 0.14397906999999999 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[151]" 
-		" -type \"float2\" 0.16316035000000001 0.18260667"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[152]" 
-		" -type \"float2\" 0.15676659000000001 0.18260667"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[153]" 
-		" -type \"float2\" 0.15676659000000001 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[154]" 
-		" -type \"float2\" 0.13758534 0.19939026000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[155]" 
-		" -type \"float2\" 0.12479782 0.19939026000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[156]" 
-		" -type \"float2\" 0.12479782 0.19379577000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[157]" 
-		" -type \"float2\" 0.13758534 0.19379577000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[158]" 
-		" -type \"float2\" 0.13119154999999999 0.19379577000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[159]" 
-		" -type \"float2\" 0.13119154999999999 0.19939026000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[160]" 
-		" -type \"float2\" 0.11840409 0.12666132999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[161]" 
-		" -type \"float2\" 0.12479782 0.20498474999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[162]" 
-		" -type \"float2\" 0.13758534 0.20498474999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[163]" 
-		" -type \"float2\" 0.13119154999999999 0.20498474999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[164]" 
-		" -type \"float2\" 0.16316035000000001 0.19939026000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[165]" 
-		" -type \"float2\" 0.15037283000000001 0.19939026000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[166]" 
-		" -type \"float2\" 0.15037283000000001 0.19379577000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[167]" 
-		" -type \"float2\" 0.14397906999999999 0.19379577000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[168]" 
-		" -type \"float2\" 0.14397906999999999 0.19939026000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[169]" 
-		" -type \"float2\" 0.16316035000000001 0.19379577000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[170]" 
-		" -type \"float2\" 0.15676659000000001 0.19379577000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[171]" 
-		" -type \"float2\" 0.15676659000000001 0.19939026000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[172]" 
-		" -type \"float2\" 0.15037283000000001 0.20498474999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[173]" 
-		" -type \"float2\" 0.14397906999999999 0.20498474999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[174]" 
-		" -type \"float2\" 0.16316035000000001 0.20498474999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[175]" 
-		" -type \"float2\" 0.15676659000000001 0.20498474999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[176]" 
-		" -type \"float2\" 0.20791659000000001 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[177]" 
-		" -type \"float2\" 0.18234160999999999 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[178]" 
-		" -type \"float2\" 0.18234160999999999 0.17701212"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[179]" 
-		" -type \"float2\" 0.16955413999999999 0.17701212"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[180]" 
-		" -type \"float2\" 0.16955413999999999 0.17141756"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[181]" 
-		" -type \"float2\" 0.18234160999999999 0.17141756"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[182]" 
-		" -type \"float2\" 0.17594782 0.17141756"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[183]" 
-		" -type \"float2\" 0.17594782 0.17701212"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[184]" 
-		" -type \"float2\" 0.16955413999999999 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[185]" 
-		" -type \"float2\" 0.16955413999999999 0.18260667"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[186]" 
-		" -type \"float2\" 0.18234160999999999 0.18260667"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[187]" 
-		" -type \"float2\" 0.17594782 0.18260667"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[188]" 
-		" -type \"float2\" 0.17594782 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[189]" 
-		" -type \"float2\" 0.20791659000000001 0.17701212"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[190]" 
-		" -type \"float2\" 0.19512913000000001 0.17701212"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[191]" 
-		" -type \"float2\" 0.19512913000000001 0.17141756"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[192]" 
-		" -type \"float2\" 0.1887354 0.17141756"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[193]" 
-		" -type \"float2\" 0.1887354 0.17701212"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[194]" 
-		" -type \"float2\" 0.20791659000000001 0.17141756"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[195]" 
-		" -type \"float2\" 0.20152286 0.17141756"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[196]" 
-		" -type \"float2\" 0.20152286 0.17701212"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[197]" 
-		" -type \"float2\" 0.19512913000000001 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[198]" 
-		" -type \"float2\" 0.19512913000000001 0.18260667"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[199]" 
-		" -type \"float2\" 0.1887354 0.18260667"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[200]" 
-		" -type \"float2\" 0.1887354 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[201]" 
-		" -type \"float2\" 0.20791659000000001 0.18260667"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[202]" 
-		" -type \"float2\" 0.20152286 0.18260667"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[203]" 
-		" -type \"float2\" 0.20152286 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[204]" 
-		" -type \"float2\" 0.18234160999999999 0.19939026000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[205]" 
-		" -type \"float2\" 0.16955413999999999 0.19939026000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[206]" 
-		" -type \"float2\" 0.16955413999999999 0.19379577000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[207]" 
-		" -type \"float2\" 0.18234160999999999 0.19379577000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[208]" 
-		" -type \"float2\" 0.17594782 0.19379577000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[209]" 
-		" -type \"float2\" 0.17594782 0.19939026000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[210]" 
-		" -type \"float2\" 0.16955413999999999 0.20498474999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[211]" 
-		" -type \"float2\" 0.18234160999999999 0.20498474999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[212]" 
-		" -type \"float2\" 0.17594782 0.20498474999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[213]" 
-		" -type \"float2\" 0.20791659000000001 0.19939026000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[214]" 
-		" -type \"float2\" 0.19512913000000001 0.19939026000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[215]" 
-		" -type \"float2\" 0.19512913000000001 0.19379577000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[216]" 
-		" -type \"float2\" 0.1887354 0.19379577000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[217]" 
-		" -type \"float2\" 0.1887354 0.19939026000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[218]" 
-		" -type \"float2\" 0.20791659000000001 0.19379577000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[219]" 
-		" -type \"float2\" 0.20152286 0.19379577000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[220]" 
-		" -type \"float2\" 0.20152286 0.19939026000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[221]" 
-		" -type \"float2\" 0.19512913000000001 0.20498474999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[222]" 
-		" -type \"float2\" 0.1887354 0.20498474999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[223]" 
-		" -type \"float2\" 0.20791659000000001 0.20498474999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[224]" 
-		" -type \"float2\" 0.20152286 0.20498474999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[225]" 
-		" -type \"float2\" 0.11840409 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[226]" 
-		" -type \"float2\" 0.11840409 0.13785037"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[227]" 
-		" -type \"float2\" 0.11840409 0.13225582"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[228]" 
-		" -type \"float2\" 0.11840409 0.14903944999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[229]" 
-		" -type \"float2\" 0.11840409 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[230]" 
-		" -type \"float2\" 0.11840409 0.16022849"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[231]" 
-		" -type \"float2\" 0.11840409 0.154634"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[232]" 
-		" -type \"float2\" 0.20152286 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[233]" 
-		" -type \"float2\" 0.20791659000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[234]" 
-		" -type \"float2\" 0.16316035000000001 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[235]" 
-		" -type \"float2\" 0.15676659000000001 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[236]" 
-		" -type \"float2\" 0.11840409 0.17141756"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[237]" 
-		" -type \"float2\" 0.11840409 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[238]" 
-		" -type \"float2\" 0.11840409 0.18260667"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[239]" 
-		" -type \"float2\" 0.11840409 0.17701212"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[240]" 
-		" -type \"float2\" 0.13758534 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[241]" 
-		" -type \"float2\" 0.13119154999999999 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[242]" 
-		" -type \"float2\" 0.11840409 0.19379577000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[243]" 
-		" -type \"float2\" 0.11840409 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[244]" 
-		" -type \"float2\" 0.12479782 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[245]" 
-		" -type \"float2\" 0.11840409 0.20498474999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[246]" 
-		" -type \"float2\" 0.11840409 0.19939026000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[247]" 
-		" -type \"float2\" 0.15037283000000001 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[248]" 
-		" -type \"float2\" 0.14397906999999999 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[249]" 
-		" -type \"float2\" 0.18234160999999999 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[250]" 
-		" -type \"float2\" 0.17594782 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[251]" 
-		" -type \"float2\" 0.16955413999999999 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[252]" 
-		" -type \"float2\" 0.19512913000000001 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Pot" "uvSet[0].uvSetPoints[253]" 
-		" -type \"float2\" 0.1887354 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints" " -s 83"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[0]" " -type \"float2\" 0.11840409 0.19715247"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[1]" " -type \"float2\" 0.12287971 0.19715247"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[2]" " -type \"float2\" 0.12735534000000001 0.19715247"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[3]" " -type \"float2\" 0.13183096 0.19715247"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[4]" " -type \"float2\" 0.13630655 0.19715247"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[5]" " -type \"float2\" 0.14078220999999999 0.19715247"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[6]" " -type \"float2\" 0.14525783 0.19715247"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[7]" " -type \"float2\" 0.14973344999999999 0.19715247"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[8]" " -type \"float2\" 0.15420908 0.19715247"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[9]" " -type \"float2\" 0.15868473 0.19715247"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[10]" " -type \"float2\" 0.16316035000000001 0.19715247"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[11]" " -type \"float2\" 0.16763595000000001 0.19715247"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[12]" " -type \"float2\" 0.1721116 0.19715247"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[13]" " -type \"float2\" 0.17658719 0.19715247"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[14]" " -type \"float2\" 0.18106290999999999 0.19715247"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[15]" " -type \"float2\" 0.1855385 0.19715247"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[16]" " -type \"float2\" 0.19001414999999999 0.19715247"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[17]" " -type \"float2\" 0.19448974999999999 0.19715247"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[18]" " -type \"float2\" 0.19896539999999999 0.19715247"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[19]" " -type \"float2\" 0.20344098999999999 0.19715247"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[20]" " -type \"float2\" 0.20791659000000001 0.19715247"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[21]" " -type \"float2\" 0.11840409 0.20162811999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[22]" " -type \"float2\" 0.12287971 0.20162811999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[23]" " -type \"float2\" 0.12735534000000001 0.20162811999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[24]" " -type \"float2\" 0.13183096 0.20162811999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[25]" " -type \"float2\" 0.13630655 0.20162811999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[26]" " -type \"float2\" 0.14078220999999999 0.20162811999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[27]" " -type \"float2\" 0.14525783 0.20162811999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[28]" " -type \"float2\" 0.14973344999999999 0.20162811999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[29]" " -type \"float2\" 0.15420908 0.20162811999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[30]" " -type \"float2\" 0.15868473 0.20162811999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[31]" " -type \"float2\" 0.16316035000000001 0.20162811999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[32]" " -type \"float2\" 0.16763595000000001 0.20162811999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[33]" " -type \"float2\" 0.1721116 0.20162811999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[34]" " -type \"float2\" 0.17658719 0.20162811999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[35]" " -type \"float2\" 0.18106290999999999 0.20162811999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[36]" " -type \"float2\" 0.1855385 0.20162811999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[37]" " -type \"float2\" 0.19001414999999999 0.20162811999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[38]" " -type \"float2\" 0.19448974999999999 0.20162811999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[39]" " -type \"float2\" 0.19896539999999999 0.20162811999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[40]" " -type \"float2\" 0.20344098999999999 0.20162811999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[41]" " -type \"float2\" 0.20791659000000001 0.20162811999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[42]" " -type \"float2\" 0.11840409 0.20610371"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[43]" " -type \"float2\" 0.12287971 0.20610371"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[44]" " -type \"float2\" 0.12735534000000001 0.20610371"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[45]" " -type \"float2\" 0.13183096 0.20610371"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[46]" " -type \"float2\" 0.13630655 0.20610371"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[47]" " -type \"float2\" 0.14078220999999999 0.20610371"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[48]" " -type \"float2\" 0.14525783 0.20610371"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[49]" " -type \"float2\" 0.14973344999999999 0.20610371"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[50]" " -type \"float2\" 0.15420908 0.20610371"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[51]" " -type \"float2\" 0.15868473 0.20610371"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[52]" " -type \"float2\" 0.16316035000000001 0.20610371"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[53]" " -type \"float2\" 0.16763595000000001 0.20610371"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[54]" " -type \"float2\" 0.1721116 0.20610371"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[55]" " -type \"float2\" 0.17658719 0.20610371"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[56]" " -type \"float2\" 0.18106290999999999 0.20610371"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[57]" " -type \"float2\" 0.1855385 0.20610371"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[58]" " -type \"float2\" 0.19001414999999999 0.20610371"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[59]" " -type \"float2\" 0.19448974999999999 0.20610371"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[60]" " -type \"float2\" 0.19896539999999999 0.20610371"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[61]" " -type \"float2\" 0.20344098999999999 0.20610371"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[62]" " -type \"float2\" 0.20791659000000001 0.20610371"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[63]" " -type \"float2\" 0.12064189 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[64]" " -type \"float2\" 0.12511748 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[65]" " -type \"float2\" 0.12959313 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[66]" " -type \"float2\" 0.13406876000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[67]" " -type \"float2\" 0.13854441000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[68]" " -type \"float2\" 0.14302002999999999 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[69]" " -type \"float2\" 0.14749566 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[70]" " -type \"float2\" 0.15197127999999999 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[71]" " -type \"float2\" 0.15644693000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[72]" " -type \"float2\" 0.16092255999999999 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[73]" " -type \"float2\" 0.16539814999999999 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[74]" " -type \"float2\" 0.16987379999999999 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[75]" " -type \"float2\" 0.17434946000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[76]" " -type \"float2\" 0.17882505000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[77]" " -type \"float2\" 0.18330070000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[78]" " -type \"float2\" 0.18777630000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[79]" " -type \"float2\" 0.19225189000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[80]" " -type \"float2\" 0.19672754000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[81]" " -type \"float2\" 0.20120314 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt" 
-		"uvSet[0].uvSetPoints[82]" " -type \"float2\" 0.20567885 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints" " -s 65"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[0]" " -type \"float2\" 0.11840409 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[1]" " -type \"float2\" 0.20791659000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[2]" " -type \"float2\" 0.20791659000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[3]" " -type \"float2\" 0.11840409 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[4]" " -type \"float2\" 0.16316035000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[5]" " -type \"float2\" 0.16316035000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[6]" " -type \"float2\" 0.14078220999999999 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[7]" " -type \"float2\" 0.14078220999999999 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[8]" " -type \"float2\" 0.14078220999999999 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[9]" " -type \"float2\" 0.11840409 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[10]" " -type \"float2\" 0.12586343 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[11]" " -type \"float2\" 0.12586343 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[12]" " -type \"float2\" 0.12586343 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[13]" " -type \"float2\" 0.11840409 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[14]" " -type \"float2\" 0.14078220999999999 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[15]" " -type \"float2\" 0.13332283 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[16]" " -type \"float2\" 0.13332283 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[17]" " -type \"float2\" 0.13332283 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[18]" " -type \"float2\" 0.12586343 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[19]" " -type \"float2\" 0.11840409 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[20]" " -type \"float2\" 0.12586343 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[21]" " -type \"float2\" 0.14078220999999999 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[22]" " -type \"float2\" 0.13332283 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[23]" " -type \"float2\" 0.13332283 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[24]" " -type \"float2\" 0.16316035000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[25]" " -type \"float2\" 0.14824161 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[26]" " -type \"float2\" 0.14824161 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[27]" " -type \"float2\" 0.14824161 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[28]" " -type \"float2\" 0.16316035000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[29]" " -type \"float2\" 0.15570097999999999 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[30]" " -type \"float2\" 0.15570097999999999 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[31]" " -type \"float2\" 0.15570097999999999 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[32]" " -type \"float2\" 0.14824161 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[33]" " -type \"float2\" 0.14824161 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[34]" " -type \"float2\" 0.16316035000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[35]" " -type \"float2\" 0.15570097999999999 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[36]" " -type \"float2\" 0.15570097999999999 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[37]" " -type \"float2\" 0.18553844 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[38]" " -type \"float2\" 0.18553844 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[39]" " -type \"float2\" 0.18553844 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[40]" " -type \"float2\" 0.17061970000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[41]" " -type \"float2\" 0.17061970000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[42]" " -type \"float2\" 0.17061970000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[43]" " -type \"float2\" 0.18553844 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[44]" " -type \"float2\" 0.17807909999999999 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[45]" " -type \"float2\" 0.17807909999999999 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[46]" " -type \"float2\" 0.17807909999999999 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[47]" " -type \"float2\" 0.17061970000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[48]" " -type \"float2\" 0.17061970000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[49]" " -type \"float2\" 0.18553844 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[50]" " -type \"float2\" 0.17807909999999999 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[51]" " -type \"float2\" 0.17807909999999999 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[52]" " -type \"float2\" 0.20791659000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[53]" " -type \"float2\" 0.19299784 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[54]" " -type \"float2\" 0.19299784 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[55]" " -type \"float2\" 0.19299784 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[56]" " -type \"float2\" 0.20791659000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[57]" " -type \"float2\" 0.2004573 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[58]" " -type \"float2\" 0.2004573 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[59]" " -type \"float2\" 0.2004573 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[60]" " -type \"float2\" 0.19299784 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[61]" " -type \"float2\" 0.19299784 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[62]" " -type \"float2\" 0.20791659000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[63]" " -type \"float2\" 0.2004573 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[64]" " -type \"float2\" 0.2004573 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints" " -s 65"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[0]" " -type \"float2\" 0.11840409 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[1]" " -type \"float2\" 0.20791659000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[2]" " -type \"float2\" 0.20791659000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[3]" " -type \"float2\" 0.11840409 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[4]" " -type \"float2\" 0.16316035000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[5]" " -type \"float2\" 0.16316035000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[6]" " -type \"float2\" 0.14078220999999999 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[7]" " -type \"float2\" 0.14078220999999999 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[8]" " -type \"float2\" 0.14078220999999999 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[9]" " -type \"float2\" 0.11840409 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[10]" " -type \"float2\" 0.12586343 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[11]" " -type \"float2\" 0.12586343 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[12]" " -type \"float2\" 0.12586343 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[13]" " -type \"float2\" 0.11840409 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[14]" " -type \"float2\" 0.14078220999999999 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[15]" " -type \"float2\" 0.13332283 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[16]" " -type \"float2\" 0.13332283 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[17]" " -type \"float2\" 0.13332283 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[18]" " -type \"float2\" 0.12586343 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[19]" " -type \"float2\" 0.11840409 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[20]" " -type \"float2\" 0.12586343 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[21]" " -type \"float2\" 0.14078220999999999 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[22]" " -type \"float2\" 0.13332283 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[23]" " -type \"float2\" 0.13332283 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[24]" " -type \"float2\" 0.16316035000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[25]" " -type \"float2\" 0.14824161 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[26]" " -type \"float2\" 0.14824161 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[27]" " -type \"float2\" 0.14824161 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[28]" " -type \"float2\" 0.16316035000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[29]" " -type \"float2\" 0.15570097999999999 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[30]" " -type \"float2\" 0.15570097999999999 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[31]" " -type \"float2\" 0.15570097999999999 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[32]" " -type \"float2\" 0.14824161 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[33]" " -type \"float2\" 0.14824161 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[34]" " -type \"float2\" 0.16316035000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[35]" " -type \"float2\" 0.15570097999999999 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[36]" " -type \"float2\" 0.15570097999999999 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[37]" " -type \"float2\" 0.18553844 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[38]" " -type \"float2\" 0.18553844 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[39]" " -type \"float2\" 0.18553844 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[40]" " -type \"float2\" 0.17061970000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[41]" " -type \"float2\" 0.17061970000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[42]" " -type \"float2\" 0.17061970000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[43]" " -type \"float2\" 0.18553844 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[44]" " -type \"float2\" 0.17807909999999999 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[45]" " -type \"float2\" 0.17807909999999999 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[46]" " -type \"float2\" 0.17807909999999999 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[47]" " -type \"float2\" 0.17061970000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[48]" " -type \"float2\" 0.17061970000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[49]" " -type \"float2\" 0.18553844 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[50]" " -type \"float2\" 0.17807909999999999 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[51]" " -type \"float2\" 0.17807909999999999 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[52]" " -type \"float2\" 0.20791659000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[53]" " -type \"float2\" 0.19299784 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[54]" " -type \"float2\" 0.19299784 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[55]" " -type \"float2\" 0.19299784 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[56]" " -type \"float2\" 0.20791659000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[57]" " -type \"float2\" 0.2004573 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[58]" " -type \"float2\" 0.2004573 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[59]" " -type \"float2\" 0.2004573 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[60]" " -type \"float2\" 0.19299784 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[61]" " -type \"float2\" 0.19299784 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[62]" " -type \"float2\" 0.20791659000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[63]" " -type \"float2\" 0.2004573 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2" 
-		"uvSet[0].uvSetPoints[64]" " -type \"float2\" 0.2004573 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints" " -s 65"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[0]" " -type \"float2\" 0.11840409 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[1]" " -type \"float2\" 0.20791659000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[2]" " -type \"float2\" 0.20791659000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[3]" " -type \"float2\" 0.11840409 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[4]" " -type \"float2\" 0.16316035000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[5]" " -type \"float2\" 0.16316035000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[6]" " -type \"float2\" 0.14078220999999999 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[7]" " -type \"float2\" 0.14078220999999999 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[8]" " -type \"float2\" 0.14078220999999999 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[9]" " -type \"float2\" 0.11840409 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[10]" " -type \"float2\" 0.12586343 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[11]" " -type \"float2\" 0.12586343 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[12]" " -type \"float2\" 0.12586343 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[13]" " -type \"float2\" 0.11840409 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[14]" " -type \"float2\" 0.14078220999999999 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[15]" " -type \"float2\" 0.13332283 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[16]" " -type \"float2\" 0.13332283 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[17]" " -type \"float2\" 0.13332283 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[18]" " -type \"float2\" 0.12586343 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[19]" " -type \"float2\" 0.11840409 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[20]" " -type \"float2\" 0.12586343 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[21]" " -type \"float2\" 0.14078220999999999 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[22]" " -type \"float2\" 0.13332283 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[23]" " -type \"float2\" 0.13332283 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[24]" " -type \"float2\" 0.16316035000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[25]" " -type \"float2\" 0.14824161 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[26]" " -type \"float2\" 0.14824161 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[27]" " -type \"float2\" 0.14824161 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[28]" " -type \"float2\" 0.16316035000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[29]" " -type \"float2\" 0.15570097999999999 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[30]" " -type \"float2\" 0.15570097999999999 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[31]" " -type \"float2\" 0.15570097999999999 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[32]" " -type \"float2\" 0.14824161 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[33]" " -type \"float2\" 0.14824161 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[34]" " -type \"float2\" 0.16316035000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[35]" " -type \"float2\" 0.15570097999999999 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[36]" " -type \"float2\" 0.15570097999999999 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[37]" " -type \"float2\" 0.18553844 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[38]" " -type \"float2\" 0.18553844 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[39]" " -type \"float2\" 0.18553844 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[40]" " -type \"float2\" 0.17061970000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[41]" " -type \"float2\" 0.17061970000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[42]" " -type \"float2\" 0.17061970000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[43]" " -type \"float2\" 0.18553844 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[44]" " -type \"float2\" 0.17807909999999999 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[45]" " -type \"float2\" 0.17807909999999999 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[46]" " -type \"float2\" 0.17807909999999999 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[47]" " -type \"float2\" 0.17061970000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[48]" " -type \"float2\" 0.17061970000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[49]" " -type \"float2\" 0.18553844 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[50]" " -type \"float2\" 0.17807909999999999 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[51]" " -type \"float2\" 0.17807909999999999 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[52]" " -type \"float2\" 0.20791659000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[53]" " -type \"float2\" 0.19299784 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[54]" " -type \"float2\" 0.19299784 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[55]" " -type \"float2\" 0.19299784 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[56]" " -type \"float2\" 0.20791659000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[57]" " -type \"float2\" 0.2004573 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[58]" " -type \"float2\" 0.2004573 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[59]" " -type \"float2\" 0.2004573 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[60]" " -type \"float2\" 0.19299784 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[61]" " -type \"float2\" 0.19299784 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[62]" " -type \"float2\" 0.20791659000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[63]" " -type \"float2\" 0.2004573 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1" 
-		"uvSet[0].uvSetPoints[64]" " -type \"float2\" 0.2004573 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints" " -s 65"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[0]" " -type \"float2\" 0.11840409 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[1]" " -type \"float2\" 0.20791659000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[2]" " -type \"float2\" 0.20791659000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[3]" " -type \"float2\" 0.11840409 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[4]" " -type \"float2\" 0.16316035000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[5]" " -type \"float2\" 0.16316035000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[6]" " -type \"float2\" 0.14078220999999999 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[7]" " -type \"float2\" 0.14078220999999999 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[8]" " -type \"float2\" 0.14078220999999999 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[9]" " -type \"float2\" 0.11840409 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[10]" " -type \"float2\" 0.12586343 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[11]" " -type \"float2\" 0.12586343 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[12]" " -type \"float2\" 0.12586343 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[13]" " -type \"float2\" 0.11840409 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[14]" " -type \"float2\" 0.14078220999999999 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[15]" " -type \"float2\" 0.13332283 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[16]" " -type \"float2\" 0.13332283 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[17]" " -type \"float2\" 0.13332283 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[18]" " -type \"float2\" 0.12586343 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[19]" " -type \"float2\" 0.11840409 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[20]" " -type \"float2\" 0.12586343 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[21]" " -type \"float2\" 0.14078220999999999 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[22]" " -type \"float2\" 0.13332283 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[23]" " -type \"float2\" 0.13332283 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[24]" " -type \"float2\" 0.16316035000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[25]" " -type \"float2\" 0.14824161 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[26]" " -type \"float2\" 0.14824161 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[27]" " -type \"float2\" 0.14824161 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[28]" " -type \"float2\" 0.16316035000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[29]" " -type \"float2\" 0.15570097999999999 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[30]" " -type \"float2\" 0.15570097999999999 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[31]" " -type \"float2\" 0.15570097999999999 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[32]" " -type \"float2\" 0.14824161 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[33]" " -type \"float2\" 0.14824161 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[34]" " -type \"float2\" 0.16316035000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[35]" " -type \"float2\" 0.15570097999999999 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[36]" " -type \"float2\" 0.15570097999999999 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[37]" " -type \"float2\" 0.18553844 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[38]" " -type \"float2\" 0.18553844 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[39]" " -type \"float2\" 0.18553844 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[40]" " -type \"float2\" 0.17061970000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[41]" " -type \"float2\" 0.17061970000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[42]" " -type \"float2\" 0.17061970000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[43]" " -type \"float2\" 0.18553844 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[44]" " -type \"float2\" 0.17807909999999999 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[45]" " -type \"float2\" 0.17807909999999999 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[46]" " -type \"float2\" 0.17807909999999999 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[47]" " -type \"float2\" 0.17061970000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[48]" " -type \"float2\" 0.17061970000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[49]" " -type \"float2\" 0.18553844 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[50]" " -type \"float2\" 0.17807909999999999 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[51]" " -type \"float2\" 0.17807909999999999 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[52]" " -type \"float2\" 0.20791659000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[53]" " -type \"float2\" 0.19299784 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[54]" " -type \"float2\" 0.19299784 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[55]" " -type \"float2\" 0.19299784 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[56]" " -type \"float2\" 0.20791659000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[57]" " -type \"float2\" 0.2004573 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[58]" " -type \"float2\" 0.2004573 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[59]" " -type \"float2\" 0.2004573 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[60]" " -type \"float2\" 0.19299784 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[61]" " -type \"float2\" 0.19299784 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[62]" " -type \"float2\" 0.20791659000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[63]" " -type \"float2\" 0.2004573 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3" 
-		"uvSet[0].uvSetPoints[64]" " -type \"float2\" 0.2004573 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints" " -s 761"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[0]" " -type \"float2\" 0.11840409 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[1]" " -type \"float2\" 0.16316035000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[2]" " -type \"float2\" 0.20791659000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[3]" " -type \"float2\" 0.11840409 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[4]" " -type \"float2\" 0.16119373000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[5]" " -type \"float2\" 0.20791659000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[6]" " -type \"float2\" 0.11840409 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[7]" " -type \"float2\" 0.16316035000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[8]" " -type \"float2\" 0.20791659000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[9]" " -type \"float2\" 0.19218376000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[10]" " -type \"float2\" 0.19052240000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[11]" " -type \"float2\" 0.19218376000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[12]" " -type \"float2\" 0.14078220999999999 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[13]" " -type \"float2\" 0.20005020000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[14]" " -type \"float2\" 0.14078220999999999 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[15]" " -type \"float2\" 0.20005020000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[16]" " -type \"float2\" 0.177672 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[17]" " -type \"float2\" 0.177672 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[18]" " -type \"float2\" 0.14078220999999999 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[19]" " -type \"float2\" 0.16119373000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[20]" " -type \"float2\" 0.14078220999999999 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[21]" " -type \"float2\" 0.11840409 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[22]" " -type \"float2\" 0.20005020000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[23]" " -type \"float2\" 0.20791659000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[24]" " -type \"float2\" 0.20005020000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[25]" " -type \"float2\" 0.19052240000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[26]" " -type \"float2\" 0.16119373000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[27]" " -type \"float2\" 0.14078220999999999 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[28]" " -type \"float2\" 0.11840409 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[29]" " -type \"float2\" 0.20791659000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[30]" " -type \"float2\" 0.20005020000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[31]" " -type \"float2\" 0.19052240000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[32]" " -type \"float2\" 0.177672 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[33]" " -type \"float2\" 0.177672 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[34]" " -type \"float2\" 0.177672 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[35]" " -type \"float2\" 0.11840409 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[36]" " -type \"float2\" 0.14078220999999999 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[37]" " -type \"float2\" 0.14078220999999999 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[38]" " -type \"float2\" 0.11840409 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[39]" " -type \"float2\" 0.16316035000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[40]" " -type \"float2\" 0.16119373000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[41]" " -type \"float2\" 0.16119373000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[42]" " -type \"float2\" 0.14078220999999999 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[43]" " -type \"float2\" 0.11840409 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[44]" " -type \"float2\" 0.19218376000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[45]" " -type \"float2\" 0.20005020000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[46]" " -type \"float2\" 0.20005020000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[47]" " -type \"float2\" 0.19052240000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[48]" " -type \"float2\" 0.20791659000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[49]" " -type \"float2\" 0.20791659000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[50]" " -type \"float2\" 0.20791659000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[51]" " -type \"float2\" 0.20005020000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[52]" " -type \"float2\" 0.19052240000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[53]" " -type \"float2\" 0.14078220999999999 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[54]" " -type \"float2\" 0.11840409 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[55]" " -type \"float2\" 0.16119373000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[56]" " -type \"float2\" 0.16316035000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[57]" " -type \"float2\" 0.14078220999999999 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[58]" " -type \"float2\" 0.11840409 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[59]" " -type \"float2\" 0.20005020000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[60]" " -type \"float2\" 0.19052240000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[61]" " -type \"float2\" 0.20791659000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[62]" " -type \"float2\" 0.20791659000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[63]" " -type \"float2\" 0.20005020000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[64]" " -type \"float2\" 0.19218376000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[65]" " -type \"float2\" 0.177672 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[66]" " -type \"float2\" 0.177672 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[67]" " -type \"float2\" 0.177672 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[68]" " -type \"float2\" 0.177672 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[69]" " -type \"float2\" 0.177672 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[70]" " -type \"float2\" 0.11840409 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[71]" " -type \"float2\" 0.14078220999999999 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[72]" " -type \"float2\" 0.14078220999999999 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[73]" " -type \"float2\" 0.11840409 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[74]" " -type \"float2\" 0.16316035000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[75]" " -type \"float2\" 0.16119373000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[76]" " -type \"float2\" 0.16119373000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[77]" " -type \"float2\" 0.14078220999999999 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[78]" " -type \"float2\" 0.11840409 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[79]" " -type \"float2\" 0.19218376000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[80]" " -type \"float2\" 0.20005020000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[81]" " -type \"float2\" 0.20005020000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[82]" " -type \"float2\" 0.19052240000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[83]" " -type \"float2\" 0.20791659000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[84]" " -type \"float2\" 0.20791659000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[85]" " -type \"float2\" 0.20791659000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[86]" " -type \"float2\" 0.20005020000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[87]" " -type \"float2\" 0.19052240000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[88]" " -type \"float2\" 0.14078220999999999 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[89]" " -type \"float2\" 0.11840409 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[90]" " -type \"float2\" 0.16119373000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[91]" " -type \"float2\" 0.16316035000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[92]" " -type \"float2\" 0.14078220999999999 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[93]" " -type \"float2\" 0.11840409 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[94]" " -type \"float2\" 0.20005020000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[95]" " -type \"float2\" 0.19052240000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[96]" " -type \"float2\" 0.20791659000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[97]" " -type \"float2\" 0.20791659000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[98]" " -type \"float2\" 0.20005020000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[99]" " -type \"float2\" 0.19218376000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[100]" " -type \"float2\" 0.177672 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[101]" " -type \"float2\" 0.177672 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[102]" " -type \"float2\" 0.177672 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[103]" " -type \"float2\" 0.177672 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[104]" " -type \"float2\" 0.177672 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[105]" " -type \"float2\" 0.11840409 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[106]" " -type \"float2\" 0.14078220999999999 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[107]" " -type \"float2\" 0.14078220999999999 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[108]" " -type \"float2\" 0.11840409 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[109]" " -type \"float2\" 0.16316035000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[110]" " -type \"float2\" 0.16119373000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[111]" " -type \"float2\" 0.16119373000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[112]" " -type \"float2\" 0.14078220999999999 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[113]" " -type \"float2\" 0.11840409 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[114]" " -type \"float2\" 0.19218376000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[115]" " -type \"float2\" 0.20005020000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[116]" " -type \"float2\" 0.20005020000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[117]" " -type \"float2\" 0.19052240000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[118]" " -type \"float2\" 0.20791659000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[119]" " -type \"float2\" 0.20791659000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[120]" " -type \"float2\" 0.20791659000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[121]" " -type \"float2\" 0.20005020000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[122]" " -type \"float2\" 0.19052240000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[123]" " -type \"float2\" 0.14078220999999999 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[124]" " -type \"float2\" 0.11840409 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[125]" " -type \"float2\" 0.16119373000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[126]" " -type \"float2\" 0.16316035000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[127]" " -type \"float2\" 0.14078220999999999 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[128]" " -type \"float2\" 0.11840409 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[129]" " -type \"float2\" 0.20005020000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[130]" " -type \"float2\" 0.19052240000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[131]" " -type \"float2\" 0.20791659000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[132]" " -type \"float2\" 0.20791659000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[133]" " -type \"float2\" 0.20005020000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[134]" " -type \"float2\" 0.19218376000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[135]" " -type \"float2\" 0.177672 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[136]" " -type \"float2\" 0.177672 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[137]" " -type \"float2\" 0.177672 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[138]" " -type \"float2\" 0.177672 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[139]" " -type \"float2\" 0.177672 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[140]" " -type \"float2\" 0.11840409 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[141]" " -type \"float2\" 0.14078220999999999 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[142]" " -type \"float2\" 0.14078220999999999 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[143]" " -type \"float2\" 0.11840409 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[144]" " -type \"float2\" 0.16316035000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[145]" " -type \"float2\" 0.16119373000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[146]" " -type \"float2\" 0.16119373000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[147]" " -type \"float2\" 0.14078220999999999 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[148]" " -type \"float2\" 0.11840409 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[149]" " -type \"float2\" 0.19218376000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[150]" " -type \"float2\" 0.20005020000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[151]" " -type \"float2\" 0.20005020000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[152]" " -type \"float2\" 0.19052240000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[153]" " -type \"float2\" 0.20791659000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[154]" " -type \"float2\" 0.20791659000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[155]" " -type \"float2\" 0.20791659000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[156]" " -type \"float2\" 0.20005020000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[157]" " -type \"float2\" 0.19052240000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[158]" " -type \"float2\" 0.14078220999999999 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[159]" " -type \"float2\" 0.11840409 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[160]" " -type \"float2\" 0.16119373000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[161]" " -type \"float2\" 0.16316035000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[162]" " -type \"float2\" 0.14078220999999999 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[163]" " -type \"float2\" 0.11840409 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[164]" " -type \"float2\" 0.20005020000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[165]" " -type \"float2\" 0.19052240000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[166]" " -type \"float2\" 0.20791659000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[167]" " -type \"float2\" 0.20791659000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[168]" " -type \"float2\" 0.20005020000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[169]" " -type \"float2\" 0.19218376000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[170]" " -type \"float2\" 0.177672 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[171]" " -type \"float2\" 0.177672 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[172]" " -type \"float2\" 0.177672 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[173]" " -type \"float2\" 0.177672 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[174]" " -type \"float2\" 0.177672 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[175]" " -type \"float2\" 0.11840409 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[176]" " -type \"float2\" 0.14078220999999999 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[177]" " -type \"float2\" 0.14078220999999999 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[178]" " -type \"float2\" 0.11840409 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[179]" " -type \"float2\" 0.16316035000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[180]" " -type \"float2\" 0.16119373000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[181]" " -type \"float2\" 0.16119373000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[182]" " -type \"float2\" 0.14078220999999999 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[183]" " -type \"float2\" 0.11840409 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[184]" " -type \"float2\" 0.19218376000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[185]" " -type \"float2\" 0.20005020000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[186]" " -type \"float2\" 0.20005020000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[187]" " -type \"float2\" 0.19052240000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[188]" " -type \"float2\" 0.20791659000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[189]" " -type \"float2\" 0.20791659000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[190]" " -type \"float2\" 0.20791659000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[191]" " -type \"float2\" 0.20005020000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[192]" " -type \"float2\" 0.19052240000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[193]" " -type \"float2\" 0.14078220999999999 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[194]" " -type \"float2\" 0.11840409 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[195]" " -type \"float2\" 0.16119373000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[196]" " -type \"float2\" 0.16316035000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[197]" " -type \"float2\" 0.14078220999999999 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[198]" " -type \"float2\" 0.11840409 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[199]" " -type \"float2\" 0.20005020000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[200]" " -type \"float2\" 0.19052240000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[201]" " -type \"float2\" 0.20791659000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[202]" " -type \"float2\" 0.20791659000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[203]" " -type \"float2\" 0.20005020000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[204]" " -type \"float2\" 0.19218376000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[205]" " -type \"float2\" 0.177672 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[206]" " -type \"float2\" 0.177672 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[207]" " -type \"float2\" 0.177672 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[208]" " -type \"float2\" 0.177672 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[209]" " -type \"float2\" 0.177672 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[210]" " -type \"float2\" 0.11840409 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[211]" " -type \"float2\" 0.14078220999999999 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[212]" " -type \"float2\" 0.14078220999999999 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[213]" " -type \"float2\" 0.11840409 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[214]" " -type \"float2\" 0.16316035000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[215]" " -type \"float2\" 0.16119373000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[216]" " -type \"float2\" 0.16119373000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[217]" " -type \"float2\" 0.14078220999999999 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[218]" " -type \"float2\" 0.11840409 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[219]" " -type \"float2\" 0.19218376000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[220]" " -type \"float2\" 0.20005020000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[221]" " -type \"float2\" 0.20005020000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[222]" " -type \"float2\" 0.19052240000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[223]" " -type \"float2\" 0.20791659000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[224]" " -type \"float2\" 0.20791659000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[225]" " -type \"float2\" 0.20791659000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[226]" " -type \"float2\" 0.20005020000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[227]" " -type \"float2\" 0.19052240000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[228]" " -type \"float2\" 0.14078220999999999 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[229]" " -type \"float2\" 0.11840409 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[230]" " -type \"float2\" 0.16119373000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[231]" " -type \"float2\" 0.16316035000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[232]" " -type \"float2\" 0.14078220999999999 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[233]" " -type \"float2\" 0.11840409 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[234]" " -type \"float2\" 0.20005020000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[235]" " -type \"float2\" 0.19052240000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[236]" " -type \"float2\" 0.20791659000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[237]" " -type \"float2\" 0.20791659000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[238]" " -type \"float2\" 0.20005020000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[239]" " -type \"float2\" 0.19218376000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[240]" " -type \"float2\" 0.177672 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[241]" " -type \"float2\" 0.177672 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[242]" " -type \"float2\" 0.177672 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[243]" " -type \"float2\" 0.177672 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[244]" " -type \"float2\" 0.177672 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[245]" " -type \"float2\" 0.11840409 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[246]" " -type \"float2\" 0.14078220999999999 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[247]" " -type \"float2\" 0.14078220999999999 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[248]" " -type \"float2\" 0.11840409 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[249]" " -type \"float2\" 0.16316035000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[250]" " -type \"float2\" 0.16119373000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[251]" " -type \"float2\" 0.16119373000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[252]" " -type \"float2\" 0.14078220999999999 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[253]" " -type \"float2\" 0.11840409 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[254]" " -type \"float2\" 0.19218376000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[255]" " -type \"float2\" 0.20005020000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[256]" " -type \"float2\" 0.20005020000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[257]" " -type \"float2\" 0.19052240000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[258]" " -type \"float2\" 0.20791659000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[259]" " -type \"float2\" 0.20791659000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[260]" " -type \"float2\" 0.20791659000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[261]" " -type \"float2\" 0.20005020000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[262]" " -type \"float2\" 0.19052240000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[263]" " -type \"float2\" 0.14078220999999999 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[264]" " -type \"float2\" 0.11840409 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[265]" " -type \"float2\" 0.16119373000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[266]" " -type \"float2\" 0.16316035000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[267]" " -type \"float2\" 0.14078220999999999 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[268]" " -type \"float2\" 0.11840409 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[269]" " -type \"float2\" 0.20005020000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[270]" " -type \"float2\" 0.19052240000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[271]" " -type \"float2\" 0.20791659000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[272]" " -type \"float2\" 0.20791659000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[273]" " -type \"float2\" 0.20005020000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[274]" " -type \"float2\" 0.19218376000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[275]" " -type \"float2\" 0.177672 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[276]" " -type \"float2\" 0.177672 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[277]" " -type \"float2\" 0.177672 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[278]" " -type \"float2\" 0.177672 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[279]" " -type \"float2\" 0.177672 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[280]" " -type \"float2\" 0.11840409 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[281]" " -type \"float2\" 0.14078220999999999 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[282]" " -type \"float2\" 0.14078220999999999 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[283]" " -type \"float2\" 0.11840409 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[284]" " -type \"float2\" 0.16316035000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[285]" " -type \"float2\" 0.16119373000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[286]" " -type \"float2\" 0.16119373000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[287]" " -type \"float2\" 0.14078220999999999 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[288]" " -type \"float2\" 0.11840409 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[289]" " -type \"float2\" 0.19218376000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[290]" " -type \"float2\" 0.20005020000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[291]" " -type \"float2\" 0.20005020000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[292]" " -type \"float2\" 0.19052240000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[293]" " -type \"float2\" 0.20791659000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[294]" " -type \"float2\" 0.20791659000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[295]" " -type \"float2\" 0.20791659000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[296]" " -type \"float2\" 0.20005020000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[297]" " -type \"float2\" 0.19052240000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[298]" " -type \"float2\" 0.14078220999999999 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[299]" " -type \"float2\" 0.11840409 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[300]" " -type \"float2\" 0.16119373000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[301]" " -type \"float2\" 0.16316035000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[302]" " -type \"float2\" 0.14078220999999999 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[303]" " -type \"float2\" 0.11840409 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[304]" " -type \"float2\" 0.20005020000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[305]" " -type \"float2\" 0.19052240000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[306]" " -type \"float2\" 0.20791659000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[307]" " -type \"float2\" 0.20791659000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[308]" " -type \"float2\" 0.20005020000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[309]" " -type \"float2\" 0.19218376000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[310]" " -type \"float2\" 0.177672 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[311]" " -type \"float2\" 0.177672 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[312]" " -type \"float2\" 0.177672 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[313]" " -type \"float2\" 0.177672 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[314]" " -type \"float2\" 0.177672 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[315]" " -type \"float2\" 0.11840409 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[316]" " -type \"float2\" 0.14078220999999999 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[317]" " -type \"float2\" 0.14078220999999999 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[318]" " -type \"float2\" 0.11840409 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[319]" " -type \"float2\" 0.16316035000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[320]" " -type \"float2\" 0.16119373000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[321]" " -type \"float2\" 0.16119373000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[322]" " -type \"float2\" 0.14078220999999999 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[323]" " -type \"float2\" 0.11840409 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[324]" " -type \"float2\" 0.19218376000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[325]" " -type \"float2\" 0.20005020000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[326]" " -type \"float2\" 0.20005020000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[327]" " -type \"float2\" 0.19052240000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[328]" " -type \"float2\" 0.20791659000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[329]" " -type \"float2\" 0.20791659000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[330]" " -type \"float2\" 0.20791659000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[331]" " -type \"float2\" 0.20005020000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[332]" " -type \"float2\" 0.19052240000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[333]" " -type \"float2\" 0.14078220999999999 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[334]" " -type \"float2\" 0.11840409 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[335]" " -type \"float2\" 0.16119373000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[336]" " -type \"float2\" 0.16316035000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[337]" " -type \"float2\" 0.14078220999999999 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[338]" " -type \"float2\" 0.11840409 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[339]" " -type \"float2\" 0.20005020000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[340]" " -type \"float2\" 0.19052240000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[341]" " -type \"float2\" 0.20791659000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[342]" " -type \"float2\" 0.20791659000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[343]" " -type \"float2\" 0.20005020000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[344]" " -type \"float2\" 0.19218376000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[345]" " -type \"float2\" 0.177672 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[346]" " -type \"float2\" 0.177672 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[347]" " -type \"float2\" 0.177672 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[348]" " -type \"float2\" 0.177672 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[349]" " -type \"float2\" 0.177672 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[350]" " -type \"float2\" 0.11840409 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[351]" " -type \"float2\" 0.14078220999999999 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[352]" " -type \"float2\" 0.14078220999999999 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[353]" " -type \"float2\" 0.11840409 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[354]" " -type \"float2\" 0.16316035000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[355]" " -type \"float2\" 0.16119373000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[356]" " -type \"float2\" 0.16119373000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[357]" " -type \"float2\" 0.14078220999999999 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[358]" " -type \"float2\" 0.11840409 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[359]" " -type \"float2\" 0.19218376000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[360]" " -type \"float2\" 0.20005020000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[361]" " -type \"float2\" 0.20005020000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[362]" " -type \"float2\" 0.19052240000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[363]" " -type \"float2\" 0.20791659000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[364]" " -type \"float2\" 0.20791659000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[365]" " -type \"float2\" 0.20791659000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[366]" " -type \"float2\" 0.20005020000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[367]" " -type \"float2\" 0.19052240000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[368]" " -type \"float2\" 0.14078220999999999 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[369]" " -type \"float2\" 0.11840409 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[370]" " -type \"float2\" 0.16119373000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[371]" " -type \"float2\" 0.16316035000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[372]" " -type \"float2\" 0.14078220999999999 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[373]" " -type \"float2\" 0.11840409 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[374]" " -type \"float2\" 0.20005020000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[375]" " -type \"float2\" 0.19052240000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[376]" " -type \"float2\" 0.20791659000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[377]" " -type \"float2\" 0.20791659000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[378]" " -type \"float2\" 0.20005020000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[379]" " -type \"float2\" 0.19218376000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[380]" " -type \"float2\" 0.177672 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[381]" " -type \"float2\" 0.177672 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[382]" " -type \"float2\" 0.177672 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[383]" " -type \"float2\" 0.177672 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[384]" " -type \"float2\" 0.177672 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[385]" " -type \"float2\" 0.11840409 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[386]" " -type \"float2\" 0.14078220999999999 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[387]" " -type \"float2\" 0.14078220999999999 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[388]" " -type \"float2\" 0.11840409 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[389]" " -type \"float2\" 0.16316035000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[390]" " -type \"float2\" 0.16119373000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[391]" " -type \"float2\" 0.16119373000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[392]" " -type \"float2\" 0.14078220999999999 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[393]" " -type \"float2\" 0.11840409 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[394]" " -type \"float2\" 0.19218376000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[395]" " -type \"float2\" 0.20005020000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[396]" " -type \"float2\" 0.20005020000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[397]" " -type \"float2\" 0.19052240000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[398]" " -type \"float2\" 0.20791659000000001 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[399]" " -type \"float2\" 0.20791659000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[400]" " -type \"float2\" 0.20791659000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[401]" " -type \"float2\" 0.20005020000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[402]" " -type \"float2\" 0.19052240000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[403]" " -type \"float2\" 0.14078220999999999 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[404]" " -type \"float2\" 0.11840409 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[405]" " -type \"float2\" 0.16119373000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[406]" " -type \"float2\" 0.16316035000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[407]" " -type \"float2\" 0.14078220999999999 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[408]" " -type \"float2\" 0.11840409 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[409]" " -type \"float2\" 0.20005020000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[410]" " -type \"float2\" 0.19052240000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[411]" " -type \"float2\" 0.20791659000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[412]" " -type \"float2\" 0.20791659000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[413]" " -type \"float2\" 0.20005020000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[414]" " -type \"float2\" 0.19218376000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[415]" " -type \"float2\" 0.177672 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[416]" " -type \"float2\" 0.177672 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[417]" " -type \"float2\" 0.177672 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[418]" " -type \"float2\" 0.177672 0.12106678"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[419]" " -type \"float2\" 0.177672 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[420]" " -type \"float2\" 0.15197127999999999 0.14903944999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[421]" " -type \"float2\" 0.15476856 0.14903944999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[422]" " -type \"float2\" 0.15476856 0.15043807000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[423]" " -type \"float2\" 0.15197127999999999 0.15043807000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[424]" " -type \"float2\" 0.15756580000000001 0.14903944999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[425]" " -type \"float2\" 0.15756580000000001 0.15043807000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[426]" " -type \"float2\" 0.16036307999999999 0.14903944999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[427]" " -type \"float2\" 0.16036307999999999 0.15043807000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[428]" " -type \"float2\" 0.16316035000000001 0.14903944999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[429]" " -type \"float2\" 0.16316035000000001 0.15043807000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[430]" " -type \"float2\" 0.16595760000000001 0.14903944999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[431]" " -type \"float2\" 0.16595760000000001 0.15043807000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[432]" " -type \"float2\" 0.16875485000000001 0.14903944999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[433]" " -type \"float2\" 0.16875485000000001 0.15043807000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[434]" " -type \"float2\" 0.17155221000000001 0.14903944999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[435]" " -type \"float2\" 0.17155221000000001 0.15043807000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[436]" " -type \"float2\" 0.17434946000000001 0.14903944999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[437]" " -type \"float2\" 0.17434946000000001 0.15043807000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[438]" " -type \"float2\" 0.15476856 0.15183669"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[439]" " -type \"float2\" 0.15197127999999999 0.15183669"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[440]" " -type \"float2\" 0.15756580000000001 0.15183669"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[441]" " -type \"float2\" 0.16036307999999999 0.15183669"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[442]" " -type \"float2\" 0.16316035000000001 0.15183669"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[443]" " -type \"float2\" 0.16595760000000001 0.15183669"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[444]" " -type \"float2\" 0.16875485000000001 0.15183669"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[445]" " -type \"float2\" 0.17155221000000001 0.15183669"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[446]" " -type \"float2\" 0.17434946000000001 0.15183669"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[447]" " -type \"float2\" 0.15476856 0.15323534999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[448]" " -type \"float2\" 0.15197127999999999 0.15323534999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[449]" " -type \"float2\" 0.15756580000000001 0.15323534999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[450]" " -type \"float2\" 0.16036307999999999 0.15323534999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[451]" " -type \"float2\" 0.16316035000000001 0.15323534999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[452]" " -type \"float2\" 0.16595760000000001 0.15323534999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[453]" " -type \"float2\" 0.16875485000000001 0.15323534999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[454]" " -type \"float2\" 0.17155221000000001 0.15323534999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[455]" " -type \"float2\" 0.17434946000000001 0.15323534999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[456]" " -type \"float2\" 0.15476856 0.154634"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[457]" " -type \"float2\" 0.15197127999999999 0.154634"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[458]" " -type \"float2\" 0.15756580000000001 0.154634"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[459]" " -type \"float2\" 0.16036307999999999 0.154634"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[460]" " -type \"float2\" 0.16316035000000001 0.154634"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[461]" " -type \"float2\" 0.16595760000000001 0.154634"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[462]" " -type \"float2\" 0.16875485000000001 0.154634"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[463]" " -type \"float2\" 0.17155221000000001 0.154634"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[464]" " -type \"float2\" 0.17434946000000001 0.154634"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[465]" " -type \"float2\" 0.15476856 0.15603262000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[466]" " -type \"float2\" 0.15197127999999999 0.15603262000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[467]" " -type \"float2\" 0.15756580000000001 0.15603262000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[468]" " -type \"float2\" 0.16036307999999999 0.15603262000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[469]" " -type \"float2\" 0.16316035000000001 0.15603262000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[470]" " -type \"float2\" 0.16595760000000001 0.15603262000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[471]" " -type \"float2\" 0.16875485000000001 0.15603262000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[472]" " -type \"float2\" 0.17155221000000001 0.15603262000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[473]" " -type \"float2\" 0.17434946000000001 0.15603262000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[474]" " -type \"float2\" 0.15476856 0.15743124"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[475]" " -type \"float2\" 0.15197127999999999 0.15743124"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[476]" " -type \"float2\" 0.15756580000000001 0.15743124"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[477]" " -type \"float2\" 0.16036307999999999 0.15743124"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[478]" " -type \"float2\" 0.16316035000000001 0.15743124"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[479]" " -type \"float2\" 0.16595760000000001 0.15743124"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[480]" " -type \"float2\" 0.16875485000000001 0.15743124"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[481]" " -type \"float2\" 0.17155221000000001 0.15743124"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[482]" " -type \"float2\" 0.17434946000000001 0.15743124"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[483]" " -type \"float2\" 0.15476856 0.15882987000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[484]" " -type \"float2\" 0.15197127999999999 0.15882987000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[485]" " -type \"float2\" 0.15756580000000001 0.15882987000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[486]" " -type \"float2\" 0.16036307999999999 0.15882987000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[487]" " -type \"float2\" 0.16316035000000001 0.15882987000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[488]" " -type \"float2\" 0.16595760000000001 0.15882987000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[489]" " -type \"float2\" 0.16875485000000001 0.15882987000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[490]" " -type \"float2\" 0.17155221000000001 0.15882987000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[491]" " -type \"float2\" 0.17434946000000001 0.15882987000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[492]" " -type \"float2\" 0.15476856 0.16022849"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[493]" " -type \"float2\" 0.15197127999999999 0.16022849"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[494]" " -type \"float2\" 0.15756580000000001 0.16022849"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[495]" " -type \"float2\" 0.16036307999999999 0.16022849"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[496]" " -type \"float2\" 0.16316035000000001 0.16022849"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[497]" " -type \"float2\" 0.16595760000000001 0.16022849"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[498]" " -type \"float2\" 0.16875485000000001 0.16022849"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[499]" " -type \"float2\" 0.17155221000000001 0.16022849"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[500]" " -type \"float2\" 0.17434946000000001 0.16022849"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[501]" " -type \"float2\" 0.15476856 0.16162710999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[502]" " -type \"float2\" 0.15197127999999999 0.16162710999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[503]" " -type \"float2\" 0.15756580000000001 0.16162710999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[504]" " -type \"float2\" 0.16036307999999999 0.16162710999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[505]" " -type \"float2\" 0.16316035000000001 0.16162710999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[506]" " -type \"float2\" 0.16595760000000001 0.16162710999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[507]" " -type \"float2\" 0.16875485000000001 0.16162710999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[508]" " -type \"float2\" 0.17155221000000001 0.16162710999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[509]" " -type \"float2\" 0.17434946000000001 0.16162710999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[510]" " -type \"float2\" 0.15476856 0.1630258"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[511]" " -type \"float2\" 0.15197127999999999 0.1630258"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[512]" " -type \"float2\" 0.15756580000000001 0.1630258"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[513]" " -type \"float2\" 0.16036307999999999 0.1630258"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[514]" " -type \"float2\" 0.16316035000000001 0.1630258"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[515]" " -type \"float2\" 0.16595760000000001 0.1630258"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[516]" " -type \"float2\" 0.16875485000000001 0.1630258"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[517]" " -type \"float2\" 0.17155221000000001 0.1630258"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[518]" " -type \"float2\" 0.17434946000000001 0.1630258"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[519]" " -type \"float2\" 0.15476856 0.16442441999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[520]" " -type \"float2\" 0.15197127999999999 0.16442441999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[521]" " -type \"float2\" 0.15756580000000001 0.16442441999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[522]" " -type \"float2\" 0.16036307999999999 0.16442441999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[523]" " -type \"float2\" 0.16316035000000001 0.16442441999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[524]" " -type \"float2\" 0.16595760000000001 0.16442441999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[525]" " -type \"float2\" 0.16875485000000001 0.16442441999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[526]" " -type \"float2\" 0.17155221000000001 0.16442441999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[527]" " -type \"float2\" 0.17434946000000001 0.16442441999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[528]" " -type \"float2\" 0.15476856 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[529]" " -type \"float2\" 0.15197127999999999 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[530]" " -type \"float2\" 0.15756580000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[531]" " -type \"float2\" 0.16036307999999999 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[532]" " -type \"float2\" 0.16316035000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[533]" " -type \"float2\" 0.16595760000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[534]" " -type \"float2\" 0.16875485000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[535]" " -type \"float2\" 0.17155221000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[536]" " -type \"float2\" 0.17434946000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[537]" " -type \"float2\" 0.15476856 0.1672217"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[538]" " -type \"float2\" 0.15197127999999999 0.1672217"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[539]" " -type \"float2\" 0.15756580000000001 0.1672217"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[540]" " -type \"float2\" 0.16036307999999999 0.1672217"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[541]" " -type \"float2\" 0.16316035000000001 0.1672217"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[542]" " -type \"float2\" 0.16595760000000001 0.1672217"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[543]" " -type \"float2\" 0.16875485000000001 0.1672217"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[544]" " -type \"float2\" 0.17155221000000001 0.1672217"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[545]" " -type \"float2\" 0.17434946000000001 0.1672217"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[546]" " -type \"float2\" 0.15476856 0.16862031999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[547]" " -type \"float2\" 0.15197127999999999 0.16862031999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[548]" " -type \"float2\" 0.15756580000000001 0.16862031999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[549]" " -type \"float2\" 0.16036307999999999 0.16862031999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[550]" " -type \"float2\" 0.16316035000000001 0.16862031999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[551]" " -type \"float2\" 0.16595760000000001 0.16862031999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[552]" " -type \"float2\" 0.16875485000000001 0.16862031999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[553]" " -type \"float2\" 0.17155221000000001 0.16862031999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[554]" " -type \"float2\" 0.17434946000000001 0.16862031999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[555]" " -type \"float2\" 0.15476856 0.17001894000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[556]" " -type \"float2\" 0.15197127999999999 0.17001894000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[557]" " -type \"float2\" 0.15756580000000001 0.17001894000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[558]" " -type \"float2\" 0.16036307999999999 0.17001894000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[559]" " -type \"float2\" 0.16316035000000001 0.17001894000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[560]" " -type \"float2\" 0.16595760000000001 0.17001894000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[561]" " -type \"float2\" 0.16875485000000001 0.17001894000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[562]" " -type \"float2\" 0.17155221000000001 0.17001894000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[563]" " -type \"float2\" 0.17434946000000001 0.17001894000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[564]" " -type \"float2\" 0.15476856 0.17141756"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[565]" " -type \"float2\" 0.15197127999999999 0.17141756"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[566]" " -type \"float2\" 0.15756580000000001 0.17141756"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[567]" " -type \"float2\" 0.16036307999999999 0.17141756"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[568]" " -type \"float2\" 0.16316035000000001 0.17141756"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[569]" " -type \"float2\" 0.16595760000000001 0.17141756"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[570]" " -type \"float2\" 0.16875485000000001 0.17141756"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[571]" " -type \"float2\" 0.17155221000000001 0.17141756"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[572]" " -type \"float2\" 0.17434946000000001 0.17141756"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[573]" " -type \"float2\" 0.15476856 0.17281619000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[574]" " -type \"float2\" 0.15197127999999999 0.17281619000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[575]" " -type \"float2\" 0.15756580000000001 0.17281619000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[576]" " -type \"float2\" 0.16036307999999999 0.17281619000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[577]" " -type \"float2\" 0.16316035000000001 0.17281619000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[578]" " -type \"float2\" 0.16595760000000001 0.17281619000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[579]" " -type \"float2\" 0.16875485000000001 0.17281619000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[580]" " -type \"float2\" 0.17155221000000001 0.17281619000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[581]" " -type \"float2\" 0.17434946000000001 0.17281619000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[582]" " -type \"float2\" 0.15476856 0.17421481"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[583]" " -type \"float2\" 0.15197127999999999 0.17421481"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[584]" " -type \"float2\" 0.15756580000000001 0.17421481"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[585]" " -type \"float2\" 0.16036307999999999 0.17421481"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[586]" " -type \"float2\" 0.16316035000000001 0.17421481"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[587]" " -type \"float2\" 0.16595760000000001 0.17421481"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[588]" " -type \"float2\" 0.16875485000000001 0.17421481"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[589]" " -type \"float2\" 0.17155221000000001 0.17421481"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[590]" " -type \"float2\" 0.17434946000000001 0.17421481"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[591]" " -type \"float2\" 0.15476856 0.17561349000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[592]" " -type \"float2\" 0.15197127999999999 0.17561349000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[593]" " -type \"float2\" 0.15756580000000001 0.17561349000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[594]" " -type \"float2\" 0.16036307999999999 0.17561349000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[595]" " -type \"float2\" 0.16316035000000001 0.17561349000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[596]" " -type \"float2\" 0.16595760000000001 0.17561349000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[597]" " -type \"float2\" 0.16875485000000001 0.17561349000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[598]" " -type \"float2\" 0.17155221000000001 0.17561349000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[599]" " -type \"float2\" 0.17434946000000001 0.17561349000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[600]" " -type \"float2\" 0.15476856 0.17701212"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[601]" " -type \"float2\" 0.15197127999999999 0.17701212"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[602]" " -type \"float2\" 0.15756580000000001 0.17701212"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[603]" " -type \"float2\" 0.16036307999999999 0.17701212"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[604]" " -type \"float2\" 0.16316035000000001 0.17701212"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[605]" " -type \"float2\" 0.16595760000000001 0.17701212"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[606]" " -type \"float2\" 0.16875485000000001 0.17701212"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[607]" " -type \"float2\" 0.17155221000000001 0.17701212"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[608]" " -type \"float2\" 0.17434946000000001 0.17701212"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[609]" " -type \"float2\" 0.15476856 0.17841074000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[610]" " -type \"float2\" 0.15197127999999999 0.17841074000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[611]" " -type \"float2\" 0.15756580000000001 0.17841074000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[612]" " -type \"float2\" 0.16036307999999999 0.17841074000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[613]" " -type \"float2\" 0.16316035000000001 0.17841074000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[614]" " -type \"float2\" 0.16595760000000001 0.17841074000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[615]" " -type \"float2\" 0.16875485000000001 0.17841074000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[616]" " -type \"float2\" 0.17155221000000001 0.17841074000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[617]" " -type \"float2\" 0.17434946000000001 0.17841074000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[618]" " -type \"float2\" 0.15476856 0.17980942"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[619]" " -type \"float2\" 0.15197127999999999 0.17980942"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[620]" " -type \"float2\" 0.15756580000000001 0.17980942"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[621]" " -type \"float2\" 0.16036307999999999 0.17980942"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[622]" " -type \"float2\" 0.16316035000000001 0.17980942"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[623]" " -type \"float2\" 0.16595760000000001 0.17980942"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[624]" " -type \"float2\" 0.16875485000000001 0.17980942"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[625]" " -type \"float2\" 0.17155221000000001 0.17980942"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[626]" " -type \"float2\" 0.17434946000000001 0.17980942"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[627]" " -type \"float2\" 0.15476856 0.18120803999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[628]" " -type \"float2\" 0.15197127999999999 0.18120803999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[629]" " -type \"float2\" 0.15756580000000001 0.18120803999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[630]" " -type \"float2\" 0.16036307999999999 0.18120803999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[631]" " -type \"float2\" 0.16316035000000001 0.18120803999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[632]" " -type \"float2\" 0.16595760000000001 0.18120803999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[633]" " -type \"float2\" 0.16875485000000001 0.18120803999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[634]" " -type \"float2\" 0.17155221000000001 0.18120803999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[635]" " -type \"float2\" 0.17434946000000001 0.18120803999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[636]" " -type \"float2\" 0.15476856 0.18260667"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[637]" " -type \"float2\" 0.15197127999999999 0.18260667"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[638]" " -type \"float2\" 0.15756580000000001 0.18260667"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[639]" " -type \"float2\" 0.16036307999999999 0.18260667"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[640]" " -type \"float2\" 0.16316035000000001 0.18260667"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[641]" " -type \"float2\" 0.16595760000000001 0.18260667"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[642]" " -type \"float2\" 0.16875485000000001 0.18260667"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[643]" " -type \"float2\" 0.17155221000000001 0.18260667"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[644]" " -type \"float2\" 0.17434946000000001 0.18260667"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[645]" " -type \"float2\" 0.16316035000000001 0.12106675"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[646]" " -type \"float2\" 0.17305018999999999 0.12516329000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[647]" " -type \"float2\" 0.16316035000000001 0.13505312999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[648]" " -type \"float2\" 0.15327051 0.12516329000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[649]" " -type \"float2\" 0.149174 0.13505312999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[650]" " -type \"float2\" 0.15327051 0.14494293999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[651]" " -type \"float2\" 0.16316035000000001 0.14903944999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[652]" " -type \"float2\" 0.17305018999999999 0.14494293999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[653]" " -type \"float2\" 0.17714669999999999 0.13505312999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[654]" " -type \"float2\" 0.11840409 0.13225582"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[655]" " -type \"float2\" 0.12959313 0.13225582"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[656]" " -type \"float2\" 0.12959313 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[657]" " -type \"float2\" 0.11840409 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[658]" " -type \"float2\" 0.14078220999999999 0.13225582"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[659]" " -type \"float2\" 0.14078220999999999 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[660]" " -type \"float2\" 0.15197127999999999 0.13225582"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[661]" " -type \"float2\" 0.15197127999999999 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[662]" " -type \"float2\" 0.16316035000000001 0.13225582"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[663]" " -type \"float2\" 0.16316035000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[664]" " -type \"float2\" 0.17434946000000001 0.13225582"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[665]" " -type \"float2\" 0.17434946000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[666]" " -type \"float2\" 0.18553844 0.13225582"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[667]" " -type \"float2\" 0.18553844 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[668]" " -type \"float2\" 0.19672754000000001 0.13225582"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[669]" " -type \"float2\" 0.19672754000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[670]" " -type \"float2\" 0.20791659000000001 0.13225582"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[671]" " -type \"float2\" 0.20791659000000001 0.14344493"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[672]" " -type \"float2\" 0.12959313 0.154634"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[673]" " -type \"float2\" 0.11840409 0.154634"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[674]" " -type \"float2\" 0.14078220999999999 0.154634"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[675]" " -type \"float2\" 0.15197127999999999 0.154634"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[676]" " -type \"float2\" 0.16316035000000001 0.154634"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[677]" " -type \"float2\" 0.17434946000000001 0.154634"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[678]" " -type \"float2\" 0.18553844 0.154634"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[679]" " -type \"float2\" 0.19672754000000001 0.154634"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[680]" " -type \"float2\" 0.20791659000000001 0.154634"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[681]" " -type \"float2\" 0.12959313 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[682]" " -type \"float2\" 0.11840409 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[683]" " -type \"float2\" 0.14078220999999999 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[684]" " -type \"float2\" 0.15197127999999999 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[685]" " -type \"float2\" 0.16316035000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[686]" " -type \"float2\" 0.17434946000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[687]" " -type \"float2\" 0.18553844 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[688]" " -type \"float2\" 0.19672754000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[689]" " -type \"float2\" 0.20791659000000001 0.16582304"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[690]" " -type \"float2\" 0.12959313 0.17701212"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[691]" " -type \"float2\" 0.11840409 0.17701212"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[692]" " -type \"float2\" 0.14078220999999999 0.17701212"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[693]" " -type \"float2\" 0.15197127999999999 0.17701212"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[694]" " -type \"float2\" 0.16316035000000001 0.17701212"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[695]" " -type \"float2\" 0.17434946000000001 0.17701212"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[696]" " -type \"float2\" 0.18553844 0.17701212"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[697]" " -type \"float2\" 0.19672754000000001 0.17701212"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[698]" " -type \"float2\" 0.20791659000000001 0.17701212"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[699]" " -type \"float2\" 0.12959313 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[700]" " -type \"float2\" 0.11840409 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[701]" " -type \"float2\" 0.14078220999999999 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[702]" " -type \"float2\" 0.15197127999999999 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[703]" " -type \"float2\" 0.16316035000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[704]" " -type \"float2\" 0.17434946000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[705]" " -type \"float2\" 0.18553844 0.18820116000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[706]" " -type \"float2\" 0.19672754000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[707]" " -type \"float2\" 0.20791659000000001 0.18820116000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[708]" " -type \"float2\" 0.12959313 0.19939026000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[709]" " -type \"float2\" 0.11840409 0.19939026000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[710]" " -type \"float2\" 0.14078220999999999 0.19939026000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[711]" " -type \"float2\" 0.15197127999999999 0.19939026000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[712]" " -type \"float2\" 0.16316035000000001 0.19939026000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[713]" " -type \"float2\" 0.17434946000000001 0.19939026000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[714]" " -type \"float2\" 0.18553844 0.19939026000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[715]" " -type \"float2\" 0.19672754000000001 0.19939026000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[716]" " -type \"float2\" 0.20791659000000001 0.19939026000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[717]" " -type \"float2\" 0.12399861 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[718]" " -type \"float2\" 0.13518769 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[719]" " -type \"float2\" 0.14637673000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[720]" " -type \"float2\" 0.15756580000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[721]" " -type \"float2\" 0.16875485000000001 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[722]" " -type \"float2\" 0.17994394999999999 0.21057936999999999"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[723]" " -type \"float2\" 0.19113305 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[724]" " -type \"float2\" 0.2023221 0.21057936999999999"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[725]" " -type \"float2\" 0.13462824000000001 0.142326"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[726]" " -type \"float2\" 0.14413893 0.142326"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[727]" " -type \"float2\" 0.15364963000000001 0.142326"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[728]" " -type \"float2\" 0.16316035000000001 0.142326"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[729]" " -type \"float2\" 0.17267104999999999 0.142326"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[730]" " -type \"float2\" 0.18218181 0.142326"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[731]" " -type \"float2\" 0.19169243999999999 0.142326"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[732]" " -type \"float2\" 0.20120314 0.142326"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[733]" " -type \"float2\" 0.12511750999999999 0.142326"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[734]" " -type \"float2\" 0.15420908 0.17253646"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[735]" " -type \"float2\" 0.14973344999999999 0.17253646"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[736]" " -type \"float2\" 0.15868473 0.17253646"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[737]" " -type \"float2\" 0.16316035000000001 0.17253646"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[738]" " -type \"float2\" 0.16763595000000001 0.17253646"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[739]" " -type \"float2\" 0.1721116 0.17253646"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[740]" " -type \"float2\" 0.17658719 0.17253646"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[741]" " -type \"float2\" 0.18106285 0.17253646"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[742]" " -type \"float2\" 0.14525783 0.17253646"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[743]" " -type \"float2\" 0.15085238000000001 0.16246632"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[744]" " -type \"float2\" 0.14469841 0.16246632"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[745]" " -type \"float2\" 0.15700638 0.16246632"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[746]" " -type \"float2\" 0.16316035000000001 0.16246632"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[747]" " -type \"float2\" 0.16931435 0.16246632"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[748]" " -type \"float2\" 0.17546829999999999 0.16246632"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[749]" " -type \"float2\" 0.18162229999999999 0.16246632"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[750]" " -type \"float2\" 0.18777630000000001 0.16246632"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[751]" " -type \"float2\" 0.13854441000000001 0.16246632"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[752]" " -type \"float2\" 0.14749566 0.15239614000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[753]" " -type \"float2\" 0.13966331000000001 0.15239614000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[754]" " -type \"float2\" 0.15532800999999999 0.15239614000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[755]" " -type \"float2\" 0.16316035000000001 0.15239614000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[756]" " -type \"float2\" 0.1709927 0.15239614000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[757]" " -type \"float2\" 0.17882505000000001 0.15239614000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[758]" " -type \"float2\" 0.1866574 0.15239614000000001"
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[759]" " -type \"float2\" 0.19448974999999999 0.15239614000000001"
-		
-		2 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape" 
-		"uvSet[0].uvSetPoints[760]" " -type \"float2\" 0.13183096 0.15239614000000001"
-		3 "|PottedFlower:revolvedSurface3|PottedFlower:Pot.instObjGroups" ":initialShadingGroup.dagSetMembers" 
-		"-na"
-		3 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "PottedFlower:groupId1.groupId" "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape.instObjGroups.objectGroups[0].objectGroupId" 
-		""
-		3 ":initialShadingGroup.memberWireframeColor" "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape.instObjGroups.objectGroups[0].objectGrpColor" 
-		""
-		3 "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape.instObjGroups.objectGroups[0]" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "PottedFlower:groupId1.message" ":initialShadingGroup.groupNodes" "-na"
-		
-		3 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		5 3 "PottedFlowerRN" "|PottedFlower:revolvedSurface3|PottedFlower:Pot.instObjGroups" 
-		"PottedFlowerRN.placeHolderList[1]" ":initialShadingGroup.dsm"
-		5 3 "PottedFlowerRN" "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:Dirt.instObjGroups" 
-		"PottedFlowerRN.placeHolderList[2]" ":initialShadingGroup.dsm"
-		5 3 "PottedFlowerRN" "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface1|PottedFlower:Leaf3.instObjGroups" 
-		"PottedFlowerRN.placeHolderList[3]" ":initialShadingGroup.dsm"
-		5 3 "PottedFlowerRN" "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface3|PottedFlower:Leaf2.instObjGroups" 
-		"PottedFlowerRN.placeHolderList[4]" ":initialShadingGroup.dsm"
-		5 3 "PottedFlowerRN" "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface2|PottedFlower:Leaf1.instObjGroups" 
-		"PottedFlowerRN.placeHolderList[5]" ":initialShadingGroup.dsm"
-		5 3 "PottedFlowerRN" "|PottedFlower:revolvedSurface3|PottedFlower:pSphere1|PottedFlower:loftedSurface4|PottedFlower:Leaf3.instObjGroups" 
-		"PottedFlowerRN.placeHolderList[6]" ":initialShadingGroup.dsm"
-		5 3 "PottedFlowerRN" "|PottedFlower:revolvedSurface3|PottedFlower:Flower|PottedFlower:FlowerShape.instObjGroups" 
-		"PottedFlowerRN.placeHolderList[7]" "";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode shadingEngine -n "lambert1SG";
 	rename -uid "AB01C0DC-4973-E13F-78AA-6FACCE5F42B5";
 	setAttr ".ihi" 0;
-	setAttr -s 31 ".dsm";
+	setAttr -s 23 ".dsm";
 	setAttr ".ro" yes;
 createNode materialInfo -n "materialInfo1";
 	rename -uid "C4F56B70-48F9-11D2-E88A-B19AF77B3366";
@@ -11498,7 +7873,7 @@ createNode reference -n "SofaRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"SofaRN"
 		"SofaRN" 0
-		"SofaRN" 362
+		"SofaRN" 53
 		2 "|Sofa:polySurface1" "translate" " -type \"double3\" -6.95157313346862793 -1.1920928955078125e-07 2.38630199432373047"
 		
 		2 "|Sofa:polySurface1" "rotate" " -type \"double3\" 0 89.99999999999997158 0"
@@ -11519,213 +7894,12 @@ createNode reference -n "SofaRN";
 		2 "|Sofa:Pillow3" "rotatePivotTranslate" " -type \"double3\" 0 0 0"
 		2 "|Sofa:Pillow3" "scalePivot" " -type \"double3\" -11.07575321197509766 1.9692535400390625 25.20804405212402344"
 		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts" " -s 103"
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[0]" " -type \"float3\" 8.88736439999999916 3.794992 9.01862140000000068"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[1]" " -type \"float3\" 6.54136469999999992 3.7343731 12.012138"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[2]" " -type \"float3\" 7.53242869999999964 6.48665760000000002 14.846751"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[3]" " -type \"float3\" 9.87842939999999992 6.54727649999999972 11.853233"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[4]" " -type \"float3\" 7.2161464999999998 5.10756969999999999 13.574876"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[5]" " -type \"float3\" 9.20364670000000018 5.17407940000000011 10.290496"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[6]" " -type \"float3\" 7.64071510000000043 3.60704849999999988 10.579229"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[7]" " -type \"float3\" 7.91437960000000018 4.78448340000000005 12.277588"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[8]" " -type \"float3\" 7.64253569999999982 4.02954580000000018 11.597248"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[9]" " -type \"float3\" 8.93180270000000043 4.41914180000000023 9.61015510000000006"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[10]" " -type \"float3\" 8.31643389999999982 3.64161089999999987 9.48069"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[11]" " -type \"float3\" 8.31901260000000065 4.065042 10.49776"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[12]" " -type \"float3\" 8.26977540000000033 3.77193930000000011 9.99491120000000066"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[13]" " -type \"float3\" 8.79588030000000032 4.04167319999999997 9.2699852000000007"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[14]" " -type \"float3\" 7.59253689999999981 3.73727460000000011 11.099646"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[15]" " -type \"float3\" 7.97574190000000005 3.62167450000000013 10.030763"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[16]" " -type \"float3\" 7.90786790000000028 3.72448040000000002 10.568109"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[17]" " -type \"float3\" 7.94793889999999958 4.0077 11.085827"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[18]" " -type \"float3\" 8.5908566000000004 4.8199797000000002 11.1781"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[19]" " -type \"float3\" 9.06772420000000068 4.79661079999999984 9.950325"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[20]" " -type \"float3\" 8.44618419999999936 4.43917129999999993 10.86692"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[21]" " -type \"float3\" 7.76970820000000018 4.4030819000000001 11.964964"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[22]" " -type \"float3\" 8.0741385999999995 4.38109639999999967 11.457325"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[23]" " -type \"float3\" 8.21978280000000083 4.76263859999999983 11.766167"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[24]" " -type \"float3\" 6.94430260000000033 4.352632 12.894536"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[25]" " -type \"float3\" 7.313242 3.59950420000000015 11.125556"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[26]" " -type \"float3\" 7.285439 3.98553040000000003 12.18062"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[27]" " -type \"float3\" 7.245368 3.70231010000000005 11.662902"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[28]" " -type \"float3\" 6.80838059999999956 3.975163 12.554366"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[29]" " -type \"float3\" 6.99143410000000021 3.59727119999999978 11.670278"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[30]" " -type \"float3\" 6.9447751000000002 3.7275993999999999 12.184499"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[31]" " -type \"float3\" 6.99401280000000014 4.02070240000000023 12.687347"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[32]" " -type \"float3\" 7.55728289999999969 4.740468 12.86096"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[33]" " -type \"float3\" 7.41163870000000014 4.35892579999999974 12.552118"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[34]" " -type \"float3\" 7.08022449999999992 4.7301006000000001 13.234705"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[35]" " -type \"float3\" 7.12118430000000036 4.39483170000000012 13.056507"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[36]" " -type \"float3\" 7.26585669999999961 4.77564 13.367687"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[37]" " -type \"float3\" 8.72380260000000085 6.62151960000000006 13.305952"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[38]" " -type \"float3\" 9.47549060000000054 5.92901749999999961 10.970836"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[39]" " -type \"float3\" 8.186224 5.53942159999999983 12.957928"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[40]" " -type \"float3\" 8.86270050000000076 5.5749177999999997 11.85844"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[41]" " -type \"float3\" 9.33956809999999926 5.551549 10.630666"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[42]" " -type \"float3\" 8.70875449999999951 5.167881 11.522901"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[43]" " -type \"float3\" 8.03312870000000068 5.134038 12.622793"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[44]" " -type \"float3\" 8.33619790000000016 5.10826440000000037 12.111729"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[45]" " -type \"float3\" 8.49162669999999942 5.51757619999999971 12.446507"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[46]" " -type \"float3\" 9.40079210000000032 6.65764759999999978 12.205824"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[47]" " -type \"float3\" 9.611412 6.30648660000000039 11.311006"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[48]" " -type \"float3\" 9.112752 6.11497159999999962 12.10948"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[49]" " -type \"float3\" 8.43280410000000025 6.07337520000000008 13.208869"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[50]" " -type \"float3\" 8.75223830000000014 6.07196710000000017 12.687583"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[51]" " -type \"float3\" 9.05898760000000003 6.6363411000000001 12.757287"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[52]" " -type \"float3\" 7.48798989999999964 5.86250689999999963 14.255217"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[53]" " -type \"float3\" 7.82912680000000005 5.49540619999999969 13.5413"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[54]" " -type \"float3\" 7.67369840000000014 5.08609489999999997 13.206524"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[55]" " -type \"float3\" 7.35206840000000028 5.48503830000000026 13.915046"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[56]" " -type \"float3\" 7.38375429999999966 5.12354090000000006 13.712487"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[57]" " -type \"float3\" 7.53770070000000025 5.53057770000000026 14.048027"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[58]" " -type \"float3\" 8.39648820000000029 6.614171 13.85208"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[59]" " -type \"float3\" 8.08973789999999937 6.04979710000000015 13.782376"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[60]" " -type \"float3\" 7.62391229999999975 6.23997639999999976 14.595387"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[61]" " -type \"float3\" 7.78775119999999976 6.07063250000000032 14.299067"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[62]" " -type \"float3\" 8.07579229999999981 6.613307 14.395411"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[63]" " -type \"float3\" 8.45442680000000024 5.44936470000000028 11.60223"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[64]" " -type \"float3\" 8.18258289999999988 4.694427 10.92189"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[65]" " -type \"float3\" 8.857543 4.72805549999999997 9.82429980000000036"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[66]" " -type \"float3\" 8.60601430000000001 4.18590119999999999 9.57442570000000082"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[67]" " -type \"float3\" 7.934104 4.15779690000000013 10.672498"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[68]" " -type \"float3\" 8.28472329999999957 4.188447 10.096831"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[69]" " -type \"float3\" 8.54723259999999918 4.74552390000000024 10.336378"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[70]" " -type \"float3\" 9.12938690000000008 5.48299360000000036 10.50464"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[71]" " -type \"float3\" 9.01183220000000063 5.13557050000000004 10.159547"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[72]" " -type \"float3\" 8.33610250000000086 5.10040090000000035 11.256659"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[73]" " -type \"float3\" 8.70309259999999973 5.15543510000000005 10.670786"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[74]" " -type \"float3\" 8.81907649999999954 5.5004616000000004 11.016718"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[75]" " -type \"float3\" 7.88473269999999982 4.7233533999999997 11.431171"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[76]" " -type \"float3\" 7.62222289999999969 4.16627689999999973 11.191625"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[77]" " -type \"float3\" 7.28101440000000011 4.1415614999999999 11.764013"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[78]" " -type \"float3\" 7.53254219999999997 4.68371579999999987 12.013887"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[79]" " -type \"float3\" 8.15657619999999994 5.47829150000000009 12.111511"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[80]" " -type \"float3\" 8.04059220000000074 5.133265 11.765579"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[81]" " -type \"float3\" 7.686832 5.09123090000000023 12.349134"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[82]" " -type \"float3\" 7.80438709999999958 5.43865350000000003 12.694227"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[83]" " -type \"float3\" 8.73237989999999975 6.63208009999999959 13.295226"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[84]" " -type \"float3\" 8.7262707000000006 6.20430230000000016 12.28257"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[85]" " -type \"float3\" 9.40123080000000044 6.23793129999999962 11.184979"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[86]" " -type \"float3\" 9.27378940000000007 5.86352630000000019 10.816294"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[87]" " -type \"float3\" 8.59876060000000031 5.8304191000000003 11.91544"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[88]" " -type \"float3\" 8.96438030000000019 5.88165280000000035 11.326154"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[89]" " -type \"float3\" 9.0909203999999999 6.25539920000000027 11.697058"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[90]" " -type \"float3\" 9.40682789999999969 6.66507819999999995 12.198276"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[91]" " -type \"float3\" 9.45158290000000001 6.5321258999999996 11.685754"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[92]" " -type \"float3\" 8.77772809999999915 6.49802970000000002 12.777523"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[93]" " -type \"float3\" 9.13244060000000069 6.54005529999999968 12.212119"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[94]" " -type \"float3\" 9.0672473999999994 6.64651010000000042 12.746958"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[95]" " -type \"float3\" 8.428421 6.23322920000000025 12.791851"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[96]" " -type \"float3\" 8.30187989999999942 5.85948370000000018 12.420948"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[97]" " -type \"float3\" 7.94878909999999994 5.81918619999999986 13.005881"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[98]" " -type \"float3\" 8.076231 6.19359160000000042 13.374567"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[99]" " -type \"float3\" 8.404747 6.6243401000000004 13.841751"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[100]" " -type \"float3\" 8.46994019999999992 6.51788520000000027 13.306913"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[101]" " -type \"float3\" 8.1265830999999995 6.4877868000000003 13.87534"
-		
-		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pnts[102]" " -type \"float3\" 8.08182809999999918 6.620738 14.387863"
-		
+		2 "|Sofa:Pillow3|Sofa:Pillow3Shape" "pt[0:102]" (" -s 103 -type \"float3\" 8.88736439999999916 3.794992 9.01862140000000068 6.54136469999999992 3.7343731 12.012138 7.53242869999999964 6.48665760000000002 14.846751 9.87842939999999992 6.54727649999999972 11.853233 7.2161464999999998 5.10756969999999999 13.574876 9.20364670000000018 5.17407940000000011 10.290496 7.64071510000000043 3.60704849999999988 10.579229 7.91437960000000018 4.78448340000000005 12.277588 7.64253569999999982 4.02954580000000018 11.597248 8.93180270000000043 4.41914180000000023 9.61015510000000006 8.31643389999999982 3.64161089999999987 9.48069 8.31901260000000065 4.065042 10.49776 8.26977540000000033 3.77193930000000011 9.99491120000000066 8.79588030000000032 4.04167319999999997 9.2699852000000007 7.59253689999999981 3.73727460000000011 11.099646 7.97574190000000005 3.62167450000000013 10.030763 7.90786790000000028 3.72448040000000002 10.568109 7.94793889999999958 4.0077 11.085827 8.5908566000000004 4.8199797000000002 11.1781 9.06772420000000068 4.79661079999999984 9.950325 8.44618419999999"
+		+ "936 4.43917129999999993 10.86692 7.76970820000000018 4.4030819000000001 11.964964 8.0741385999999995 4.38109639999999967 11.457325 8.21978280000000083 4.76263859999999983 11.766167 6.94430260000000033 4.352632 12.894536 7.313242 3.59950420000000015 11.125556 7.285439 3.98553040000000003 12.18062 7.245368 3.70231010000000005 11.662902 6.80838059999999956 3.975163 12.554366 6.99143410000000021 3.59727119999999978 11.670278 6.9447751000000002 3.7275993999999999 12.184499 6.99401280000000014 4.02070240000000023 12.687347 7.55728289999999969 4.740468 12.86096 7.41163870000000014 4.35892579999999974 12.552118 7.08022449999999992 4.7301006000000001 13.234705 7.12118430000000036 4.39483170000000012 13.056507 7.26585669999999961 4.77564 13.367687 8.72380260000000085 6.62151960000000006 13.305952 9.47549060000000054 5.92901749999999961 10.970836 8.186224 5.53942159999999983 12.957928 8.86270050000000076 5.5749177999999997 11.85844 9.33956809999999926 5.551549 10.630666 8.70875449999999951 5.167881 11.522901 8.033128700"
+		+ "00000068 5.134038 12.622793 8.33619790000000016 5.10826440000000037 12.111729 8.49162669999999942 5.51757619999999971 12.446507 9.40079210000000032 6.65764759999999978 12.205824 9.611412 6.30648660000000039 11.311006 9.112752 6.11497159999999962 12.10948 8.43280410000000025 6.07337520000000008 13.208869 8.75223830000000014 6.07196710000000017 12.687583 9.05898760000000003 6.6363411000000001 12.757287 7.48798989999999964 5.86250689999999963 14.255217 7.82912680000000005 5.49540619999999969 13.5413 7.67369840000000014 5.08609489999999997 13.206524 7.35206840000000028 5.48503830000000026 13.915046 7.38375429999999966 5.12354090000000006 13.712487 7.53770070000000025 5.53057770000000026 14.048027 8.39648820000000029 6.614171 13.85208 8.08973789999999937 6.04979710000000015 13.782376 7.62391229999999975 6.23997639999999976 14.595387 7.78775119999999976 6.07063250000000032 14.299067 8.07579229999999981 6.613307 14.395411 8.45442680000000024 5.44936470000000028 11.60223 8.18258289999999988 4.694427 10.92189 8.857543"
+		+ " 4.72805549999999997 9.82429980000000036 8.60601430000000001 4.18590119999999999 9.57442570000000082 7.934104 4.15779690000000013 10.672498 8.28472329999999957 4.188447 10.096831 8.54723259999999918 4.74552390000000024 10.336378 9.12938690000000008 5.48299360000000036 10.50464 9.01183220000000063 5.13557050000000004 10.159547 8.33610250000000086 5.10040090000000035 11.256659 8.70309259999999973 5.15543510000000005 10.670786 8.81907649999999954 5.5004616000000004 11.016718 7.88473269999999982 4.7233533999999997 11.431171 7.62222289999999969 4.16627689999999973 11.191625 7.28101440000000011 4.1415614999999999 11.764013 7.53254219999999997 4.68371579999999987 12.013887 8.15657619999999994 5.47829150000000009 12.111511 8.04059220000000074 5.133265 11.765579 7.686832 5.09123090000000023 12.349134 7.80438709999999958 5.43865350000000003 12.694227 8.73237989999999975 6.63208009999999959 13.295226 8.7262707000000006 6.20430230000000016 12.28257 9.40123080000000044 6.23793129999999962 11.184979 9.27378940000000007 5.8"
+		+ "6352630000000019 10.816294 8.59876060000000031 5.8304191000000003 11.91544 8.96438030000000019 5.88165280000000035 11.326154 9.0909203999999999 6.25539920000000027 11.697058 9.40682789999999969 6.66507819999999995 12.198276 9.45158290000000001 6.5321258999999996 11.685754 8.77772809999999915 6.49802970000000002 12.777523 9.13244060000000069 6.54005529999999968 12.212119 9.0672473999999994 6.64651010000000042 12.746958 8.428421 6.23322920000000025 12.791851 8.30187989999999942 5.85948370000000018 12.420948 7.94878909999999994 5.81918619999999986 13.005881 8.076231 6.19359160000000042 13.374567 8.404747 6.6243401000000004 13.841751 8.46994019999999992 6.51788520000000027 13.306913 8.1265830999999995 6.4877868000000003 13.87534 8.08182809999999918 6.620738 14.387863"
+		)
 		2 "|Sofa:Pillow2" "translate" " -type \"double3\" 7.26581240825334795 -0.10936704158619159 -14.03759962578069143"
 		
 		2 "|Sofa:Pillow2" "rotate" " -type \"double3\" 0 90.07366709958928652 0"
@@ -11734,213 +7908,12 @@ createNode reference -n "SofaRN";
 		2 "|Sofa:Pillow2" "rotatePivotTranslate" " -type \"double3\" 0 0 0"
 		2 "|Sofa:Pillow2" "scalePivot" " -type \"double3\" -11.07575321197509766 1.9692535400390625 25.20804405212402344"
 		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts" " -s 103"
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[0]" " -type \"float3\" 0.95345902000000005 3.74948859999999984 9.34694769999999941"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[1]" " -type \"float3\" -0.33118926999999998 3.74522470000000007 9.27831169999999972"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[2]" " -type \"float3\" -0.34547451000000001 6.66499609999999976 12.099271"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[3]" " -type \"float3\" 0.9391737 6.6692594999999999 12.167906"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[4]" " -type \"float3\" -0.10751084 5.20490310000000012 10.685433"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[5]" " -type \"float3\" 0.71549534999999997 5.20958089999999974 10.760784"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[6]" " -type \"float3\" 0.30487197999999999 3.58069680000000012 9.34836390000000073"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[7]" " -type \"float3\" 0.30387279 4.795012 11.16013"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[8]" " -type \"float3\" 0.30779117 3.99413319999999983 10.483535"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[9]" " -type \"float3\" 0.71941370000000004 4.40870240000000013 10.084189"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[10]" " -type \"float3\" 0.58281463 3.595109 9.38465790000000055"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[11]" " -type \"float3\" 0.58571470000000003 4.00963349999999963 10.51854"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[12]" " -type \"float3\" 0.58532112999999997 3.71171879999999987 9.97247789999999945"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[13]" " -type \"float3\" 0.72137289999999998 4.00826309999999975 9.74589250000000007"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[14]" " -type \"float3\" 0.30742936999999998 3.69685549999999985 9.94355580000000039"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[15]" " -type \"float3\" 0.44307032000000002 3.5851487999999998 9.36411569999999926"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[16]" " -type \"float3\" 0.44610404999999997 3.66994689999999979 9.98416609999999949"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[17]" " -type \"float3\" 0.44673963999999999 3.95608020000000016 10.549596"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[18]" " -type \"float3\" 0.58179634999999996 4.8105121000000004 11.195135"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[19]" " -type \"float3\" 0.71745455000000002 4.80914209999999986 10.422487"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[20]" " -type \"float3\" 0.58402955999999995 4.4047837000000003 10.891831"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[21]" " -type \"float3\" 0.30610179999999998 4.38870429999999967 10.855216"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[22]" " -type \"float3\" 0.44508237 4.35028889999999979 10.925791"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[23]" " -type \"float3\" 0.44282132000000002 4.756958 11.226191"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[24]" " -type \"float3\" -0.10359247000000001 4.40402459999999962 10.008839"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[25]" " -type \"float3\" 0.16873492000000001 3.58358929999999987 9.3389988000000006"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[26]" " -type \"float3\" 0.17240427 3.9545205000000001 10.524479"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[27]" " -type \"float3\" 0.17176864999999999 3.66838720000000018 9.95904829999999919"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[28]" " -type \"float3\" -0.10163329 4.00358530000000012 9.67054079999999949"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[29]" " -type \"float3\" 0.034143906000000002 3.59199020000000013 9.33442310000000042"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[30]" " -type \"float3\" 0.036650273999999997 3.70860050000000019 9.92224309999999932"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[31]" " -type \"float3\" 0.037043872999999998 4.006515 10.468307"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[32]" " -type \"float3\" 0.16848588 4.75539920000000027 11.201073"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[33]" " -type \"float3\" 0.17074695000000001 4.3487290999999999 10.900674"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[34]" " -type \"float3\" -0.10555167 4.80446390000000001 10.347136"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[35]" " -type \"float3\" 0.035358720000000003 4.40166520000000006 10.841598"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[36]" " -type \"float3\" 0.033125496999999997 4.80739360000000016 11.144901"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[37]" " -type \"float3\" 0.28930711999999997 6.77805760000000035 12.062026"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[38]" " -type \"float3\" 0.71157694000000005 6.01045940000000023 11.437379"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[39]" " -type \"float3\" 0.29995441 5.59589050000000032 11.836724"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[40]" " -type \"float3\" 0.57787794000000003 5.61139060000000001 11.87173"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[41]" " -type \"float3\" 0.71353613999999999 5.61002060000000036 11.099082"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[42]" " -type \"float3\" 0.58024149999999997 5.17787790000000037 11.544063"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[43]" " -type \"float3\" 0.30230068999999998 5.16419080000000008 11.509251"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[44]" " -type \"float3\" 0.44130080999999999 5.12175750000000019 11.576417"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[45]" " -type \"float3\" 0.43890290999999998 5.55783749999999976 11.902785"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[46]" " -type \"float3\" 0.56721765000000002 6.7942929000000003 12.096162"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[47]" " -type \"float3\" 0.70961779000000003 6.41089920000000024 11.775677"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[48]" " -type \"float3\" 0.57318455000000001 6.19716739999999966 12.075995"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[49]" " -type \"float3\" 0.29533598 6.17489959999999982 12.041932"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[50]" " -type \"float3\" 0.43395156000000001 6.16007139999999964 12.092733"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[51]" " -type \"float3\" 0.42750141000000003 6.78273729999999997 12.077508"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[52]" " -type \"float3\" -0.11142922 6.00578210000000023 11.362028"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[53]" " -type \"float3\" 0.16456751999999999 5.55627780000000016 11.877667"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[54]" " -type \"float3\" 0.16696541000000001 5.12019819999999992 11.5513"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[55]" " -type \"float3\" -0.10947005 5.60534239999999961 11.02373"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[56]" " -type \"float3\" 0.031570688 5.17475889999999961 11.493828"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[57]" " -type \"float3\" 0.029207154999999999 5.60827209999999976 11.821496"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[58]" " -type \"float3\" 0.15316604 6.781178 12.052391"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[59]" " -type \"float3\" 0.15961612999999999 6.15851159999999975 12.067616"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[60]" " -type \"float3\" -0.11338839000000001 6.40622090000000011 11.700325"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[61]" " -type \"float3\" 0.024513731 6.1940489000000003 12.025762"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[62]" " -type \"float3\" 0.018546831 6.79117440000000006 12.045928"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[63]" " -type \"float3\" 0.29019767000000002 5.56989619999999963 10.242977"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[64]" " -type \"float3\" 0.29411605000000002 4.76901770000000003 9.56638240000000017"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[65]" " -type \"float3\" 0.57207799000000004 4.78234150000000025 9.60396390000000011"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[66]" " -type \"float3\" 0.57680684000000004 4.19417 9.40144820000000081"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[67]" " -type \"float3\" 0.29878014000000003 4.18695210000000007 9.36347869999999993"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[68]" " -type \"float3\" 0.43656128999999999 4.21067570000000035 9.34415910000000061"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[69]" " -type \"float3\" 0.43156427000000003 4.81597519999999957 9.53182510000000072"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[70]" " -type \"float3\" 0.56815963999999997 5.58322 10.280559"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[71]" " -type \"float3\" 0.56970613999999997 5.21640109999999968 9.931201"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[72]" " -type \"float3\" 0.29175949000000001 5.20139270000000042 9.89331819999999951"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[73]" " -type \"float3\" 0.42915595000000001 5.25274040000000042 9.85764980000000079"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[74]" " -type \"float3\" 0.42764588999999997 5.61685370000000006 10.20842"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[75]" " -type \"float3\" 0.15722886 4.814415 9.50670810000000088"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[76]" " -type \"float3\" 0.16222586999999999 4.20911650000000037 9.31904220000000016"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[77]" " -type \"float3\" 0.028136016999999999 4.191052 9.35121439999999993"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[78]" " -type \"float3\" 0.023407181999999999 4.779223 9.55373"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[79]" " -type \"float3\" 0.15331052000000001 5.61529349999999994 10.183303"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[80]" " -type \"float3\" 0.15482056 5.25118059999999964 9.83253290000000035"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[81]" " -type \"float3\" 0.021035354999999999 5.21328260000000032 9.88096810000000048"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[82]" " -type \"float3\" 0.019488802 5.5801014999999996 10.230325"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[83]" " -type \"float3\" 0.28908989000000002 6.79036469999999959 12.04746"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[84]" " -type \"float3\" 0.28627929000000002 6.37077470000000012 10.919572"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[85]" " -type \"float3\" 0.56424123000000004 6.38409850000000034 10.957153"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[86]" " -type \"float3\" 0.56593364000000002 5.98861650000000001 10.584474"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[87]" " -type \"float3\" 0.28797767000000002 5.97578619999999994 10.548646"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[88]" " -type \"float3\" 0.42539394000000003 6.02310130000000044 10.509586"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[89]" " -type \"float3\" 0.42372750999999997 6.41773219999999966 10.885015"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[90]" " -type \"float3\" 0.56706482000000002 6.80295369999999977 12.085912"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[91]" " -type \"float3\" 0.56460463999999999 6.68333819999999967 11.500564"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[92]" " -type \"float3\" 0.28660177999999997 6.66981320000000011 11.456153"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[93]" " -type \"float3\" 0.42432397999999999 6.70560359999999989 11.447042"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[94]" " -type \"float3\" 0.42729225999999998 6.79458859999999998 12.063481"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[95]" " -type \"float3\" 0.14939213000000001 6.416172 10.859898"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[96]" " -type \"float3\" 0.15105853999999999 6.0215424999999998 10.484469"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[97]" " -type \"float3\" 0.017262794000000001 5.98549750000000014 10.534239"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[98]" " -type \"float3\" 0.015570423999999999 6.38098 10.906919"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[99]" " -type \"float3\" 0.15295686 6.79302880000000009 12.038363"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[100]" " -type \"float3\" 0.14998859 6.70404429999999962 11.421925"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[101]" " -type \"float3\" 0.015933795000000001 6.68021970000000032 11.45033"
-		
-		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pnts[102]" " -type \"float3\" 0.018393995 6.79983520000000041 12.035678"
-		
+		2 "|Sofa:Pillow2|Sofa:Pillow2Shape" "pt[0:102]" (" -s 103 -type \"float3\" 0.95345902000000005 3.74948859999999984 9.34694769999999941 -0.33118926999999998 3.74522470000000007 9.27831169999999972 -0.34547451000000001 6.66499609999999976 12.099271 0.9391737 6.6692594999999999 12.167906 -0.10751084 5.20490310000000012 10.685433 0.71549534999999997 5.20958089999999974 10.760784 0.30487197999999999 3.58069680000000012 9.34836390000000073 0.30387279 4.795012 11.16013 0.30779117 3.99413319999999983 10.483535 0.71941370000000004 4.40870240000000013 10.084189 0.58281463 3.595109 9.38465790000000055 0.58571470000000003 4.00963349999999963 10.51854 0.58532112999999997 3.71171879999999987 9.97247789999999945 0.72137289999999998 4.00826309999999975 9.74589250000000007 0.30742936999999998 3.69685549999999985 9.94355580000000039 0.44307032000000002 3.5851487999999998 9.36411569999999926 0.44610404999999997 3.66994689999999979 9.98416609999999949 0.44673963999999999 3.95608020000000016 10.549596 0.58179634999999996 4.8105121000000004 11.195135 0.71745455000000002 4.809142099"
+		+ "99999986 10.422487 0.58402955999999995 4.4047837000000003 10.891831 0.30610179999999998 4.38870429999999967 10.855216 0.44508237 4.35028889999999979 10.925791 0.44282132000000002 4.756958 11.226191 -0.10359247000000001 4.40402459999999962 10.008839 0.16873492000000001 3.58358929999999987 9.3389988000000006 0.17240427 3.9545205000000001 10.524479 0.17176864999999999 3.66838720000000018 9.95904829999999919 -0.10163329 4.00358530000000012 9.67054079999999949 0.034143906000000002 3.59199020000000013 9.33442310000000042 0.036650273999999997 3.70860050000000019 9.92224309999999932 0.037043872999999998 4.006515 10.468307 0.16848588 4.75539920000000027 11.201073 0.17074695000000001 4.3487290999999999 10.900674 -0.10555167 4.80446390000000001 10.347136 0.035358720000000003 4.40166520000000006 10.841598 0.033125496999999997 4.80739360000000016 11.144901 0.28930711999999997 6.77805760000000035 12.062026 0.71157694000000005 6.01045940000000023 11.437379 0.29995441 5.59589050000000032 11.836724 0.57787794000000003 5.61139"
+		+ "060000000001 11.87173 0.71353613999999999 5.61002060000000036 11.099082 0.58024149999999997 5.17787790000000037 11.544063 0.30230068999999998 5.16419080000000008 11.509251 0.44130080999999999 5.12175750000000019 11.576417 0.43890290999999998 5.55783749999999976 11.902785 0.56721765000000002 6.7942929000000003 12.096162 0.70961779000000003 6.41089920000000024 11.775677 0.57318455000000001 6.19716739999999966 12.075995 0.29533598 6.17489959999999982 12.041932 0.43395156000000001 6.16007139999999964 12.092733 0.42750141000000003 6.78273729999999997 12.077508 -0.11142922 6.00578210000000023 11.362028 0.16456751999999999 5.55627780000000016 11.877667 0.16696541000000001 5.12019819999999992 11.5513 -0.10947005 5.60534239999999961 11.02373 0.031570688 5.17475889999999961 11.493828 0.029207154999999999 5.60827209999999976 11.821496 0.15316604 6.781178 12.052391 0.15961612999999999 6.15851159999999975 12.067616 -0.11338839000000001 6.40622090000000011 11.700325 0.024513731 6.1940489000000003 12.025762 0.018546831 6.79"
+		+ "117440000000006 12.045928 0.29019767000000002 5.56989619999999963 10.242977 0.29411605000000002 4.76901770000000003 9.56638240000000017 0.57207799000000004 4.78234150000000025 9.60396390000000011 0.57680684000000004 4.19417 9.40144820000000081 0.29878014000000003 4.18695210000000007 9.36347869999999993 0.43656128999999999 4.21067570000000035 9.34415910000000061 0.43156427000000003 4.81597519999999957 9.53182510000000072 0.56815963999999997 5.58322 10.280559 0.56970613999999997 5.21640109999999968 9.931201 0.29175949000000001 5.20139270000000042 9.89331819999999951 0.42915595000000001 5.25274040000000042 9.85764980000000079 0.42764588999999997 5.61685370000000006 10.20842 0.15722886 4.814415 9.50670810000000088 0.16222586999999999 4.20911650000000037 9.31904220000000016 0.028136016999999999 4.191052 9.35121439999999993 0.023407181999999999 4.779223 9.55373 0.15331052000000001 5.61529349999999994 10.183303 0.15482056 5.25118059999999964 9.83253290000000035 0.021035354999999999 5.21328260000000032 9.880968100000"
+		+ "00048 0.019488802 5.5801014999999996 10.230325 0.28908989000000002 6.79036469999999959 12.04746 0.28627929000000002 6.37077470000000012 10.919572 0.56424123000000004 6.38409850000000034 10.957153 0.56593364000000002 5.98861650000000001 10.584474 0.28797767000000002 5.97578619999999994 10.548646 0.42539394000000003 6.02310130000000044 10.509586 0.42372750999999997 6.41773219999999966 10.885015 0.56706482000000002 6.80295369999999977 12.085912 0.56460463999999999 6.68333819999999967 11.500564 0.28660177999999997 6.66981320000000011 11.456153 0.42432397999999999 6.70560359999999989 11.447042 0.42729225999999998 6.79458859999999998 12.063481 0.14939213000000001 6.416172 10.859898 0.15105853999999999 6.0215424999999998 10.484469 0.017262794000000001 5.98549750000000014 10.534239 0.015570423999999999 6.38098 10.906919 0.15295686 6.79302880000000009 12.038363 0.14998859 6.70404429999999962 11.421925 0.015933795000000001 6.68021970000000032 11.45033 0.018393995 6.79983520000000041 12.035678"
+		)
 		2 "|Sofa:Pillow1" "translate" " -type \"double3\" 7.26581240825334795 -0.10936704158619159 -14.03759962578069143"
 		
 		2 "|Sofa:Pillow1" "rotate" " -type \"double3\" 0 90.07366709958928652 0"
@@ -11949,213 +7922,12 @@ createNode reference -n "SofaRN";
 		2 "|Sofa:Pillow1" "rotatePivotTranslate" " -type \"double3\" 0 0 0"
 		2 "|Sofa:Pillow1" "scalePivot" " -type \"double3\" -11.07575321197509766 1.9692535400390625 25.20804405212402344"
 		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts" " -s 103"
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[0]" " -type \"float3\" -6.54665759999999963 3.77236510000000003 11.50148"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[1]" " -type \"float3\" -8.46802620000000061 3.84449169999999985 9.12634659999999975"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[2]" " -type \"float3\" -9.30271720000000002 6.55734249999999985 11.762845"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[3]" " -type \"float3\" -7.38134960000000007 6.48521570000000036 14.137978"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[4]" " -type \"float3\" -8.68548870000000051 5.20442149999999959 10.329165"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[5]" " -type \"float3\" -7.16388650000000027 5.12528559999999977 12.935159"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[6]" " -type \"float3\" -7.47279550000000015 3.65429739999999992 10.338409"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[7]" " -type \"float3\" -7.72087340000000033 4.82089229999999969 11.961366"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[8]" " -type \"float3\" -7.49192190000000036 4.07677080000000025 11.335367"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[9]" " -type \"float3\" -6.93493460000000006 4.38116410000000034 12.309161"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[10]" " -type \"float3\" -6.96247769999999999 3.63948820000000017 11.228725"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[11]" " -type \"float3\" -6.98219350000000016 4.06286530000000035 12.224642"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[12]" " -type \"float3\" -6.93413449999999987 3.77170320000000014 11.739388"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[13]" " -type \"float3\" -6.82045890000000021 4.00910329999999959 11.996161"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[14]" " -type \"float3\" -7.443346 3.78647139999999993 10.855367"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[15]" " -type \"float3\" -7.21830459999999974 3.64441350000000019 10.778928"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[16]" " -type \"float3\" -7.17341709999999999 3.74995469999999997 11.315398"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[17]" " -type \"float3\" -7.21441170000000032 4.0316 11.816583"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[18]" " -type \"float3\" -7.21114540000000037 4.80698630000000016 12.850639"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[19]" " -type \"float3\" -7.04941029999999991 4.75322479999999992 12.622161"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[20]" " -type \"float3\" -7.09018329999999963 4.43193630000000027 12.56734"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[21]" " -type \"float3\" -7.59988689999999956 4.44524960000000036 11.676653"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[22]" " -type \"float3\" -7.32166620000000012 4.39997720000000037 12.161717"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[23]" " -type \"float3\" -7.44336320000000029 4.7757215000000004 12.442581"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[24]" " -type \"float3\" -8.45653629999999978 4.46030040000000039 9.703166"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[25]" " -type \"float3\" -7.72550489999999979 3.67079209999999989 9.91026210000000063"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[26]" " -type \"float3\" -7.72161249999999999 4.05797860000000021 10.947917"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[27]" " -type \"float3\" -7.68061729999999976 3.77633259999999993 10.446734"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[28]" " -type \"float3\" -8.342061 4.08823969999999992 9.39016720000000049"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[29]" " -type \"float3\" -7.97687909999999967 3.69224569999999996 9.491395"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[30]" " -type \"float3\" -7.94853590000000043 3.824461 10.002058"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[31]" " -type \"float3\" -7.99659489999999984 4.11562249999999974 10.487311"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[32]" " -type \"float3\" -7.9505644000000002 4.80210070000000044 11.573915"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[33]" " -type \"float3\" -7.828866 4.42635579999999962 11.293052"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[34]" " -type \"float3\" -8.57101250000000014 4.83236069999999973 10.016165"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[35]" " -type \"float3\" -8.1045847000000002 4.48469449999999981 10.83001"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[36]" " -type \"float3\" -8.22554680000000005 4.85974410000000034 11.11331"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[37]" " -type \"float3\" -8.38526919999999976 6.62567380000000039 12.848293"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[38]" " -type \"float3\" -7.392838 5.86940669999999987 13.561157"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[39]" " -type \"float3\" -7.94982529999999965 5.56501339999999978 12.587363"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[40]" " -type \"float3\" -7.44009690000000035 5.55110789999999987 13.476638"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[41]" " -type \"float3\" -7.2783623000000004 5.49734590000000001 13.248158"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[42]" " -type \"float3\" -7.31130410000000008 5.15019890000000036 13.170856"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[43]" " -type \"float3\" -7.82171959999999977 5.16572380000000031 12.281853"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[44]" " -type \"float3\" -7.5423511999999997 5.11671779999999998 12.763764"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[45]" " -type \"float3\" -7.67231509999999961 5.5198425999999996 13.068579"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[46]" " -type \"float3\" -7.87593940000000003 6.61237860000000044 13.736864"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[47]" " -type \"float3\" -7.50731370000000009 6.24146749999999972 13.874156"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[48]" " -type \"float3\" -7.64418790000000037 6.08119489999999985 13.685346"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[49]" " -type \"float3\" -8.15114310000000053 6.08913759999999993 12.796492"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[50]" " -type \"float3\" -7.8846683999999998 6.06384369999999961 13.265955"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[51]" " -type \"float3\" -8.13090230000000069 6.61597919999999995 13.288593"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[52]" " -type \"float3\" -8.91444019999999959 5.94854350000000043 10.955162"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[53]" " -type \"float3\" -8.17951580000000078 5.54622130000000002 12.199914"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[54]" " -type \"float3\" -8.049552 5.14309689999999975 11.8951"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[55]" " -type \"float3\" -8.799964 5.57648230000000034 10.642163"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[56]" " -type \"float3\" -8.32570549999999976 5.20295570000000041 11.433526"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[57]" " -type \"float3\" -8.45449829999999913 5.60386510000000015 11.739308"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[58]" " -type \"float3\" -8.63810250000000046 6.64235780000000009 12.419929"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[59]" " -type \"float3\" -8.39186950000000031 6.09022280000000027 12.39729"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[60]" " -type \"float3\" -9.0289154000000007 6.32060379999999977 11.268162"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[61]" " -type \"float3\" -8.65858940000000032 6.13395259999999976 11.948016"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[62]" " -type \"float3\" -8.8903408000000006 6.66513590000000011 11.999534"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[63]" " -type \"float3\" -8.14052389999999981 5.46418759999999981 11.219445"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[64]" " -type \"float3\" -7.91157250000000012 4.72006610000000038 10.593447"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[65]" " -type \"float3\" -7.4006653 4.70435379999999981 11.484805"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[66]" " -type \"float3\" -7.19541360000000019 4.172226 11.27746"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[67]" " -type \"float3\" -7.70876550000000016 4.19334079999999965 10.386119"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[68]" " -type \"float3\" -7.46625660000000035 4.19885830000000038 10.797673"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[69]" " -type \"float3\" -7.68010039999999972 4.74546959999999984 10.993269"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[70]" " -type \"float3\" -7.6296166999999997 5.4484748999999999 12.110804"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[71]" " -type \"float3\" -7.52972649999999977 5.10572719999999958 11.79025"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[72]" " -type \"float3\" -8.04001049999999928 5.11992929999999991 10.898536"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[73]" " -type \"float3\" -7.81040189999999956 5.14917659999999966 11.297657"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[74]" " -type \"float3\" -7.9090524000000002 5.48959059999999965 11.619267"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[75]" " -type \"float3\" -8.18730159999999962 4.77184819999999998 10.124603"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[76]" " -type \"float3\" -7.97345729999999975 4.2252364 9.92900850000000013"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[77]" " -type \"float3\" -8.209815 4.22498370000000012 9.5401296999999996"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[78]" " -type \"float3\" -8.41506670000000057 4.75711149999999972 9.74747559999999957"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[79]" " -type \"float3\" -8.41625310000000049 5.51596930000000008 10.750602"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[80]" " -type \"float3\" -8.31760219999999961 5.1755551999999998 10.428991"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[81]" " -type \"float3\" -8.54412839999999996 5.15848490000000037 10.052919"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[82]" " -type \"float3\" -8.64401819999999965 5.50123259999999981 10.373473"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[83]" " -type \"float3\" -8.39193440000000024 6.635891 12.83651"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[84]" " -type \"float3\" -8.36947540000000068 6.2083086999999999 11.845444"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[85]" " -type \"float3\" -7.85856819999999967 6.19259640000000022 12.736801"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[86]" " -type \"float3\" -7.7503719000000002 5.82325979999999976 12.394608"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[87]" " -type \"float3\" -8.2612514000000008 5.83949660000000037 11.504783"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[88]" " -type \"float3\" -8.030488 5.86499829999999989 11.900764"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[89]" " -type \"float3\" -8.13800430000000041 6.23371220000000026 12.245265"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[90]" " -type \"float3\" -7.8806295000000004 6.6195687999999997 13.728572"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[91]" " -type \"float3\" -7.90748169999999995 6.48480559999999961 13.219857"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[92]" " -type \"float3\" -8.4191704000000005 6.50000619999999962 12.322632"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[93]" " -type \"float3\" -8.18011 6.516736 12.74363"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[94]" " -type \"float3\" -8.13732049999999951 6.62581829999999972 13.277246"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[95]" " -type \"float3\" -8.64520450000000018 6.2600908000000004 11.3766"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[96]" " -type \"float3\" -8.53768829999999923 5.89137739999999965 11.0321"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[97]" " -type \"float3\" -8.76477339999999927 5.87601710000000033 10.657277"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[98]" " -type \"float3\" -8.87296959999999935 6.24535420000000041 10.999472"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[99]" " -type \"float3\" -8.64452080000000045 6.65219689999999986 12.408582"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[100]" " -type \"float3\" -8.68731020000000065 6.54311419999999977 11.874966"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[101]" " -type \"float3\" -8.9218826 6.53756330000000041 11.482527"
-		
-		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pnts[102]" " -type \"float3\" -8.895031 6.67232610000000026 11.991241"
-		
+		2 "|Sofa:Pillow1|Sofa:Pillow1Shape" "pt[0:102]" (" -s 103 -type \"float3\" -6.54665759999999963 3.77236510000000003 11.50148 -8.46802620000000061 3.84449169999999985 9.12634659999999975 -9.30271720000000002 6.55734249999999985 11.762845 -7.38134960000000007 6.48521570000000036 14.137978 -8.68548870000000051 5.20442149999999959 10.329165 -7.16388650000000027 5.12528559999999977 12.935159 -7.47279550000000015 3.65429739999999992 10.338409 -7.72087340000000033 4.82089229999999969 11.961366 -7.49192190000000036 4.07677080000000025 11.335367 -6.93493460000000006 4.38116410000000034 12.309161 -6.96247769999999999 3.63948820000000017 11.228725 -6.98219350000000016 4.06286530000000035 12.224642 -6.93413449999999987 3.77170320000000014 11.739388 -6.82045890000000021 4.00910329999999959 11.996161 -7.443346 3.78647139999999993 10.855367 -7.21830459999999974 3.64441350000000019 10.778928 -7.17341709999999999 3.74995469999999997 11.315398 -7.21441170000000032 4.0316 11.816583 -7.21114540000000037 4.80698630000000016 12.850639 -7.04941029999999991 4.75322479999999992 12.622"
+		+ "161 -7.09018329999999963 4.43193630000000027 12.56734 -7.59988689999999956 4.44524960000000036 11.676653 -7.32166620000000012 4.39997720000000037 12.161717 -7.44336320000000029 4.7757215000000004 12.442581 -8.45653629999999978 4.46030040000000039 9.703166 -7.72550489999999979 3.67079209999999989 9.91026210000000063 -7.72161249999999999 4.05797860000000021 10.947917 -7.68061729999999976 3.77633259999999993 10.446734 -8.342061 4.08823969999999992 9.39016720000000049 -7.97687909999999967 3.69224569999999996 9.491395 -7.94853590000000043 3.824461 10.002058 -7.99659489999999984 4.11562249999999974 10.487311 -7.9505644000000002 4.80210070000000044 11.573915 -7.828866 4.42635579999999962 11.293052 -8.57101250000000014 4.83236069999999973 10.016165 -8.1045847000000002 4.48469449999999981 10.83001 -8.22554680000000005 4.85974410000000034 11.11331 -8.38526919999999976 6.62567380000000039 12.848293 -7.392838 5.86940669999999987 13.561157 -7.94982529999999965 5.56501339999999978 12.587363 -7.44009690000000035 5.551107899"
+		+ "99999987 13.476638 -7.2783623000000004 5.49734590000000001 13.248158 -7.31130410000000008 5.15019890000000036 13.170856 -7.82171959999999977 5.16572380000000031 12.281853 -7.5423511999999997 5.11671779999999998 12.763764 -7.67231509999999961 5.5198425999999996 13.068579 -7.87593940000000003 6.61237860000000044 13.736864 -7.50731370000000009 6.24146749999999972 13.874156 -7.64418790000000037 6.08119489999999985 13.685346 -8.15114310000000053 6.08913759999999993 12.796492 -7.8846683999999998 6.06384369999999961 13.265955 -8.13090230000000069 6.61597919999999995 13.288593 -8.91444019999999959 5.94854350000000043 10.955162 -8.17951580000000078 5.54622130000000002 12.199914 -8.049552 5.14309689999999975 11.8951 -8.799964 5.57648230000000034 10.642163 -8.32570549999999976 5.20295570000000041 11.433526 -8.45449829999999913 5.60386510000000015 11.739308 -8.63810250000000046 6.64235780000000009 12.419929 -8.39186950000000031 6.09022280000000027 12.39729 -9.0289154000000007 6.32060379999999977 11.268162 -8.658589400000"
+		+ "00032 6.13395259999999976 11.948016 -8.8903408000000006 6.66513590000000011 11.999534 -8.14052389999999981 5.46418759999999981 11.219445 -7.91157250000000012 4.72006610000000038 10.593447 -7.4006653 4.70435379999999981 11.484805 -7.19541360000000019 4.172226 11.27746 -7.70876550000000016 4.19334079999999965 10.386119 -7.46625660000000035 4.19885830000000038 10.797673 -7.68010039999999972 4.74546959999999984 10.993269 -7.6296166999999997 5.4484748999999999 12.110804 -7.52972649999999977 5.10572719999999958 11.79025 -8.04001049999999928 5.11992929999999991 10.898536 -7.81040189999999956 5.14917659999999966 11.297657 -7.9090524000000002 5.48959059999999965 11.619267 -8.18730159999999962 4.77184819999999998 10.124603 -7.97345729999999975 4.2252364 9.92900850000000013 -8.209815 4.22498370000000012 9.5401296999999996 -8.41506670000000057 4.75711149999999972 9.74747559999999957 -8.41625310000000049 5.51596930000000008 10.750602 -8.31760219999999961 5.1755551999999998 10.428991 -8.54412839999999996 5.1584849000000003"
+		+ "7 10.052919 -8.64401819999999965 5.50123259999999981 10.373473 -8.39193440000000024 6.635891 12.83651 -8.36947540000000068 6.2083086999999999 11.845444 -7.85856819999999967 6.19259640000000022 12.736801 -7.7503719000000002 5.82325979999999976 12.394608 -8.2612514000000008 5.83949660000000037 11.504783 -8.030488 5.86499829999999989 11.900764 -8.13800430000000041 6.23371220000000026 12.245265 -7.8806295000000004 6.6195687999999997 13.728572 -7.90748169999999995 6.48480559999999961 13.219857 -8.4191704000000005 6.50000619999999962 12.322632 -8.18011 6.516736 12.74363 -8.13732049999999951 6.62581829999999972 13.277246 -8.64520450000000018 6.2600908000000004 11.3766 -8.53768829999999923 5.89137739999999965 11.0321 -8.76477339999999927 5.87601710000000033 10.657277 -8.87296959999999935 6.24535420000000041 10.999472 -8.64452080000000045 6.65219689999999986 12.408582 -8.68731020000000065 6.54311419999999977 11.874966 -8.9218826 6.53756330000000041 11.482527 -8.895031 6.67232610000000026 11.991241"
+		)
 		2 "|Sofa:leftCushion" "translate" " -type \"double3\" 7.26581240825334795 -0.10936704158619159 -14.03759962578069143"
 		
 		2 "|Sofa:leftCushion" "rotate" " -type \"double3\" 0 90.07366709958928652 0"
@@ -12195,9 +7967,9 @@ createNode reference -n "SofaRN";
 		
 		3 "Sofa:polyTweakUV10.output" "|Sofa:polySurface2|Sofa:SofaTop.inMesh" ""
 		
-		3 "Sofa:polyTweakUV34.output" "|Sofa:leftCushion|Sofa:leftCushionShape.inMesh" 
-		""
 		3 "Sofa:polyTweakUV33.output" "|Sofa:RightCushion|Sofa:RightCushionShape.inMesh" 
+		""
+		3 "Sofa:polyTweakUV34.output" "|Sofa:leftCushion|Sofa:leftCushionShape.inMesh" 
 		""
 		5 4 "SofaRN" "|Sofa:leftCushion|Sofa:leftCushionShape.inMesh" "SofaRN.placeHolderList[1]" 
 		""
@@ -12267,6 +8039,178 @@ createNode transformGeometry -n "transformGeometry2";
 createNode transformGeometry -n "transformGeometry3";
 	rename -uid "204BF99F-4B15-3752-A31F-499F3FB461E4";
 	setAttr ".txf" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 24.260964074236146 1;
+createNode reference -n "PottedFlowerRN";
+	rename -uid "6197F618-4504-B58A-4308-C8906A8A27FA";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"PottedFlowerRN"
+		"PottedFlowerRN" 0
+		"PottedFlowerRN" 55
+		2 "|PottedFlower:revolvedSurface1" "translate" " -type \"double3\" -0.013827049102033136 0.16858093443507871 -9.10091221835808639"
+		
+		2 "|PottedFlower:revolvedSurface1" "rotate" " -type \"double3\" 0 -96.11373928980819414 0"
+		
+		2 "|PottedFlower:revolvedSurface1" "scale" " -type \"double3\" 0.72549164500595043 0.72549164500595043 0.72549164500595043"
+		
+		2 "|PottedFlower:revolvedSurface1" "rotatePivot" " -type \"double3\" -2.63692996327336e-08 -0.15487374365329742 0"
+		
+		2 "|PottedFlower:revolvedSurface1" "rotatePivotTranslate" " -type \"double3\" 0 0 0"
+		
+		2 "|PottedFlower:revolvedSurface1" "scalePivot" " -type \"double3\" -2.63692996327336e-08 -0.15487374365329742 0"
+		
+		2 "|PottedFlower:revolvedSurface2" "translate" " -type \"double3\" -0.013827049102033136 0.16858093443507871 -9.10091221835808639"
+		
+		2 "|PottedFlower:revolvedSurface2" "rotate" " -type \"double3\" 0 -96.11373928980819414 0"
+		
+		2 "|PottedFlower:revolvedSurface2" "scale" " -type \"double3\" 0.72549164500595043 0.72549164500595043 0.72549164500595043"
+		
+		2 "|PottedFlower:revolvedSurface2" "rotatePivot" " -type \"double3\" -2.63692996327336e-08 -0.15487374365329742 0"
+		
+		2 "|PottedFlower:revolvedSurface2" "rotatePivotTranslate" " -type \"double3\" 0 0 0"
+		
+		2 "|PottedFlower:revolvedSurface2" "scalePivot" " -type \"double3\" -2.63692996327336e-08 -0.15487374365329742 0"
+		
+		2 "|PottedFlower:revolvedSurface3" "translate" " -type \"double3\" -0.013827049102033136 0.16858093443507871 -9.10091221835808639"
+		
+		2 "|PottedFlower:revolvedSurface3" "rotate" " -type \"double3\" 0 -96.11373928980819414 0"
+		
+		2 "|PottedFlower:revolvedSurface3" "scale" " -type \"double3\" 0.72549164500595043 0.72549164500595043 0.72549164500595043"
+		
+		2 "|PottedFlower:revolvedSurface3" "rotatePivot" " -type \"double3\" -2.63692996327336e-08 -0.15487374365329742 0"
+		
+		2 "|PottedFlower:revolvedSurface3" "rotatePivotTranslate" " -type \"double3\" 0 0 0"
+		
+		2 "|PottedFlower:revolvedSurface3" "scalePivot" " -type \"double3\" -2.63692996327336e-08 -0.15487374365329742 0"
+		
+		2 "|PottedFlower:Flower" "translate" " -type \"double3\" -0.013827049102033136 0.16858093443507871 -9.10091221835808639"
+		
+		2 "|PottedFlower:Flower" "rotate" " -type \"double3\" 0 -96.11373928980819414 0"
+		
+		2 "|PottedFlower:Flower" "scale" " -type \"double3\" 0.72549164500595043 0.72549164500595043 0.72549164500595043"
+		
+		2 "|PottedFlower:Flower" "rotatePivot" " -type \"double3\" -2.63692996327336e-08 -0.15487374365329742 0"
+		
+		2 "|PottedFlower:Flower" "rotatePivotTranslate" " -type \"double3\" 0 0 0"
+		
+		2 "|PottedFlower:Flower" "scalePivot" " -type \"double3\" -2.63692996327336e-08 -0.15487374365329742 0"
+		
+		2 "|PottedFlower:pSphere1" "translate" " -type \"double3\" -0.013827049102033136 0.16858093443507871 -9.10091221835808639"
+		
+		2 "|PottedFlower:pSphere1" "rotate" " -type \"double3\" 0 -96.11373928980819414 0"
+		
+		2 "|PottedFlower:pSphere1" "scale" " -type \"double3\" 0.72549164500595043 0.72549164500595043 0.72549164500595043"
+		
+		2 "|PottedFlower:pSphere1" "rotatePivot" " -type \"double3\" -2.63692996327336e-08 -0.15487374365329742 0"
+		
+		2 "|PottedFlower:pSphere1" "rotatePivotTranslate" " -type \"double3\" 0 0 0"
+		
+		2 "|PottedFlower:pSphere1" "scalePivot" " -type \"double3\" -2.63692996327336e-08 -0.15487374365329742 0"
+		
+		2 "|PottedFlower:loftedSurface1" "translate" " -type \"double3\" -0.013827049102033136 0.16858093443507871 -9.10091221835808639"
+		
+		2 "|PottedFlower:loftedSurface1" "rotate" " -type \"double3\" 0 -96.11373928980819414 0"
+		
+		2 "|PottedFlower:loftedSurface1" "scale" " -type \"double3\" 0.72549164500595043 0.72549164500595043 0.72549164500595043"
+		
+		2 "|PottedFlower:loftedSurface1" "rotatePivot" " -type \"double3\" -2.63692996327336e-08 -0.15487374365329742 0"
+		
+		2 "|PottedFlower:loftedSurface1" "rotatePivotTranslate" " -type \"double3\" 0 0 0"
+		
+		2 "|PottedFlower:loftedSurface1" "scalePivot" " -type \"double3\" -2.63692996327336e-08 -0.15487374365329742 0"
+		
+		2 "|PottedFlower:loftedSurface3" "translate" " -type \"double3\" -0.013827049102033136 0.16858093443507871 -9.10091221835808639"
+		
+		2 "|PottedFlower:loftedSurface3" "rotate" " -type \"double3\" 0 -96.11373928980819414 0"
+		
+		2 "|PottedFlower:loftedSurface3" "scale" " -type \"double3\" 0.72549164500595043 0.72549164500595043 0.72549164500595043"
+		
+		2 "|PottedFlower:loftedSurface3" "rotatePivot" " -type \"double3\" -2.63692996327336e-08 -0.15487374365329742 0"
+		
+		2 "|PottedFlower:loftedSurface3" "rotatePivotTranslate" " -type \"double3\" 0 0 0"
+		
+		2 "|PottedFlower:loftedSurface3" "scalePivot" " -type \"double3\" -2.63692996327336e-08 -0.15487374365329742 0"
+		
+		2 "|PottedFlower:loftedSurface2" "translate" " -type \"double3\" -0.013827049102033136 0.16858093443507871 -9.10091221835808639"
+		
+		2 "|PottedFlower:loftedSurface2" "rotate" " -type \"double3\" 0 -96.11373928980819414 0"
+		
+		2 "|PottedFlower:loftedSurface2" "scale" " -type \"double3\" 0.72549164500595043 0.72549164500595043 0.72549164500595043"
+		
+		2 "|PottedFlower:loftedSurface2" "rotatePivot" " -type \"double3\" -2.63692996327336e-08 -0.15487374365329742 0"
+		
+		2 "|PottedFlower:loftedSurface2" "rotatePivotTranslate" " -type \"double3\" 0 0 0"
+		
+		2 "|PottedFlower:loftedSurface2" "scalePivot" " -type \"double3\" -2.63692996327336e-08 -0.15487374365329742 0"
+		
+		2 "|PottedFlower:loftedSurface4" "translate" " -type \"double3\" -0.013827049102033136 0.16858093443507871 -9.10091221835808639"
+		
+		2 "|PottedFlower:loftedSurface4" "rotate" " -type \"double3\" 0 -96.11373928980819414 0"
+		
+		2 "|PottedFlower:loftedSurface4" "scale" " -type \"double3\" 0.72549164500595043 0.72549164500595043 0.72549164500595043"
+		
+		2 "|PottedFlower:loftedSurface4" "rotatePivot" " -type \"double3\" -2.63692996327336e-08 -0.15487374365329742 0"
+		
+		2 "|PottedFlower:loftedSurface4" "rotatePivotTranslate" " -type \"double3\" 0 0 0"
+		
+		2 "|PottedFlower:loftedSurface4" "scalePivot" " -type \"double3\" -2.63692996327336e-08 -0.15487374365329742 0"
+		
+		2 "|PottedFlower:pSphere2" "translate" " -type \"double3\" 0 0 0";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode reference -n "BookshelfRN";
+	rename -uid "02A8B014-4A61-50E9-52B8-BAA9FCC77539";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"BookshelfRN"
+		"BookshelfRN" 0
+		"BookshelfRN" 1
+		2 "|Bookshelf:pCube6" "translate" " -type \"double3\" 7 0 -9.29837585009525469";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode reference -n "BooksRN1";
+	rename -uid "884F76F5-43EC-34EB-AD76-08BDA70638FF";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"BooksRN1"
+		"BooksRN1" 0
+		"BooksRN1" 24
+		2 "|Books1:BookGrp" "translate" " -type \"double3\" 6.27300033744286623 5.03761812487618688 -8.7287796969090099"
+		
+		2 "|Books1:BookGrp" "rotatePivot" " -type \"double3\" 0 0 0"
+		2 "|Books1:BookGrp" "scalePivot" " -type \"double3\" 0 0 0"
+		2 "|Books1:BookGrp|Books1:Book20" "translate" " -type \"double3\" 0 0 0"
+		2 "|Books1:BookGrp|Books1:Book2" "translate" " -type \"double3\" 0 0 0"
+		2 "|Books1:BookGrp|Books1:Book" "translate" " -type \"double3\" 0 0 0"
+		2 "|Books1:BookGrp|Books1:Book13" "translate" " -type \"double3\" 0 0 0"
+		2 "|Books1:BookGrp|Books1:Book10" "translate" " -type \"double3\" 0 0 0"
+		2 "|Books1:BookGrp|Books1:Book18" "translate" " -type \"double3\" 0 0 0"
+		2 "|Books1:BookGrp|Books1:Book16" "translate" " -type \"double3\" 0 0 0"
+		2 "|Books1:BookGrp|Books1:Book7" "translate" " -type \"double3\" 0 0 0"
+		2 "|Books1:BookGrp|Books1:Book5" "translate" " -type \"double3\" 0 0 0"
+		2 "|Books1:BookGrp|Books1:Book15" "translate" " -type \"double3\" 0 0 0"
+		2 "|Books1:BookGrp|Books1:Book12" "translate" " -type \"double3\" 0 0 0"
+		2 "|Books1:BookGrp|Books1:Book1" "translate" " -type \"double3\" 0 0 0"
+		2 "|Books1:BookGrp|Books1:Book17" "translate" " -type \"double3\" 0 0 0"
+		2 "|Books1:BookGrp|Books1:Book6" "translate" " -type \"double3\" 0 0 0"
+		2 "|Books1:BookGrp|Books1:Book4" "translate" " -type \"double3\" 0 0 0"
+		2 "|Books1:BookGrp|Books1:Book9" "translate" " -type \"double3\" 0 0 0"
+		2 "|Books1:BookGrp|Books1:Book19" "translate" " -type \"double3\" 0 0 0"
+		2 "|Books1:BookGrp|Books1:Book3" "translate" " -type \"double3\" 0 0 0"
+		2 "|Books1:BookGrp|Books1:Book11" "translate" " -type \"double3\" 0 0 0"
+		2 "|Books1:BookGrp|Books1:Book14" "translate" " -type \"double3\" 0 0 0"
+		2 "|Books1:BookGrp|Books1:Book8" "translate" " -type \"double3\" 0 0 0";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode reference -n "DeskLmpRN1";
+	rename -uid "62822770-4F60-315F-7B4F-E8A6F6048147";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"DeskLmpRN1"
+		"DeskLmpRN1" 0
+		"DeskLmpRN1" 3
+		2 "|DeskLmp1:pCylinder5" "translate" " -type \"double3\" 9.43065098027562421 7.42621644873684339 -9.55622057491830645"
+		
+		2 "|DeskLmp1:pCylinder5" "rotate" " -type \"double3\" 0 -141.47638321568584274 0"
+		
+		2 "|DeskLmp1:pCylinder5" "rotatePivotTranslate" " -type \"double3\" 0 0 0";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
 select -ne :time1;
 	setAttr -av -k on ".cch";
 	setAttr -av -k on ".ihi";
@@ -12325,13 +8269,12 @@ select -ne :postProcessList1;
 	setAttr -cb on ".bnm";
 	setAttr -s 2 ".p";
 select -ne :defaultRenderUtilityList1;
-	setAttr -s 5 ".u";
+	setAttr -s 9 ".u";
 select -ne :defaultRenderingList1;
 	setAttr -k on ".ihi";
-	setAttr -s 5 ".r";
+	setAttr -s 8 ".r";
 select -ne :defaultTextureList1;
-	setAttr -s 5 ".tx";
-select -ne :lambert1;
+	setAttr -s 9 ".tx";
 select -ne :standardSurface1;
 	setAttr ".sr" 0.5;
 select -ne :openPBR_shader1;
@@ -12341,7 +8284,7 @@ select -ne :initialShadingGroup;
 	setAttr -k on ".ihi";
 	setAttr -av -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -s 16 ".dsm";
+	setAttr -s 47 ".dsm";
 	setAttr -k on ".mwc";
 	setAttr -k on ".an";
 	setAttr -k on ".il";
@@ -12350,7 +8293,7 @@ select -ne :initialShadingGroup;
 	setAttr -k on ".fo";
 	setAttr -k on ".epo";
 	setAttr -k on ".ro" yes;
-	setAttr -s 3 ".gn";
+	setAttr -s 6 ".gn";
 select -ne :initialParticleSE;
 	setAttr -av -k on ".cch";
 	setAttr -k on ".ihi";
@@ -12365,7 +8308,7 @@ select -ne :initialParticleSE;
 	setAttr -k on ".epo";
 	setAttr -k on ".ro" yes;
 select -ne :initialMaterialInfo;
-	setAttr -s 5 ".t";
+	setAttr -s 7 ".t";
 select -ne :defaultRenderGlobals;
 	addAttr -ci true -h true -sn "dss" -ln "defaultSurfaceShader" -dt "string";
 	setAttr -k on ".cch";
@@ -12530,39 +8473,7 @@ select -ne :hardwareRenderGlobals;
 	setAttr -k on ".bswa";
 	setAttr -k on ".shml";
 	setAttr -k on ".hwel";
-select -ne :ikSystem;
-	setAttr -s 4 ".sol";
 connectAttr "TableRN.phl[1]" "lambert1SG.dsm" -na;
-connectAttr "BookshelfRN.phl[1]" "lambert1SG.dsm" -na;
-connectAttr "BooksRN.phl[1]" "lambert1SG.dsm" -na;
-connectAttr "BooksRN.phl[2]" "lambert1SG.dsm" -na;
-connectAttr "BooksRN.phl[3]" "lambert1SG.dsm" -na;
-connectAttr "BooksRN.phl[4]" "lambert1SG.dsm" -na;
-connectAttr "BooksRN.phl[5]" "lambert1SG.dsm" -na;
-connectAttr "BooksRN.phl[6]" "lambert1SG.dsm" -na;
-connectAttr "BooksRN.phl[7]" "lambert1SG.dsm" -na;
-connectAttr "BooksRN.phl[8]" "lambert1SG.dsm" -na;
-connectAttr "BooksRN.phl[9]" "lambert1SG.dsm" -na;
-connectAttr "BooksRN.phl[10]" "lambert1SG.dsm" -na;
-connectAttr "BooksRN.phl[11]" "lambert1SG.dsm" -na;
-connectAttr "BooksRN.phl[12]" "lambert1SG.dsm" -na;
-connectAttr "BooksRN.phl[13]" "lambert1SG.dsm" -na;
-connectAttr "BooksRN.phl[14]" "lambert1SG.dsm" -na;
-connectAttr "BooksRN.phl[15]" "lambert1SG.dsm" -na;
-connectAttr "BooksRN.phl[16]" "lambert1SG.dsm" -na;
-connectAttr "BooksRN.phl[17]" "lambert1SG.dsm" -na;
-connectAttr "BooksRN.phl[18]" "lambert1SG.dsm" -na;
-connectAttr "BooksRN.phl[19]" "lambert1SG.dsm" -na;
-connectAttr "BooksRN.phl[20]" "lambert1SG.dsm" -na;
-connectAttr "BooksRN.phl[21]" "lambert1SG.dsm" -na;
-connectAttr "DeskLmpRN.phl[1]" "lambert1SG.dsm" -na;
-connectAttr "PottedFlowerRN.phl[1]" "lambert1SG.dsm" -na;
-connectAttr "PottedFlowerRN.phl[2]" "lambert1SG.dsm" -na;
-connectAttr "PottedFlowerRN.phl[3]" "lambert1SG.dsm" -na;
-connectAttr "PottedFlowerRN.phl[4]" "lambert1SG.dsm" -na;
-connectAttr "PottedFlowerRN.phl[5]" "lambert1SG.dsm" -na;
-connectAttr "PottedFlowerRN.phl[6]" "lambert1SG.dsm" -na;
-connectAttr "PottedFlowerRN.phl[7]" "lambert1SG.dsm" -na;
 connectAttr "transformGeometry1.og" "SofaRN.phl[1]";
 connectAttr "transformGeometry3.og" "SofaRN.phl[2]";
 connectAttr "transformGeometry2.og" "SofaRN.phl[3]";
@@ -12596,10 +8507,30 @@ connectAttr ":defaultArnoldFilter.msg" ":defaultArnoldRenderOptions.filt";
 connectAttr ":defaultArnoldDriver.msg" ":defaultArnoldRenderOptions.drvr";
 connectAttr "layerManager.dli[2]" "WallsLyr.id";
 connectAttr "sharedReferenceNode.sr" "TableRN.sr";
-connectAttr "sharedReferenceNode.sr" "BookshelfRN.sr";
 connectAttr "sharedReferenceNode.sr" "BooksRN.sr";
 connectAttr "sharedReferenceNode.sr" "DeskLmpRN.sr";
-connectAttr "sharedReferenceNode.sr" "PottedFlowerRN.sr";
+connectAttr "BooksRN.phl[1]" "lambert1SG.dsm" -na;
+connectAttr "BooksRN.phl[2]" "lambert1SG.dsm" -na;
+connectAttr "BooksRN.phl[3]" "lambert1SG.dsm" -na;
+connectAttr "BooksRN.phl[4]" "lambert1SG.dsm" -na;
+connectAttr "BooksRN.phl[5]" "lambert1SG.dsm" -na;
+connectAttr "BooksRN.phl[6]" "lambert1SG.dsm" -na;
+connectAttr "BooksRN.phl[7]" "lambert1SG.dsm" -na;
+connectAttr "BooksRN.phl[8]" "lambert1SG.dsm" -na;
+connectAttr "BooksRN.phl[9]" "lambert1SG.dsm" -na;
+connectAttr "BooksRN.phl[10]" "lambert1SG.dsm" -na;
+connectAttr "BooksRN.phl[11]" "lambert1SG.dsm" -na;
+connectAttr "BooksRN.phl[12]" "lambert1SG.dsm" -na;
+connectAttr "BooksRN.phl[13]" "lambert1SG.dsm" -na;
+connectAttr "BooksRN.phl[14]" "lambert1SG.dsm" -na;
+connectAttr "BooksRN.phl[15]" "lambert1SG.dsm" -na;
+connectAttr "BooksRN.phl[16]" "lambert1SG.dsm" -na;
+connectAttr "BooksRN.phl[17]" "lambert1SG.dsm" -na;
+connectAttr "BooksRN.phl[18]" "lambert1SG.dsm" -na;
+connectAttr "BooksRN.phl[19]" "lambert1SG.dsm" -na;
+connectAttr "BooksRN.phl[20]" "lambert1SG.dsm" -na;
+connectAttr "BooksRN.phl[21]" "lambert1SG.dsm" -na;
+connectAttr "DeskLmpRN.phl[1]" "lambert1SG.dsm" -na;
 connectAttr ":lambert1.oc" "lambert1SG.ss";
 connectAttr "lambert1SG.msg" "materialInfo1.sg";
 connectAttr ":lambert1.msg" "materialInfo1.m";
